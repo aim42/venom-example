@@ -1,4 +1,4 @@
-// header file for arc42-template,
+// header file for arc42-,
 // including all help texts
 //
 // ====================================
@@ -8,19 +8,17 @@
 // toc-title definition MUST follow document title without blank line!
 
 // configure DE settings for asciidoc
-include::../common/adoc.config[]
+include::./config/adoc.config[]
 
 
-include::../common/about-arc42.adoc[]
+//include::../common/about-arc42.adoc[]
 
 // horizontal line
 ***
 
 [NOTE]
 ====
-Diese Version des Templates enthält Hilfen und Erläuterungen.
-Sie dient der Einarbeitung in arc42 sowie dem Verständnis der Konzepte.
-Für die Dokumentation eigener System verwenden Sie besser die _plain_ Version.
+
 ====
 
 
@@ -37,7 +35,7 @@ include::src/kap02.adoc[]
 // 3. Kontextabgrenzung
 include::src/kap03.adoc[]
 
-// 4. Lösungsstrategie
+// 4. Lï¿½sungsstrategie
 include::src/kap04.adoc[]
 
 // 5. Bausteinsicht
@@ -55,7 +53,7 @@ include::src/kap08.adoc[]
 // 9. Entscheidungen
 include::src/kap09.adoc[]
 
-// 10. Qualität...
+// 10. Qualitï¿½t...
 include::src/kap10.adoc[]
 
 // 11. Risiken
