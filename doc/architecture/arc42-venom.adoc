@@ -1,0 +1,63 @@
+// header file for arc42-,
+// including all help texts
+//
+// ====================================
+
+= image:arc42-logo.png[] Template
+:toc-title: Inhaltsverzeichnis
+// toc-title definition MUST follow document title without blank line!
+
+// configure DE settings for asciidoc
+include::./config/adoc.config[]
+
+
+//include::../common/about-arc42.adoc[]
+
+// horizontal line
+***
+
+[NOTE]
+====
+
+====
+
+
+
+// numbering from here on
+:numbered:
+
+// 1. Anforderungen und Ziele
+include::01-Einfuehrung.adoc[]
+
+// 2. Randbedingungen
+include::02-Randbedingungen.adoc[]
+
+// 3. Kontextabgrenzung
+include::03-Kontext.adoc[]
+
+// 4. Lösungsstrategie
+include::04-Loesungsstrategie.adoc[]
+
+// 5. Bausteinsicht
+include::src/Bausteinsicht.adoc[]
+
+// 6. Laufzeitsicht
+include::06-Laufzeitsicht.adoc[]
+
+// 7. Verteilungssicht
+include::07-Verteilungssicht.adoc[]
+
+// 8. Querschnittliche Konzepte
+include::08-Konzepte.adoc[]
+
+// 9. Entscheidungen
+include::09-Entwurfsentscheidungen.adoc[]
+
+// 10. Qualität...
+include::10-Qualitaetsszenarien.adoc[]
+
+// 11. Risiken
+include::11-Technische-Risiken.adoc[]
+
+// 12. Glossar
+include::12-Glossar.adoc[]

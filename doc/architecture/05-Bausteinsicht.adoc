@@ -1,0 +1,42 @@
+
+== Bausteinsicht
+
+
+
+
+=== Whitebox Gesamtsystem
+
+
+
+//include::../../common/template-whitebox.adoc[]
+
+
+==== _Baustein 1_ (Blackbox)
+
+
+
+//include::../../common/template-blackbox-short.adoc[]
+
+
+
+=== Ebene 2
+
+
+
+==== _Baustein 1_ (Whitebox)
+
+//include::../../common/template-whitebox.adoc[]
+
+===== _Baustein 1.1_ (Blackbox)
+
+//include::../../common/template-blackbox-short.adoc[]
+
+
+==== _Baustein 2_ (Whitebox)
+
+//include::../../common/template-whitebox.adoc[]
+
+
+===== _Baustein 2.1_ (Blackbox)
+
+//include::../../common/template-blackbox-short.adoc[]

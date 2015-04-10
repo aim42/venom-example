@@ -36,21 +36,5 @@
 
 
 
-==== Organisation und Struktur
-_<hier Randbedingungen einfügen>_
-
-==== Ressourcen (Budget, Zeit, Personal)
-_<hier Randbedingungen einfügen>_
-
-==== Organisatorische Standards
-_<hier Randbedingungen einfügen>_
-
-==== Juristische Faktoren
-_<hier Randbedingungen einfügen>_
-
-
-
 
 === Konventionen
-
-

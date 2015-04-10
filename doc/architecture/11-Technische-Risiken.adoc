@@ -1,0 +1,24 @@
+
+== Technische Risiken
+
+// TODO: hier eventuell in der Issue-List behandeln!
+
+
+[cols="1,2" options="header"]
+.Technische Risiken
+|===
+|Risiko
+|Priorität
+|Konsequenz
+|Erläuterung
+
+|
+|
+|
+|
+
+|
+|
+|
+|
+|===

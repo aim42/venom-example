@@ -1,0 +1,25 @@
+
+==	Einführung und Ziele
+
+(engl.: Introduction and Goals)
+
+
+=== Aufgabenstellung
+(engl.: Requirements Overview)
+
+
+
+=== Qualitätsziele
+(engl.: Quality Goals)
+
+
+
+=== Stakeholder
+
+
+
+[cols="1,2" options="header"]
+.Stakeholder des Systems
+|===
+|Rolle |Beschreibung |Ziel / Intention |Kontakt |Bemerkungen
+|===
