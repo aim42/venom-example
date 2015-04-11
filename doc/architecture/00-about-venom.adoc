@@ -23,3 +23,9 @@ _venom (Engl.): Gift, Giftigkeit, Bosheit._
 Ich verwende den Begriff hier als Kurzform von "**VE**ry **NO**r**M**al System,
 sozusagen als einen (fiktiven) Normalfall einer über Jahre hinweg entwickelten
 und benutzten Individualsoftware.
+
+Boshaft ist daran nur, dass die hier beschriebenen Fehler und Probleme zwar erfunden
+sind, aber in der Realität natürlich in ähnlicher Form vorkommen - hoffentlich weniger
+gehäuft.
+
+Ganz normal halt...
