@@ -1,0 +1,82 @@
+// gradle build script for the VENOM architecture example
+//
+// free software - without guarantee, use at your own risk
+// ========================================================
+
+println """compiling with Java ${System.getProperty("java.version")}"""
+
+
+buildscript {
+    // these are the BUILDSCRIPT deps - required to execute
+    // build targets and -operations
+    repositories {
+        maven {
+            name 'Bintray Asciidoctor repo'
+            url  'http://dl.bintray.com/content/aalmiray/asciidoctor'
+        }
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+//        classpath ('org.aim42:HtmlSanityCheck-gradle-plugin:0.5.3')
+        classpath ( group: 'org.asciidoctor',
+                    name: 'asciidoctor-gradle-plugin',
+                    version: '1.5.2')
+    }
+}
+
+
+ext {
+    srcDir  = "$projectDir/doc"
+    targetDir = "$buildDir"
+}
+
+// =========== asciidoctor stuff ===============
+apply plugin: 'org.asciidoctor.convert'
+
+asciidoctor {
+    outputDir = file( targetDir )
+    sourceDir = file("$srcDir")
+    sources  { include "architecture/arc42-venom.adoc" }
+    attributes = [
+            separateOutputDirs: false,
+            imagesdir   : 'images',
+            doctype: 'book',
+            icons: 'font',
+            toc: 'left',
+            sectlink: true,
+            sectanchors: true,
+            numbered: true,
+            'source-highlighter': 'coderay',
+            'coderay-css': 'class',
+            // style definitions taken from aim42, currently not needed here
+            // stylesheet: 'aim42.css',
+            // stylesdir: "$srcDir/resources/css/"
+
+    ]
+    resources {
+        from "$srcDir/architecture/images"
+        into "$outputDir/architecture/images"
+
+    }
+}
+
+
+
+defaultTasks 'asciidoctor'
+
+
+//task copyResources(
+//    type: Copy,
+//    description: 'copy (downloadable) resources and artifacts to resource folder'
+//) {
+//    from "$srcDir/resources/docs"
+//into "$targetDir/resources"
+//}
+
+
+//task aim42(
+//    dependsOn: [copyResources, asciidoctor],
+//    description: 'collects all required tasks for creating aim42 documentation'
+//) << { }
