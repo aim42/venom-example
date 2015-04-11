@@ -1,25 +1,135 @@
 
-==	Einführung und Ziele
+==	Einführung
 
-(engl.: Introduction and Goals)
+=== Das Unternehmen
 
+Die SAMM AG (kurz für "sell and make money") ist seit Jahren erfolgreich
+mit dem Verkauf so genannter _komplexer Produkte_: Dazu zählen beispielsweise:
+
+* Büroausstattungen, Schrank- und Regalsysteme
+* Bürobedarf
+* Küchen und Großküchen
+* Küchenbedarf
+* Ausstattungen für Spezialläger (beispielsweise für Apotheken oder Labore )
+
+Zu den Kunden von SAMM zählen kleine und mittlere Unternehmen, Vereine,
+Behörden, Organisationen und Einzelpersonen.
+
+SAMM bietet seinen Kunden für diese _komplexen Produkte_ benutzerfreundliche
+Konfiguration an (online oder per Telefon). SAMM selbst kauft die Produkte
+bei Herstellern gemäß der Konfiguration ein, kann aufgrund langfristiger
+Liefer- und Rabattverträge die Produkte deutlich unterhalb gängiger Marktpreise
+anbieten.
+
+SAMM schafft starke Kundenbindung durch die Kombination langfristige
+Vergünstigungsverträge, zeitlich befristeten Rabattmöglichkeiten und
+branchenorientierten Vertragsmodellen.
+
+[horizontal]
+Beispiel 1:: Für die Lagerung von Medikamenten in Apotheken werden immer mehr
+Lagerautomaten verwendet: Rezepte werden an der Theke eingescannt und der Lagerautomat
+transportiert die entsprechende Medikamentenpackung automatisch an den Point-of-Sale.
+Solche Systeme kosten direkt beim Hersteller 150.000-500.000 Euro. SAMM kann
+in vielen Fällen solche Systeme für 90.000-300.000 an die Apotheken verkaufen.
+
+Beispiel 2:: Komplettausstattungen spezieller Großküchen (etwa für Krankenhäusern,
+  im Justizvollzug, Betriebskantinen) bietet SAMM in der Regel ca. 30% günstiger
+  als Möbelhäuser oder Hersteller an.
+
+Beispiel 3:: Für Einzelpersonen ist die Konfiguration spezieller Schränke oder Regale
+ein typisches SAMM-Erfolgsgeschäft.
+
+
+=== Das VENOM-System
+
+==== Historie
+VENOM wurde über die letzten Jahre durch die SAMM AG entwickelt. Das System
+in seiner heutigen Form ist aus einer Vielzahl von Vorgängersystemen entstanden,
+einen groben Überblick über die vielfältige Historie gibt Abbildung <<figure-history>>
+
+
+[[figure-history]]
+image::00-venom-history.jpg["Historie", title="Historie von VENOM"]
+
+Aufgrund der langen Historie und der häufig wechselden Entwicklungs- und Wartungsteams
+sowie der damit verbundenen wechselnden Verantwortlichkeiten und Prioritäten leidet VENOM
+unter folgenden grundsätzlichen Problemen (Details werden an anderer Stelle
+  beschrieben):
+
+* Signifikante Steigerung von Entwicklungs- und Betriebskosten
+** Hohe Aufwände zur Entwicklung und Inbetriebnahme neuer Features. Teilweise
+dauert es auch bei wichtigen Anforderungen mehr als 4-6 Monate, bis die entsprechende
+Funktion in Betrieb gehen kann.
+** Hohe Fehleranfälligkeit bei Änderungen und Neuentwicklungen: Selbst kleine Änderungen
+ziehen substantielle Test- und Bugfixing-Aufwände nach sich.
+
+* Sinkende Betriebsstabilität: Die Anzahl an Fehlern im laufenden Betrieb
+(Prio-1 Produktionsfehler) nimmt zu.
+
+* Die Verlässlichkeit von Aufwandsschätzungen der Entwicklungsteams nimmt ab.
+   mangelhafter Qualität von Dokumentation
 
 === Aufgabenstellung
-(engl.: Requirements Overview)
 
 
 
 === Qualitätsziele
-(engl.: Quality Goals)
+
 
 
 
 === Stakeholder
 
+==== Benutzer und Benutzergruppen
 
 
-[cols="1,4,1,2" options="header"]
+[[figure-users]]
+image::00-venom-users.jpg[title="Benutzer und Benutzergruppen von VENOM"]
+
+
+[cols="1,5,2,2" options="header"]
+.Benutzer und Benutzergruppen
+|===
+| Rolle | Beschreibung | Ziel  | Bemerkungen
+| Private User
+|
+|
+|
+
+| User Group
+|
+|
+|
+
+| Corporate User
+|
+|
+|
+
+| Government User
+|
+|
+|
+
+| Operations
+|
+|
+|
+
+| SAMM interne User 
+|
+|
+|
+
+
+|===
+
+==== Sonstige Stakeholder
+
+
+
+[cols="1,2,2,2,2" options="header"]
 .Stakeholder des Systems
 |===
-|Rolle |Beschreibung |Ziel / Intention |Kontakt |Bemerkungen
+|Rolle | Beschreibung | Intention | Kontakt | Bemerkungen
 |===
