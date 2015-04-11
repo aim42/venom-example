@@ -1,16 +1,19 @@
 // header file for the VENOM example
 // ====================================
 
-= image:venom-logo.jpg[] Software Architecture Documentation
+= image:../images/venom-logo-small.jpg[] Software Architecture Documentation
 :toc-title: Inhaltsverzeichnis
 // toc-title definition MUST follow document title without blank line!
 
 // configure DE settings for asciidoc
-include::../config/asciidoctor-settings.config[]
+include::../common/asciidoctor-language-settings.config[]
+
+// common header stuff
 include::../common/header.adoc[]
 
-***
 include::00-about-venom.adoc[]
+
+***
 
 [cols="1,4,1" options=""]
 |===
@@ -25,6 +28,13 @@ Asciidoc version initiated by Markus Schärtel and Jürgen Krey,
 completed and maintained by Ralf Müller and Gernot Starke.#
 | image:aim42-logo.png[aim42, link={aim42-url}]
 |===
+
+
+// some status info
+Version von {docdate}, image:http://img.shields.io/github/issues/aim42/venom-example.svg[link={project-issues}]
+
+
+
 
 
 // numbering from here on

@@ -14,3 +14,12 @@ Es dient als Beispiel für:
 ====
 Ähnlichkeiten mit bestehenden Systemen sind rein zufällig und nicht beabsichtigt.
 ====
+
+
+== Warum "VENOM"?
+
+_venom (Engl.): Gift, Giftigkeit, Bosheit._
+
+Ich verwende den Begriff hier als Kurzform von "**VE**ry **NO**r**M**al System,
+sozusagen als einen (fiktiven) Normalfall einer über Jahre hinweg entwickelten
+und benutzten Individualsoftware.

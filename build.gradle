@@ -38,10 +38,11 @@ apply plugin: 'org.asciidoctor.convert'
 asciidoctor {
     outputDir = file( targetDir )
     sourceDir = file("$srcDir")
+    println "outputDir = " + outputDir
+    println "sourceDir = " + sourceDir
+
     sources  { include "architecture/arc42-venom.adoc" }
     attributes = [
-            separateOutputDirs: false,
-            imagesdir   : 'images',
             doctype: 'book',
             icons: 'font',
             toc: 'left',
@@ -55,11 +56,22 @@ asciidoctor {
             // stylesdir: "$srcDir/resources/css/"
 
     ]
-    resources {
-        from "$srcDir/architecture/images"
-        into "$outputDir/architecture/images"
 
+
+    println "arcImageDir = " + "${srcDir}/architecture/images"
+
+    resources {
+        // include architecture diagrams
+        from("${srcDir}/architecture") {
+          include 'images/**'
+        }
+        // include logos and other common images
+        from("${srcDir}") {
+          include 'images/**'
+        }
     }
+
+
 }
 
 
