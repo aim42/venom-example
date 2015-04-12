@@ -69,11 +69,31 @@ ziehen substantielle Test- und Bugfixing-Aufwände nach sich.
 * Die Verlässlichkeit von Aufwandsschätzungen der Entwicklungsteams nimmt ab.
    mangelhafter Qualität von Dokumentation
 
+
 === Aufgabenstellung
 
+Aus der gesamten Wertschöpfungskette soll VENOM insbesondere die Konfigurations-
+und Verkaufsprozesse unterstützen, inklusive:
 
+* Konfiguration komplexer Produkte (insbesondere Möbel, Küchen, Lagersysteme,
+  Spezialmaschinen mit geringer Individualität)
+* Verwaltung der dazu notwendigen Produkt- und Konfigurationsdaten
+* Kundenverwaltung (inklusive Verkaufshistorie und einfachen CRM Funktionen)
+* Angebotserstellung auf Basis getätiger Produktauswahl und -konfiguration
+* Berücksichtigung individueller Vertrags- und Rabattgestaltung sowie Marketingkampagnen
+
+==== Beispiele von Anwendungsfällen
+
+* Ein gewerblicher Nutzer konfiguriert einen Lagerautomaten für eine Apotheke. Raummaße und
+weitere notwendige Details sind bekannt, ebenso Parameter der Apotheke (Beschaffenheit der PoS,
+  Art der Kassensysteme etc.). VENOM ermittelt nach fertiggestellter Konfiguration innerhalb
+  von max. 1 Minute einen verbindlichen Angebotspreis.
 
 === Qualitätsziele
+
+TODO:
+
+Sind für VENOM im Einzelnen nicht bekannt.
 
 
 
@@ -87,7 +107,7 @@ ziehen substantielle Test- und Bugfixing-Aufwände nach sich.
 image::00-venom-users.jpg[title="Benutzer und Benutzergruppen von VENOM"]
 
 
-[cols="1,5,2,2" options="header"]
+[cols="2,5,2,2" options="header"]
 .Benutzer und Benutzergruppen
 |===
 | Rolle | Beschreibung | Ziel  | Bemerkungen
@@ -116,9 +136,9 @@ image::00-venom-users.jpg[title="Benutzer und Benutzergruppen von VENOM"]
 |
 |
 
-| SAMM interne User 
+| SAMM interne User
 |
-|
+| Buchhaltung, Controlling, Einkauf, Logistik, Marketing, Vertrieb, Legal,
 |
 
 
@@ -128,8 +148,51 @@ image::00-venom-users.jpg[title="Benutzer und Benutzergruppen von VENOM"]
 
 
 
-[cols="1,2,2,2,2" options="header"]
+[cols="2,4,2,2,2" options="header"]
 .Stakeholder des Systems
 |===
 |Rolle | Beschreibung | Intention | Kontakt | Bemerkungen
+| Fachbereich
+|
+|
+|
+|
+
+| IT-Management
+|
+|
+|
+|
+
+| Entwickler (intern)
+|
+|
+|
+|
+
+| Entwickler (extern)
+|
+|
+|
+|
+
+| Externe Partner
+| beispielsweise Handwerker, Monteure oder Ingenieure, die zu Aufbau bzw. Inbetriebnahme
+der komplexen Produkte benötigt und durch VENOM vermittelt werden
+|
+|
+|
+
+| Produkthersteller
+| beispielsweise Hersteller von Möbeln, gewerblichen Küchengeräten,
+Transportanlagen, Lagersystemen
+| * Produktdaten und deren Konfigurationsparameter pflegen
+  * Preis- und Lieferbarkeitsinformationen hinterlegen oder ändern
+  * Durchführbarkeit und Konditionen von Sonderkonfigurationen bearbeiten
+|
+|
+
+
 |===
+
+TODO: Behörde, Standardisierungsgremien, Produkthersteller,

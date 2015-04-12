@@ -9,10 +9,20 @@
 |Begriff
 |Definition
 
-|<Begriff-1
-|Beschreibung-2
+| Archivierungspflicht
+| SAMM ist gesetzlich verpflichtet, Angebote, Aufträge und Abrechnungsinformationen
+für die jeweils dafür vorgeschriebenen Zeiträume aufzuheben. Zur Aufbewahrung von
+Angebots- und Rechnungsinformationen gelten für einige Geschäftsbereiche der SAMM
+dafür Fristen von 15 Jahren.
+
+| Sonderkonfiguration
+| Eine über den erwarteten Konfigurationsumfang hinausgehende,
+in einer oder mehreren Dimensionen spezielle Konfiguration.
+Beispiel: In Apotheken werden Lagerautomaten standardmässig zwischen Keller
+und Erdgeschoß oder nur im Erdgeschoß gebaut. Eine Sonderkonfiguration
+wäre somit die Überbrückung einer deutlich größeren Höhendifferenz.
 
 
-|<Begriff-2
-|Beschreibung-2
+|
+|
 |===
