@@ -37,7 +37,7 @@ Bitte melden Sie Fehler oder Hinweise über unseren [Issue-Tracker]. Pull-Reques
 sind herzlich willkommen!
 
 
-![Offene Punkte](http://img.shields.io/github/issues/aim42/venom-example)
+![Offene Punkte](http://img.shields.io/github/issues/aim42/venom-example.svg)
 
 
 ___
