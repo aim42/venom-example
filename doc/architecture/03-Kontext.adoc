@@ -7,12 +7,38 @@ Die folgenden Unterkapitel zeigen die Einbettung unseres Systems in seine Umgebu
 
 === Fachlicher Kontext
 
+image::03-venom-context.jpg["Business-Context", title="Business Context"]
 
 
+
+[options="header", cols="2,4"]
+.Fachlicher Kontext
+|===
+| Nachbar | Beschreibung
+| Produkthersteller
+| Küchen-, Möbel-, Lagersystemhersteller. Stellen Produktdaten und Verfügbarkeitsdaten bereit.
+
+| externe Partner für Aufbau u. Inbetriebnahme
+| Handwerker, Monteure, Ingenieurbüros, teilweise Gutachter. Insbesondere werden hier Termine und Verfügbarkeiten abgestimmt.  
+
+| Transportlogistik
+| Angebotsanfragen, Buchung und Beauftragung von Transportkapazitäten. In der Regel arbeitet VENOM mit einigen Speditionen zusammen, in Ausnahmefällen
+werden Transportunternehmer direkt beauftragt. Für Kleinbestellungen werden direkt entsprechende Versender (Post etc ) beauftragt.
+
+| Data Warehouse
+| Angebote, Aufträge, Marketingkampagnen zur Auswertung und 
+Entscheidungsunterstützung (Business Intelligence).
+
+| Marktbeobachtung
+| Konkurrenzanalyse, Auswertung von Web-Analytics, Preisbeobachtung
+
+| Exportkontrolle
+| Manche Produkte (etwa: Komplexe pharmazietaugliche Transportsysteme) können in einigen Ländern/Regionen Ausfuhrrestriktionen unterliegen. Hierüber können die Behörden entsprechende Anfragen stellen bzw. erhalten dazu Resultate.
+In Deutschland ist das das http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle, BAFA].
+
+|===
 
 === Technischer- oder Verteilungskontext
 
 
-
-=== Externe Schnittstellen
 
