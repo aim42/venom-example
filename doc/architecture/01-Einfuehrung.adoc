@@ -25,7 +25,7 @@ SAMM schafft starke Kundenbindung durch die Kombination langfristige
 Vergünstigungsverträge, zeitlich befristeten Rabattmöglichkeiten und
 branchenorientierten Vertragsmodellen.
 
-[horizontal]
+
 Beispiel 1:: Für die Lagerung von Medikamenten in Apotheken werden immer mehr
 Lagerautomaten verwendet: Rezepte werden an der Theke eingescannt und der Lagerautomat
 transportiert die entsprechende Medikamentenpackung automatisch an den Point-of-Sale.
@@ -186,13 +186,18 @@ der komplexen Produkte benötigt und durch VENOM vermittelt werden
 | Produkthersteller
 | beispielsweise Hersteller von Möbeln, gewerblichen Küchengeräten,
 Transportanlagen, Lagersystemen
-| * Produktdaten und deren Konfigurationsparameter pflegen
-  * Preis- und Lieferbarkeitsinformationen hinterlegen oder ändern
-  * Durchführbarkeit und Konditionen von Sonderkonfigurationen bearbeiten
+a|  * Produktdaten und deren Konfigurationsparameter pflegen
+   * Preis- und Lieferbarkeitsinformationen hinterlegen oder ändern
+   * Durchführbarkeit und Konditionen von Sonderkonfigurationen bearbeiten
 |
 |
 
+| Behörde (extern)
+| Beispielsweise Exportkontrollbehörde
+|
+|
+|
 
 |===
 
-TODO: Behörde, Standardisierungsgremien, Produkthersteller,
+TODO: Behörde, Standardisierungsgremien
