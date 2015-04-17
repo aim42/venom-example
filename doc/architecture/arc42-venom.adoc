@@ -1,7 +1,7 @@
 // header file for the VENOM example
 // ====================================
 
-= image:../images/venom-logo-small.jpg[] Software Architecture Documentation
+= image:../images/venom-logo-small.jpg[] VENOM Architecture Documentation
 :toc-title: Inhaltsverzeichnis
 // toc-title definition MUST follow document title without blank line!
 
