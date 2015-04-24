@@ -1,0 +1,16 @@
+
+== Image Credits
+
+=== VENOM Logo
+VENOM logo (c) 2015 by Gernot Starke. Use only with written permission.
+
+=== OpenClipart
+https://openclipart.org[openclipart.org] is a fantastic site with
+free clipart.
+
+https://openclipart.org/detail/188617/treasure-chest[Treasure-Chest] by https://openclipart.org/user-detail/Moini[Moini], used for the SAMM AG logo.
+
+https://openclipart.org/image/800px/svg_to_png/188266/bone.png[Bone], used for the VENOM logo.
+
+https://openclipart.org/detail/158953/skull-and-crossbones-large-pink[Poison], used for the VENOM logo.
+
