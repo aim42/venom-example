@@ -1,0 +1,54 @@
+
+= SAMM Inc. - Das Unternehmen
+:toc-title: Inhaltsverzeichnis
+
+// configure DE settings for asciidoc
+include::../common/asciidoctor-language-settings.config[]
+
+// common header stuff
+include::../common/header.adoc[]
+
+
+[NOTE]
+====
+Dieses Dokument beschreibt ein fiktives Unternehmen.
+Ähnlichkeiten mit bestehenden Systemen sind rein zufällig und nicht beabsichtigt.
+====
+
+
+[cols="4,1" options=""]
+|===
+|  
+| image:aim42-logo.png[aim42, link={aim42-url}]
+|===
+
+include::../common/project-status.adoc[]
+
+
+
+
+// numbering from here on
+:numbered:
+
+// Geschäftsziele
+
+
+== Historie der SAMM AG
+Die SAMM AG blickt auf eine langjährige und bewegte Geschichte zurück, geprägt
+Übernahmen und Fusionen in dynamischen Unternehmensmärkten. 
+Nachfolgende Abbildung gibt einen Überblick:
+
+[[figure-business-history]]
+image::00-samm-business-history.jpg["Historie von SAMM", title="Unternehmenshistorie"]
+
+
+// Geschäftsprozesse
+
+
+// give credits to openclipart-authors!
+include::../common/image-credits.adoc[]
+
+// license
+include::../common/license.adoc[]
+
+

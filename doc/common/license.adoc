@@ -1,0 +1,16 @@
+:numbered!:
+
+[appendix]
+== Lizenz
+
+WARNING: Sämtliche Informationen ohne Gewähr. Jegliche Haftung ausgeschlossen. Kommerzielle Nutzung und Weiterverwendung nicht gestattet.
+
+
+Diese Unterlagen sind urheberrechtlich geschützt. Jede Verwendung außerhalb der engen Grenzen des Urheberrechts ist ohne schriftliche Zustimmung von Dr. Gernot Starke unzulässig. 
+Dies gilt insbesondere für Vervielfältigungen, Übersetzungen, Scannen sowie jegliche Form der elektronischen Verarbeitung.
+
+Hier angegebene Gebrauchsnamen, Handelsnamen oder Warenbezeichnungen usw. können auch ohne besondere Kennzeichnung Marken sein und als solche den gesetzlichen Bestimmungen unterliegen.
+
+Ungeachtet der Sorgfalt, die auf die Erstellung von Text, Abbildungen und Programmen verwendet wurde, können weder Autor noch Mitautoren für mögliche Fehler, Auslassungen und deren Folgen eine juristische Verantwortung oder Haftung übernehmen.
+
+Kommerzielle Verwendung und Weitergabe nur mit schriftlicher Zustimmung der Urheber.

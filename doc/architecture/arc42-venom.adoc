@@ -30,8 +30,8 @@ completed and maintained by Ralf Müller and Gernot Starke.#
 |===
 
 
-// some status info
-Version von {docdate}, image:http://img.shields.io/github/issues/aim42/venom-example.svg[link={project-issues}]
+// Versionsinfo, Statusinfo von github
+include::../common/project-status.adoc[]
 
 
 
@@ -75,3 +75,13 @@ include::11-Technische-Risiken.adoc[]
 
 // 12. Glossar
 include::12-Glossar.adoc[]
+
+
+// Appendix
+
+// give credits to openclipart-authors!
+include::../common/image-credits.adoc[]
+
+// license
+include::../common/license.adoc[]
+

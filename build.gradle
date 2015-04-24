@@ -41,7 +41,8 @@ asciidoctor {
     println "outputDir = " + outputDir
     println "sourceDir = " + sourceDir
 
-    sources  { include "architecture/arc42-venom.adoc" }
+    sources  { include "architecture/arc42-venom.adoc",
+                       "organization/samm-orga.adoc" }
     attributes = [
             doctype: 'book',
             icons: 'font',
@@ -51,7 +52,7 @@ asciidoctor {
             numbered: true,
             'source-highlighter': 'coderay',
             'coderay-css': 'class',
-            // style definitions taken from aim42, currently not needed here
+            // style definitions currently not needed here
             // stylesheet: 'aim42.css',
             // stylesdir: "$srcDir/resources/css/"
 
@@ -63,6 +64,9 @@ asciidoctor {
     resources {
         // include architecture diagrams
         from("${srcDir}/architecture") {
+          include 'images/**'
+        }
+        from("${srcDir}/organization") {
           include 'images/**'
         }
         // include logos and other common images

@@ -1,18 +1,20 @@
+:numbered!:
 
+[appendix]
 == Image Credits
 
-=== VENOM Logo
 VENOM logo (c) 2015 by Gernot Starke. Use only with written permission.
 
-=== OpenClipart
-https://openclipart.org[openclipart.org] is a fantastic site with
-free clipart.
 
-https://openclipart.org/detail/188617/treasure-chest[Treasure-Chest] by https://openclipart.org/user-detail/Moini[Moini], used for the SAMM AG logo.
+https://openclipart.org[openclipart.org] provides free cliparts. 
+Each artist at Openclipart releases all rights to the images they share at Openclipart. 
+Unlimited commercial use of these cliparts is allowed.
 
-https://openclipart.org/image/800px/svg_to_png/188266/bone.png[Bone] by https://openclipart.org/user-detail/matheod[matheod], used for the VENOM logo.
+* https://openclipart.org/detail/188617/treasure-chest[Treasure-Chest] by https://openclipart.org/user-detail/Moini[Moini], used for the SAMM AG logo.
 
-https://openclipart.org/detail/158953/skull-and-crossbones-large-pink[Poison] by
-https://openclipart.org/user-detail/Lil_Mermaid_Girl[]Lil_Mermaid_Girl] and
+* https://openclipart.org/image/800px/svg_to_png/188266/bone.png[Bone] by https://openclipart.org/user-detail/matheod[matheod], used for the VENOM logo.
+
+* https://openclipart.org/detail/158953/skull-and-crossbones-large-pink[Poison] by
+https://openclipart.org/user-detail/Lil_Mermaid_Girl[Lil_Mermaid_Girl] and
 https://openclipart.org/user-detail/dear_theophilus[Dear-theophilus], used for the VENOM logo.
 
