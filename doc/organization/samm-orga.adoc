@@ -9,16 +9,17 @@ include::../common/asciidoctor-language-settings.config[]
 include::../common/header.adoc[]
 
 
-[NOTE]
-====
-Dieses Dokument beschreibt ein fiktives Unternehmen.
-Ähnlichkeiten mit bestehenden Systemen sind rein zufällig und nicht beabsichtigt.
-====
+
 
 
 [cols="4,1" options=""]
 |===
-|  
+a|  [NOTE]
+====
+Dieses Dokument beschreibt ein fiktives Unternehmen.
+Ähnlichkeiten mit bestehenden Systemen sind rein zufällig und nicht beabsichtigt.
+Entwickelt zur Illustration von http://aim42.org[aim42]-Praktiken.
+====
 | image:aim42-logo.png[aim42, link={aim42-url}]
 |===
 
@@ -30,21 +31,46 @@ include::../common/project-status.adoc[]
 // numbering from here on
 :numbered:
 
+== Firmenportrait
+
+[cols="1,4" options=""]
+|===
+| image:samm-logo.png[Samm Inc., 150]
+a|Die SAMM Inc. ist ein international operierendes Handelsunternehmen mit
+Verwaltungssitz in Durango, Colorado (USA) und Firmenzentrale in Berlin. 
+SAMM Inc. bündelt die Kompetenzen von über 500 Spezialisten,
+welche die gesamte vertriebliche und technische Bandbreite abdecken: Von der 
+effizienten Beschaffung und Partnerbetreuung über die Konzipierung und 
+Einführung zukunftsweisender Konfigurations- und Verkaufsprozesse bis
+hin zu einem kundenorientierten Vertrieb und Service.
+|===
+Mit mehr als 1.900.000 Kunden weltweit, davon 900.000 in Europa ist die SAMM Inc.
+international und innovativ aufgestellt, gleichzeitig traditionell und auf
+nachhaltige Kunden- und Partnerorientierung fokussiert. 
+
+
+=== Geschäftsziele
 // Geschäftsziele
 
 
-== Historie der SAMM AG
-Die SAMM AG blickt auf eine langjährige und bewegte Geschichte zurück, geprägt
+== Historie der SAMM Inc.
+Die SAMM Inc. blickt auf eine langjährige und bewegte Geschichte zurück, geprägt
 Übernahmen und Fusionen in dynamischen Unternehmensmärkten. 
+
+
 Nachfolgende Abbildung gibt einen Überblick:
 
 [[figure-business-history]]
 image::00-samm-business-history.jpg["Historie von SAMM", title="Unternehmenshistorie"]
 
 
+
+
 // Geschäftsprozesse
 
 
+// Anhaenge
+// =============================================================
 // give credits to openclipart-authors!
 include::../common/image-credits.adoc[]
 
