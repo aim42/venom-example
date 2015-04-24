@@ -79,20 +79,6 @@ asciidoctor {
 }
 
 
-
 defaultTasks 'asciidoctor'
 
 
-//task copyResources(
-//    type: Copy,
-//    description: 'copy (downloadable) resources and artifacts to resource folder'
-//) {
-//    from "$srcDir/resources/docs"
-//into "$targetDir/resources"
-//}
-
-
-//task aim42(
-//    dependsOn: [copyResources, asciidoctor],
-//    description: 'collects all required tasks for creating aim42 documentation'
-//) << { }
