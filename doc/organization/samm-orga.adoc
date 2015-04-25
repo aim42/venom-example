@@ -48,12 +48,49 @@ Mit mehr als 1.900.000 Kunden weltweit, davon 900.000 in Europa ist die SAMM Inc
 international und innovativ aufgestellt, gleichzeitig traditionell und auf
 nachhaltige Kunden- und Partnerorientierung fokussiert. 
 
+=== Aktionärsstruktur
+
+[cols="1,4" width="50"]
+|===
+| 32% | Streubesitz
+| 30% | BlackHawk Investments Ltd.
+| 18% | Gov.Pensions Funds Norway
+| 12% | Gelb Handels- und Vertriebs AG und Co. KG
+| 8%  | http://de.gameofthrones.wikia.com/wiki/Hodor[Hodor, Inc.]
+|===
+
+
+=== Wirtschaftliche Situation
+
+* starker Umsatzrückgang bei Privatkunden
+* Ausfall diverser Partner aufgrund Insolvenzen in der Möbelindustrie
+* Gestiegener Ertrag bei Gewerbekunden und für Großprojekte
+* bisher kein Markteintritt in mobiles Internet
+
+* Analysten prognostizieren weitere Verluste in den kommenden Jahren, sofern
+die Umsatz- und Marktausfälle nicht durch neue Produkte/Vertriebswege kompensiert werden können. 
+* Investoren drängen auf kurz- und mittelfristige Verbesserung der Erträge,
+ggfs. durch Verkauf von Unternehmensteilen.
+
+* Bisher ungenutztes Portfolio von Patenten im Bereich regelgestützte Innenarchitektur
+
+* Laufende Gerichtsverfahren mit Steuerbehörden bezüglich CBBPO 
+(_cross border business process outsourcing_)
+
+* Gemeinsam mit internationalen Technologiepartnern und eigenen Experten
+einige vielversprechende Innovationen kurz vor Markt-/Produktionsreife:
+** 3D-Druck von Kleinmöbeln nach individueller Spezifikation
+** Erstellung von Gebäudeplänen auf Basis von Panoramafotos - Grundlage für die halbautomatische Konfiguration von z.B. komplexen Schrank- oder Regalsystemen.
+** Expertensysteme zur Einrichtungs- oder Konfigurationsberatung, etwa: Material-/Textur-/Farbkombination, Stoff- und Dekorationsmaterial.  
 
 === Geschäftsziele
-// Geschäftsziele
 
+* Optimierung des Produktportfolios
+* 
 
-== Historie der SAMM Inc.
+=== Unternehmensstruktur
+
+=== Historie der SAMM Inc.
 Die SAMM Inc. blickt auf eine langjährige und bewegte Geschichte zurück, geprägt
 Übernahmen und Fusionen in dynamischen Unternehmensmärkten. 
 
@@ -63,8 +100,26 @@ Nachfolgende Abbildung gibt einen Überblick:
 [[figure-business-history]]
 image::00-samm-business-history.jpg["Historie von SAMM", title="Unternehmenshistorie"]
 
+[cols="1,4", options="", ]
+|===
+| SAMM Inc.| Die aktuelle Muttergesellschaft des Unternehmens.
+| Gelb Finance AG| 
+| Rot Holding /Europe|
+| Rot AG |
+| Grau GmbH | Handelsunternehmen für Kleinmöbel, diverse Filialen in Deutschland und Europa. Durch Zukauf kleinerer Unternehmen in Europa sowie Änderung der Eigentümerstruktur überführt in die Rot AG.
+| Dr. Blau & Partner| 
+| WebDev, Inc.| Gegründet 
+| Atlas Software GmbH & Co. KG |
+| Hodor KG | Ingenieurbüro mit Schwerpunkt auf Datenkonvertierung und optische
+Archivierung. 2003 von WebDev Inc. übernommen.
+| SAMM Magyar Zrt| http://www.infopark.hu[Infopark Innovation Centre], Budapest, Hungary
+| SAMM Urdu Ltd| http://www.pitb.gov.pk/ASTP[Arfa Technology Park], Lahore, Pakistan.
+
+|===
 
 
+// IT-Organisation (Prozesse, Personal)
+include::samm-it-orga.adoc[]
 
 // Geschäftsprozesse
 
