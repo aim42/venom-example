@@ -33,6 +33,7 @@ include::../common/project-status.adoc[]
 
 == Firmenportrait
 
+
 [cols="1,4" options=""]
 |===
 | image:samm-logo.png[Samm Inc., 150]
@@ -54,8 +55,8 @@ nachhaltige Kunden- und Partnerorientierung fokussiert.
 |===
 | 32% | Streubesitz
 | 30% | BlackHawk Investments Ltd.
-| 18% | Gov.Pensions Funds Norway
-| 12% | Gelb Handels- und Vertriebs AG und Co. KG
+| 18% | https://www.regjeringen.no/en/topics/the-economy/the-government-pension-fund/investment-strategy-of-the-government-pe/id699600/[Gov.Pensions Funds Norway]
+| 12% | Gelb Finance
 | 8%  | http://de.gameofthrones.wikia.com/wiki/Hodor[Hodor, Inc.]
 |===
 
@@ -72,10 +73,28 @@ die Umsatz- und Marktausfälle nicht durch neue Produkte/Vertriebswege kompensie
 * Investoren drängen auf kurz- und mittelfristige Verbesserung der Erträge,
 ggfs. durch Verkauf von Unternehmensteilen.
 
+
+=== Fachliche Situation
+In den letzten Jahren haben mehrere namhafte Beratungsunternehmen 
+(u.a. McFool & Company, Prix-Wassermann sowie Cup-Mercury)
+die SAMM Inc. auf Optimierungspotential 
+und zu Benchmarking-Zwecken untersucht.
+Nachfolgend einige Extrakte dieser Untersuchungen bzw. Ergebnisse aus Interviews
+mit SAMM Mitarbeitern.
+
+
 * Bisher ungenutztes Portfolio von Patenten im Bereich regelgestützte Innenarchitektur
+* Zu geringe Standardisierung in Prozessen und Produkten, etwa im Bereich IT-Governance und IT-Betrieb.
+* Zu geringe Prozessorientierung macht organisatorische Anpassungen auf allen Hierarchieebenen notwendig. Siehe dazu die Veröffentlichung der
+http://www.escpeurope.eu/uploads/media/WP_58_Bick.pdf[Ecole Supérieure de Commerce ESCP] zum Thema Prozessorientierung.
 
 * Laufende Gerichtsverfahren mit Steuerbehörden bezüglich CBBPO 
 (_cross border business process outsourcing_)
+
+* Hohe laufende Aufwände (Personal und Geld) in ertragsarmen Bereichen
+* Inakzeptabel schlechte _time to market_ bei innovativen Produktideen
+ (bereits mehrfach wurden hervorragende Ansätze zu langsam umgesetzt, so
+ dass Mitbewerber ähnliche Ideen bereits am Markt hatten).
 
 * Gemeinsam mit internationalen Technologiepartnern und eigenen Experten
 einige vielversprechende Innovationen kurz vor Markt-/Produktionsreife:
@@ -83,39 +102,24 @@ einige vielversprechende Innovationen kurz vor Markt-/Produktionsreife:
 ** Erstellung von Gebäudeplänen auf Basis von Panoramafotos - Grundlage für die halbautomatische Konfiguration von z.B. komplexen Schrank- oder Regalsystemen.
 ** Expertensysteme zur Einrichtungs- oder Konfigurationsberatung, etwa: Material-/Textur-/Farbkombination, Stoff- und Dekorationsmaterial.  
 
-=== Geschäftsziele
+* Laut eines vorangegangenen technischen Reviews der Softwareplattform VENOM durch Cup-Mercury gibt es eine Reihe kritischer Problemfelder:
+** zu hoher Anteil Eigenentwicklung bei Standard-IT-Aufgaben, etwa bei der Persistenz, im Reporting (DWH), Monitoring/Logging, fachliche und technische 
+Transaktionen, Konfiguration sowie Benutzeroberflächen.
+** übermäßige Komplexität im gesamten System.
+** übermäßige Heterogenität, unter anderem aufgrund der vielen Altsysteme.
+** unzureichende automatische Tests, geringe Menge an Unit-Tests.
+
+
+=== Geschäftsziele 
 
 * Optimierung des Produktportfolios
-* 
+* Schnellstmögliche kommerzielle Verwertung der vorhandenen Patente und Produktansätze
+
 
 === Unternehmensstruktur
 
-=== Historie der SAMM Inc.
-Die SAMM Inc. blickt auf eine langjährige und bewegte Geschichte zurück, geprägt
-Übernahmen und Fusionen in dynamischen Unternehmensmärkten. 
-
-
-Nachfolgende Abbildung gibt einen Überblick:
-
-[[figure-business-history]]
-image::00-samm-business-history.jpg["Historie von SAMM", title="Unternehmenshistorie"]
-
-[cols="1,4", options="", ]
-|===
-| SAMM Inc.| Die aktuelle Muttergesellschaft des Unternehmens.
-| Gelb Finance AG| 
-| Rot Holding /Europe|
-| Rot AG |
-| Grau GmbH | Handelsunternehmen für Kleinmöbel, diverse Filialen in Deutschland und Europa. Durch Zukauf kleinerer Unternehmen in Europa sowie Änderung der Eigentümerstruktur überführt in die Rot AG.
-| Dr. Blau & Partner| 
-| WebDev, Inc.| Gegründet 
-| Atlas Software GmbH & Co. KG |
-| Hodor KG | Ingenieurbüro mit Schwerpunkt auf Datenkonvertierung und optische
-Archivierung. 2003 von WebDev Inc. übernommen.
-| SAMM Magyar Zrt| http://www.infopark.hu[Infopark Innovation Centre], Budapest, Hungary
-| SAMM Urdu Ltd| http://www.pitb.gov.pk/ASTP[Arfa Technology Park], Lahore, Pakistan.
-
-|===
+// Firmengeschichte
+include::samm-history.adoc[]
 
 
 // IT-Organisation (Prozesse, Personal)

@@ -1,0 +1,25 @@
+== IT-Organisation
+
+=== Aufbauorganisation
+
+=== Relevante IT-Prozesse
+
+==== Controlling und Budgetierung
+
+==== Anforderungsmanagement
+
+==== IT-Entwicklung
+
+==== Support
+
+==== Business Intelligence
+
+=== Sourcing
+SAMM Inc. hat mit einigen Tochter- und Partnerunternehmen einen 
+umfassenden Outsourcingvertrag (_Global Sourcing Contract_) bezüglich folgender
+Leistungen geschlossen:
+
+* Mindestens 30% der gesamten Software-Entwicklungsaufgaben (insbesondere Implementierungsaufgaben) werden an Near- und Offshore Partner und Tochterunternehmen vergeben.
+* Der <<IT-Betrieb>> liegt komplett in der Verantwortung der <<Sure_Data_Inc, Sure Data Inc.>> 
+
+=== IT-Betrieb
