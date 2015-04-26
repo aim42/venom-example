@@ -42,7 +42,7 @@ asciidoctor {
     println "sourceDir = " + sourceDir
 
     sources  { include "architecture/arc42-venom.adoc",
-                       "organization/samm-orga.adoc" }
+                       "organization/index-orga.adoc" }
     attributes = [
             doctype: 'book',
             icons: 'font',
