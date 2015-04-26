@@ -43,6 +43,9 @@ asciidoctor {
 
     sources  { include "architecture/arc42-venom.adoc",
                        "organization/index-orga.adoc" }
+   
+    backends = ["html5"]
+   
     attributes = [
             doctype: 'book',
             icons: 'font',
