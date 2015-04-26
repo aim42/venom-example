@@ -54,9 +54,9 @@ nachhaltige Kunden- und Partnerorientierung fokussiert.
 [cols="1,4" width="50"]
 |===
 | 32% | Streubesitz
-| 30% | BlackHawk Investments Ltd.
+| 28% | Gelb Finance AG
 | 18% | https://www.regjeringen.no/en/topics/the-economy/the-government-pension-fund/investment-strategy-of-the-government-pe/id699600/[Gov.Pensions Funds Norway]
-| 12% | Gelb Finance
+| 14% | BlackHawk Investments Ltd.
 | 8%  | http://de.gameofthrones.wikia.com/wiki/Hodor[Hodor, Inc.]
 |===
 

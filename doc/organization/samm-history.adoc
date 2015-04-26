@@ -12,15 +12,28 @@ image::00-samm-business-history.jpg["Historie von SAMM", title="Unternehmenshist
 [cols="1,4", options="", ]
 |===
 | SAMM Inc.| Die aktuelle Muttergesellschaft des Unternehmens.
+
 | Gelb Finance AG| Equity- und Venture-Capital Gesellschaft
   gegründet, Spezialsierung auf Handel. Hat seit 2003 das strategische
   Wachstum der SAMM Inc. und ihrer Vorgängerunternehmen durch Investitionen
-  und Co-Management unterstützt. Hält mittlerweile ca. 
-| Rot Holding /Europe| Rechtsvorgängerin der SAMM Inc
-| Rot AG |
-| Grau GmbH | Handelsunternehmen für Kleinmöbel, diverse Filialen in Deutschland und Europa. Durch Zukauf kleinerer Unternehmen in Europa sowie Änderung der Eigentümerstruktur überführt in die Rot AG.
+  und Co-Management unterstützt. Hält mittlerweile ca. 28% der Anteile.
+  Steht in http://www.wirtschaftslexikon24.com/d/wechselseitig-beteiligte-unternehmen/wechselseitig-beteiligte-unternehmen.htm[wechselseitiger Beteiligung] mit SAMM Inc (die ca. 42% der Anteile an Gelb Finance hält).
+
+
+| Grau GmbH | 1950 gegründetes Handelsunternehmen für Kleinmöbel, diverse Filialen vorrangig in Deutschland und Europa. 
+Nach dem Rücktritt der Gründerin haben die Erben das Portfolio des Familienunternehmens stark erweitert und in Europa kleinere Unternehmen zugekauft.
+Schon früh setzten sie dabei auf Individualität als Verkaufsfaktor und steigerten
+dadurch Ertrag und Marktanteile kontinuierlich.
+
+| Rot AG | Starkes Wachstum und globale Ausrichtung machten die Überführung
+ein eine Aktiengesellschaft wirtschaftlich und rechtlich notwendig. Erste Beteiligung seitens Gelb Finance. 
+
+| Rot Holding /Europe| Aufteilung in Holding-Struktur, Gründung einiger Landesgesellschaften für regulierte oder ausfuhrbeschränkte Märkte.
+Rechtsvorgängerin der SAMM Inc.
+
 | Dr. Blau & Partner| Ausgründung der Atlas Software. Koordination von
 Logistikleistungen, insbesondere für komplexe Produkte (wie Genehmigung, Entwurf, Konfiguration, Aufbau, Inbetriebnahme, Abnahme von Industrieanlagen). Frühzeitige Investition in die Vorgängerunternehmen der WebDev Inc.
+
 | WebDev, Inc.| Gegründet als Anbieter von eCommerce Dienstleistungen, insbesondere Softwareentwicklung. 
 Langjährige Erfahrung in webbasierten Verkaufsplattformen, 
 Konzeption und Entwicklung von Webshops, Integration von online-Zahlungsdiensten.
@@ -30,8 +43,13 @@ Konzeption und Entwicklung von Webshops, Integration von online-Zahlungsdiensten
 | Atlas Software GmbH & Co. KG | Anbieter von Standardsoftware für öffentliche und staatliche Unternehmen in Europa, Schwerpunkt Planung und Abwicklung internationaler Waren- und Leistungsverkehre, Zoll- und Steuerabwicklung, Organisation und Koordination von Transportlogistik.
 | Hodor KG | Ingenieurbüro mit Schwerpunkt auf Datenkonvertierung und optische
 Archivierung. 2003 von WebDev Inc. übernommen.
-| SAMM Magyar Zrt| http://www.infopark.hu[Infopark Innovation Centre], Budapest, Hungary
+
+| SAMM Magyar Zrt| 2008 übernahm Rot Holding einen ungarischen IT-Anbieter,
+spezialisiert auf _cross border business process outsourcing_ (CBBPO).
+http://www.infopark.hu[Infopark Innovation Centre], Budapest, Hungary
+
 | SAMM Urdu Ltd| http://www.pitb.gov.pk/ASTP[Arfa Technology Park], Lahore, Pakistan.
+
 | [[Sure_Data_Inc]] Sure Data Inc. | Rechenzentrumsdienstleistung, betreibt hochverfügbare Rechenzentren in EMEA, Amerika und Asien. SAMM Inc. hat bereits in 2005 etwa 25% der Anteile übernommen. Leistet den kompletten <<IT-Betrieb>> für SAMM Inc.
 
 |===
