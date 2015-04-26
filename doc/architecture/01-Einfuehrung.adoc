@@ -3,7 +3,7 @@
 
 === Das Unternehmen
 
-Die SAMM AG (kurz für "sell and make money") ist seit Jahren erfolgreich
+Die SAMM Inc. (kurz für "sell and make money") ist seit Jahren erfolgreich
 mit dem Verkauf so genannter _komplexer Produkte_: Dazu zählen beispielsweise:
 
 * Büroausstattungen, Schrank- und Regalsysteme
@@ -40,12 +40,18 @@ Beispiel 3:: Für Einzelpersonen ist die Konfiguration spezieller Schränke oder
 ein typisches SAMM-Erfolgsgeschäft.
 
 
+
+
 === Das VENOM-System
 
-==== Historie
-VENOM wurde über die letzten Jahre durch die SAMM AG entwickelt. Das System
-in seiner heutigen Form ist aus einer Vielzahl von Vorgängersystemen entstanden,
-einen groben Überblick über die vielfältige Historie gibt Abbildung <<figure-history>>
+==== Historie 
+VENOM wurde über die letzten Jahre durch die SAMM Inc. und ihre Vorgängerunternehmen entwickelt. 
+Das System in seiner heutigen Form ist aus einer Vielzahl von Vorgängersystemen entstanden, erklärbar im Wesentlichen durch die Unternehmenshistorie
+(siehe dazu die SAMM Inc. Unternehmensinformation)
+
+
+Einen groben Überblick über die Historie von VENOM und dessen Vorgänger
+gibt Abbildung <<figure-history>>.
 
 
 [[figure-history]]
@@ -68,6 +74,7 @@ ziehen substantielle Test- und Bugfixing-Aufwände nach sich.
 
 * Die Verlässlichkeit von Aufwandsschätzungen der Entwicklungsteams nimmt ab.
    mangelhafter Qualität von Dokumentation
+
 
 
 === Aufgabenstellung
