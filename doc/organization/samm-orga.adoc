@@ -61,6 +61,34 @@ nachhaltige Kunden- und Partnerorientierung fokussiert.
 |===
 
 
+
+// Firmengeschichte
+// =================
+include::samm-history.adoc[]
+
+
+=== Geschäftsziele 
+
+* Optimierung des Produktportfolios
+* Schnellstmögliche kommerzielle Verwertung der vorhandenen Patente und Produktansätze
+
+
+== Unternehmensstruktur
+
+// Geschäftsprozesse (Überblick)
+include::samm-business-processes.adoc[]
+
+=== Aufbauorganisation
+
+
+// IT-Organisation (Prozesse, Personal)
+include::samm-it-orga.adoc[]
+
+
+
+== Aktuelle Situation
+
+
 === Wirtschaftliche Situation
 
 * starker Umsatzrückgang bei Privatkunden
@@ -110,22 +138,6 @@ Transaktionen, Konfiguration sowie Benutzeroberflächen.
 ** unzureichende automatische Tests, geringe Menge an Unit-Tests.
 
 
-=== Geschäftsziele 
-
-* Optimierung des Produktportfolios
-* Schnellstmögliche kommerzielle Verwertung der vorhandenen Patente und Produktansätze
-
-
-=== Unternehmensstruktur
-
-// Firmengeschichte
-include::samm-history.adoc[]
-
-
-// IT-Organisation (Prozesse, Personal)
-include::samm-it-orga.adoc[]
-
-// Geschäftsprozesse
 
 
 // Anhaenge
