@@ -1,0 +1,13 @@
+=== Geschäftsprozesse
+
+Nachfolgende Abbildung gibt einen Überblick über die Geschäftsprozesse
+bei SAMM Inc:
+
+[[figure-business-processes-overview]]
+image::org-processes-overview.png["Geschäftsprozesse (Überblick)", title="Geschäftsprozesse (Überblick)"]
+
+
+[cols="1,4", options="", ]
+|===
+| |
+|===
