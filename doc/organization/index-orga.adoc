@@ -81,6 +81,12 @@ include::samm-business-processes.adoc[]
 
 === Aufbauorganisation
 
+Nachfolgend finden Sie eine Übersicht der Aufbauorganisation 
+von SAMM Inc., 
+
+image:org-structure.png[Samm Inc. Org-Chart]
+
+
 
 // IT-Organisation (Prozesse, Personal)
 include::samm-it-orga.adoc[]
