@@ -84,7 +84,7 @@ include::samm-business-processes.adoc[]
 Nachfolgend finden Sie eine Übersicht der Aufbauorganisation 
 von SAMM Inc., 
 
-image:org-structure.png[Samm Inc. Org-Chart]
+image::org-structure.png[Samm Inc. Org-Chart]
 
 
 
