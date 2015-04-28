@@ -50,6 +50,18 @@ Mit mehr als 1.900.000 Kunden weltweit, davon 900.000 in Europa ist die SAMM Inc
 international und innovativ aufgestellt, gleichzeitig traditionell und auf
 nachhaltige Kunden- und Partnerorientierung fokussiert. 
 
+=== Niederlassungen
+Die Firmenzentrale für das operative Geschäft befindet sich in Berlin,
+der Verwaltungssitz (steuerlicher und juristischer Sitz der Firma) in Durango,
+Colorado, USA.
+
+Grund für diese Trennung ist die Notwendigkeit der Präsenz am US-amerikanischen
+Aktienmarkt sowie die Bilanzierung nach US-amerikanischem Recht: Beide Aspekte 
+vereinfachen die Abwicklung von mittleren und großen Projekten
+im Bereich _Hochtechnologie_ mit US- sowie kanadischen Regierungsorganisationen
+erheblich.
+
+
 === Aktionärsstruktur
 
 [cols="1,4" width="50"]
