@@ -13,13 +13,49 @@
 ==== Support
 
 ==== Business Intelligence
+BI Systeme werden durch den Bereich DELIVERY grob spezifiziert, 
+i.d.R. von IT:IS implementiert und an <<Sure_Data_Inc, Sure Data Inc.>> zum 
+Betrieb übergeben.
+
+[WARNING]
+--
+Manche Reports werden allerdings durch Accounting selbst implementiert und
+auch betrieben. Dazu stellt <<Sure_Data_Inc, Sure Data Inc.>> 
+Zugänge zu den betreffenden Datenbanken oder Servern bereit.
+--
 
 === Sourcing
 SAMM Inc. hat mit einigen Tochter- und Partnerunternehmen einen 
 umfassenden Outsourcingvertrag (_Global Sourcing Contract_) bezüglich folgender
 Leistungen geschlossen:
 
-* Mindestens 30% der gesamten Software-Entwicklungsaufgaben (insbesondere Implementierungsaufgaben) werden an Near- und Offshore Partner und Tochterunternehmen vergeben.
+* Mindestens 30% der gesamten Software-Entwicklungsaufgaben (insbesondere Implementierungsaufgaben) werden an Near- und Offshore Partner und Tochterunternehmen vergeben:
+
+ ** Den internen Töchtern (SAMM Magyar Zr, SAMM Urdu Ltd) kommen signifikante Teile
+    der UI-Implementierung zu. Soweit möglich werden Aufträge als Gewerke an diese
+    Unternehmen vergeben.
+ ** Diverse externe Agenturen erhalten Aufträge zu UI-Screen-Design auf Basis
+    fachlicher Grobspezifikationen.
+ ** Diverse externe Entwicklungsunternehmen und IT-Beratungsunternehmen erhalten (auf Basis t&m (_time and material_) sowie Gewerke Konzeptions- und Entwicklungsaufträge).    
 * Der <<IT-Betrieb>> liegt komplett in der Verantwortung der <<Sure_Data_Inc, Sure Data Inc.>> 
+
+Diese Verträge umfassen für die internen Töchter die Verpflichtung,
+sämtliche Entwicklungsartefakte (Entwurfsdokumente, Quellcode, evtl. Wiki,
+Issue-Tracker) innerhalb der SAMM Inc. eigenen Infrastruktur zu erstellen
+und zu pflegen.
+
+Abnahme gelieferter Leistungen findet auf Basis funktionaler Tests statt.
+Code- oder Designreviews finden nur in Ausnahmefällen statt.
+
+[WARNING]
+--
+* Die Spezifikations- und Abnahmeprozesse des Sourcings sind
+auf Durchsatz optimiert, d.h. es sollen in möglichst kurzer Zeit
+möglichst viele Sourcing-Aufträge bearbeitet werden. Daher liegt
+der Fokus bei Abnahmen auf Funktionstests.
+* Unit- oder Integrationstests werden i.d.R. nicht explizt beauftragt,
+daher auch nicht geliefert.  
+--
+
 
 === IT-Betrieb
