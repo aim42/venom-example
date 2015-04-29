@@ -44,7 +44,7 @@ SAMM Inc. bündelt die Kompetenzen von über 500 Spezialisten,
 welche die gesamte vertriebliche und technische Bandbreite abdecken: Von der 
 effizienten Beschaffung und Partnerbetreuung über die Konzipierung und 
 Einführung zukunftsweisender Konfigurations- und Verkaufsprozesse bis
-hin zu einem kundenorientierten Vertrieb und Service.
+hin zu kundenorientiertem Vertrieb und Service.
 |===
 Mit mehr als 1.900.000 Kunden weltweit, davon 900.000 in Europa ist die SAMM Inc.
 international und innovativ aufgestellt, gleichzeitig traditionell und auf
@@ -96,7 +96,7 @@ include::samm-business-processes.adoc[]
 Nachfolgend finden Sie eine Übersicht der Aufbauorganisation 
 von SAMM Inc., 
 
-image::org-structure.png[Samm Inc. Org-Chart]
+image::org-structure.png[Samm Inc. Org-Chart, title="Org-Chart"]
 
 
 
@@ -106,6 +106,12 @@ include::samm-it-orga.adoc[]
 
 
 == Aktuelle Situation
+In den letzten Jahren haben mehrere namhafte Beratungsunternehmen 
+(u.a. McFool & Company, Prix-Wassermann sowie Cup-Mercury)
+die SAMM Inc. auf Optimierungspotential 
+und zu Benchmarking-Zwecken untersucht.
+Nachfolgend einige Extrakte dieser Untersuchungen bzw. Ergebnisse aus Interviews
+mit SAMM Mitarbeitern.
 
 
 === Wirtschaftliche Situation
@@ -122,12 +128,6 @@ ggfs. durch Verkauf von Unternehmensteilen.
 
 
 === Fachliche Situation
-In den letzten Jahren haben mehrere namhafte Beratungsunternehmen 
-(u.a. McFool & Company, Prix-Wassermann sowie Cup-Mercury)
-die SAMM Inc. auf Optimierungspotential 
-und zu Benchmarking-Zwecken untersucht.
-Nachfolgend einige Extrakte dieser Untersuchungen bzw. Ergebnisse aus Interviews
-mit SAMM Mitarbeitern.
 
 
 * Bisher ungenutztes Portfolio von Patenten im Bereich regelgestützte Innenarchitektur
