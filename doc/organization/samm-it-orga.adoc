@@ -1,16 +1,85 @@
 == IT-Organisation
 
-=== Aufbauorganisation
+=== Aufbauorganisation und Beauftragung
+Aufträge für Beratung, Konzeption und Entwicklung gibt die IT
+auf unterschiedliche Weise sowohl an die SAMM-Töchter wie auch
+an externe Dienstleister, Agenturen und/oder Freiberufler.
+
+image::it-structure.png[]
+
+
+[WARNING]
+--
+IT-Management möchte die Vertragsform _time-and-material_, (t&m) 
+weitmöglich einschränken und durch die Vergabe von Gewerken ersetzen.
+Das führt zu erheblicher Unzufriedenheit seitens betroffener Mitarbeiter,
+weil laut deren Aussage die _Spezifikation zu aufwändig_ sei. 
+--
+
+
+[WARNING]
+--
+Die CTOs sind mit den Aufgaben IT-Strategie, IT-Governance, IT-Controlling
+sowie der Abteilungsleitung hoffnungslos überarbeitet. Das Thema IT-Security
+ist nominell zwar durch die CTOs besetzt, wird faktisch unzureichend zentral
+wahrgenommen. Es gelten eine Vielzahl von bereichs- oder systemspezifischen Regelungen.
+--
 
 === Relevante IT-Prozesse
 
 ==== Controlling und Budgetierung
+Controlling und Budgetierung wird durch die CTOs wahrgenommen,
+mit starker Unterstützung durch den Finanzen & Controlling (FC)
 
 ==== Anforderungsmanagement
+(hier: für die Customer-Systeme, insbesondere VENOM)
+Anforderungen werden primär durch DY formuliert, teilweise
+auch durch ER, RS und FC.
+
+Zur Beschreibung von Anforderungen verwenden die Bereiche unterschiedlichste
+Ansätze (Umgangssprache, Use-Cases, Funktionslisten, User-Stories) in
+unterschiedlicher Detaillierung und Brauchbarkeit (seitens Entwicklungsteams).
+
+
+[WARNING]
+--
+Eine klare fachliche Priorisierung zwischen DY, ER und RS ist
+problematisch:
+
+* DY ist primär kurzfristig orientiert,
+  oft stark projekt- oder kundengetrieben ("muss gestern fertig sein")
+* ER orientiert sich an Marktbeobachtungen und den Interessen
+  von Lieferanten, oft mittelfristig (6-18 Monate Vorlauf).
+* RS arbeitet langfristig mit eher _strategischen_ Anforderungen,
+  die allerdings teilweise sehr hohe Ertragsoptionen bieten
+  (Beispiel: die bisher ungenutzten Patente). 
+* FC bringt teilweise sehr kurzfristige _investorenbedingte_ Anforderungen,
+  teilweise bilanz- oder steuerrelevante Themen. Die Leitung von FC
+  liegt seit Jahren beim CFO, d.h. FC-Anforderungen haben immer höchste
+  Priorität.   
+--
 
 ==== IT-Entwicklung
+(hier mit Fokus auf die Customer-Systeme, insbesondere VENOM)
+
+Weiterentwicklung sowie Wartung/Fehlerbehebung von VENOM findet durch
+die CS statt.
+
+[WARNING]
+--
+Einige Know-How Träger von VENOM Komponenten haben von CS intern zu
+RS:Innovation gewechselt. Sie werden immer noch für kritische oder schwierige
+Entwicklungsaufgaben herangezogen. Einerseits führt dies zu 
+Interessenskonflikten zwischen den Verantwortlichen für CS und RS,
+andererseits ist es innerhalb von CS sehr schwierig, das Know-How
+dieser Subsysteme selbst aufzubauen.
+-- 
+
+
 
 ==== Support
+IT betreibt selbst ein kleines Call-Center, greift aber stark auf externe
+Dienstleister zurück.
 
 ==== Business Intelligence
 BI Systeme werden durch den Bereich DELIVERY grob spezifiziert, 
@@ -57,5 +126,17 @@ der Fokus bei Abnahmen auf Funktionstests.
 daher auch nicht geliefert.  
 --
 
+[WARNING]
+--
+* Interne Entwickler beschweren sich oftmals über vermeintlich unzureichende
+Codequalität (u.a. Verletzung von Coding-Styleguides oder -Standards 
+oder Abweichung von etablierten technischen Konzepten) und fordern
+Überarbeitung oder Neuentwicklung von Komponenten. 
+* IT-Management hält diese Beschwerden den Ausdruck der Ablehnung der 
+Sourcing-Prozesse.
+--
+
 
 === IT-Betrieb
+
+Siehe auch VENOM-Architekturdokumentation, insbesondere Verteilungssicht.
