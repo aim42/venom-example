@@ -5,7 +5,7 @@ Aufträge für Beratung, Konzeption und Entwicklung gibt die IT
 auf unterschiedliche Weise sowohl an die SAMM-Töchter wie auch
 an externe Dienstleister, Agenturen und/oder Freiberufler.
 
-image::it-structure.png[]
+image::it-structure.png["Struktur der IT", title="Struktur der IT"]
 
 
 [WARNING]
