@@ -19,7 +19,7 @@ massiv geprägt durch die Historie von VENOM:
 
 Enthaltene Bausteine::
 
-[cols="1,3" options=""]
+[cols="1,4" options=""]
 .HtmlSanityChecker building blocks
 |===
 | <<Sales Frontend>> | Benutzeroberfläche für Auswahl + Kauf der Produkte
