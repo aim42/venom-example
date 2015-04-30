@@ -54,3 +54,4 @@ http://www.infopark.hu[Infopark Innovation Centre], Budapest, Hungary
 | [[Sure_Data_Inc]] Sure Data Inc. | Rechenzentrumsdienstleistung, betreibt hochverfügbare Rechenzentren in EMEA, Amerika und Asien. SAMM Inc. hat bereits in 2005 etwa 25% der Anteile übernommen. Leistet den kompletten <<IT-Betrieb>> für SAMM Inc.
 
 |===
+
