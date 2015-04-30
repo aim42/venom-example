@@ -18,3 +18,6 @@ Unlimited commercial use of these cliparts is allowed.
 https://openclipart.org/user-detail/Lil_Mermaid_Girl[Lil_Mermaid_Girl] and
 https://openclipart.org/user-detail/dear_theophilus[Dear-theophilus], used for the VENOM logo.
 
+* https://openclipart.org/detail/176510/comicstyle-shelves[comic shelves] by 
+https://openclipart.org/user-detail/rubejar[rubejar], used for the example configurator
+

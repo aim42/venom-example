@@ -79,6 +79,9 @@ include::12-Glossar.adoc[]
 
 // Appendix
 
+// Beispiel Konfigurator
+include::Appendix-Konfigurator.adoc[]
+
 // give credits to openclipart-authors!
 include::../common/image-credits.adoc[]
 

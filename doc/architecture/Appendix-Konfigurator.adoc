@@ -4,3 +4,22 @@
 == Beispiel eines Konfigurators
 
 image::Konfigurator-Beispiel.png[title="Beispiel eines einfachen Konfigurators"]
+
+
+.Konfiguratoren in der Realität 
+**** 
+
+[NOTE]
+--
+Natürlich gibt es solche Konfiguratoren auch in der realen Welt,
+beispielsweise bei Ihrem favorisierten Automobilhersteller.
+
+Während der Arbeit an dieser fiktiven VENOM Fallstudie habe
+ich einen Konfigurator für 
+http://hem.com/de/konfigurieren-aufbewahrung/?ref=stl.contact.cust_sub[Design-Möbel] 
+gefunden, der
+in einigen fachlichen Aspekten dem VENOM Geschäftsmodell ähnelt,
+zum VENOM-Projekt aber keinerlei (!) inhaltliche oder technische Beziehung hat.
+  
+--
+****
