@@ -1,2 +1,4 @@
 build
 .gradle
+VENOM.vpp.working
+*.vpp~*
