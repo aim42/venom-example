@@ -1,5 +1,5 @@
 
-== Glossar
+== Glossar und Abkürzungen
 
 
 
@@ -15,6 +15,16 @@ für die jeweils dafür vorgeschriebenen Zeiträume aufzuheben. Zur Aufbewahrung
 Angebots- und Rechnungsinformationen gelten für einige Geschäftsbereiche der SAMM
 dafür Fristen von 15 Jahren.
 
+| CF | _customer facing_, Systeme oder Anwendungen für Kunden
+
+| Kunden | Privatkunden, Benutzergruppen, Firmenkunden, Behörden (staatliche Organisationen), Organisationen
+
+| NPO | _non profit organization_, Hilfsorganisationen oder gemeinnützige
+Organisationen/Vereine. Beispiele: 
+http://www.drk.de/ueber-uns/auftrag.html[Rotes Kreuz], 
+http://www.cap-anamur.org/[Cap Anamur], 
+http://www.greenpeace.org/international/en/[Greenpeace]. 
+
 | Sonderkonfiguration
 | Eine über den erwarteten Konfigurationsumfang hinausgehende,
 in einer oder mehreren Dimensionen spezielle Konfiguration.
@@ -22,6 +32,8 @@ Beispiel: In Apotheken werden Lagerautomaten standardmässig zwischen Keller
 und Erdgeschoß oder nur im Erdgeschoß gebaut. Eine Sonderkonfiguration
 wäre somit die Überbrückung einer deutlich größeren Höhendifferenz.
 
+
+| t&m | _time and material_, Beauftragung von Dienstleistungen nach Zeit- und/oder Aufwand.
 
 |
 |
