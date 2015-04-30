@@ -51,6 +51,21 @@ Transaktionen, Konfiguration sowie Benutzeroberflächen.
 ** unzureichende automatische Tests, geringe Menge an Unit-Tests.
 
 === Situation der IT
+(hier bezogen auf die _customer facing systems_, insbesondere VENOM)
+Die Situation der Kundensysteme, primär VENOM, fasst 
+Abbildung <<abb-kpis-over-time>> in kompakter Form zusammen:
 
-image::05-features-bugs.png[]
+* Die Entwicklungsgeschwindigkeit der CS-Teams ist in den letzten Jahren
+kontinuierlich gesunken.
+* Die Menge kritischer Produktionsfehler (Prio-1, d.h. System war für Endkunden
+oder prozessrelevante Beteiligte zu Geschäftszeiten nicht verfügbar) stieg in
+dieser Zeit signifikant an.
 
+[[abb-kpis-over-time]]
+image::05-KPI-over-time.png[title="Kritische Fehler und Entwicklungsgeschwindigkeit"]
+
+[[abb-verfuegbarkeit]]
+image::05-verfuegbarkeit.png[title="Verfügbarkeit von VENOM"]
+
+Das IT-Budget ist in den letzten Jahren praktisch konstant geblieben,
+in dieser Hinsicht ist keine Korrelation zu den o.g. KPI's erkennbar.
