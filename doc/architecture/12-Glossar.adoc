@@ -17,6 +17,10 @@ dafür Fristen von 15 Jahren.
 
 | CF | _customer facing_, Systeme oder Anwendungen für Kunden
 
+| Konfigurator 
+| Ermöglicht Endbenutzern den Entwurf bzw. Konfiguration komplexer Produkte.
+ Teilweise durch Regel- oder Expertensysteme unterstützt, teilweise auch durch telefonische Beratung.
+ 
 | Kunden | Privatkunden, Benutzergruppen, Firmenkunden, Behörden (staatliche Organisationen), Organisationen
 
 | NPO | _non profit organization_, Hilfsorganisationen oder gemeinnützige
