@@ -1,0 +1,6 @@
+:numbered!:
+
+[appendix]
+== Beispiel eines Konfigurators
+
+image::Konfigurator-Beispiel.png[title="Beispiel eines einfachen Konfigurators"]
