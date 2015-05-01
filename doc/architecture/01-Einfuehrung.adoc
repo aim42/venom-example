@@ -21,6 +21,8 @@ bei Herstellern gemäß der Konfiguration ein, kann aufgrund langfristiger
 Liefer- und Rabattverträge die Produkte deutlich unterhalb gängiger Marktpreise
 anbieten.
 
+[small]#<<Beispiele-Konfiguration,Vereinfachte Beispiele>> solcher Konfiguration finden Sie im <<Beispiele-Konfiguration, Anhang>>.#
+
 SAMM schafft starke Kundenbindung durch die Kombination langfristige
 Vergünstigungsverträge, zeitlich befristeten Rabattmöglichkeiten und
 branchenorientierten Vertragsmodellen.
