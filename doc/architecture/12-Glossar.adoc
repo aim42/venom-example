@@ -15,6 +15,13 @@ für die jeweils dafür vorgeschriebenen Zeiträume aufzuheben. Zur Aufbewahrung
 Angebots- und Rechnungsinformationen gelten für einige Geschäftsbereiche der SAMM
 dafür Fristen von 15 Jahren.
 
+| ATLAS
+| Ein ab 2003 von der damaligen ROT Ag übernommener Spezialanbieter für 
+  Software im Bereich Planung und Vermittlung von Transportleistungen
+  mit unterschiedlichen Speditionen. Die Software gleichen Namens (ATLAS/2) wurde
+  in VENOM integriert. Sehr erfolgreich mit öffentlichen Unternehmen und Behörden
+  weltweit.
+
 | BAFA 
 | http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle]
 
