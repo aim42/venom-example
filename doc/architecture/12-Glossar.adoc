@@ -30,10 +30,17 @@ dafür Fristen von 15 Jahren.
 
 | CF | _customer facing_, Systeme oder Anwendungen für Kunden
 
+| ECI 
+| _Export Control Interface_, Standardschnittstelle, über die Behörden 
+ relevante Informationen über exportregulierte Projekte abrufen können, u.a. 
+ Baupläne, Stücklisten, Artikelbeschreibungen, Lieferanten- und Transportdetails.
+
+
 | Konfigurator 
 | Ermöglicht Endbenutzern den Entwurf bzw. Konfiguration komplexer Produkte.
  Teilweise durch Regel- oder Expertensysteme unterstützt, teilweise auch durch telefonische Beratung.
  
+
 | Kunden | Privatkunden, Benutzergruppen, Firmenkunden, Behörden (staatliche Organisationen), Organisationen (-> NPOs)
 
 | NPO | _non profit organization_, Hilfsorganisationen oder gemeinnützige
