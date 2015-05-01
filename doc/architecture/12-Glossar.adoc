@@ -15,19 +15,32 @@ für die jeweils dafür vorgeschriebenen Zeiträume aufzuheben. Zur Aufbewahrung
 Angebots- und Rechnungsinformationen gelten für einige Geschäftsbereiche der SAMM
 dafür Fristen von 15 Jahren.
 
+| BAFA 
+| http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle.
+
+| BI 
+| _business intelligence_, Verfahren und Prozesse zur Sammlung und Auswertung betriebswirtschaftlich relevanter Daten mit dem Ziel, bessere operative oder strategische Entscheidungen treffen zu können. BI wertet mit entsprechender Software Daten über das eigene Unternehmen, die Mitbewerber sowie die Marktentwicklung aus.
+
 | CF | _customer facing_, Systeme oder Anwendungen für Kunden
 
 | Konfigurator 
 | Ermöglicht Endbenutzern den Entwurf bzw. Konfiguration komplexer Produkte.
  Teilweise durch Regel- oder Expertensysteme unterstützt, teilweise auch durch telefonische Beratung.
  
-| Kunden | Privatkunden, Benutzergruppen, Firmenkunden, Behörden (staatliche Organisationen), Organisationen
+| Kunden | Privatkunden, Benutzergruppen, Firmenkunden, Behörden (staatliche Organisationen), Organisationen (-> NPOs)
 
 | NPO | _non profit organization_, Hilfsorganisationen oder gemeinnützige
 Organisationen/Vereine. Beispiele: 
 http://www.drk.de/ueber-uns/auftrag.html[Rotes Kreuz], 
 http://www.cap-anamur.org/[Cap Anamur], 
 http://www.greenpeace.org/international/en/[Greenpeace]. 
+
+| PoS | _Point of Sales_, der Verkaufsort von Waren. Relevant beispielsweise
+für die Konfiguratoren von Apothekensystemen.
+
+| SAMM
+| Sell And Make Money. Eingetragenes Marken- und Warenzeichen (C) und (R) SAMM Inc. 
+
 
 | Sonderkonfiguration
 | Eine über den erwarteten Konfigurationsumfang hinausgehende,
@@ -39,6 +52,7 @@ wäre somit die Überbrückung einer deutlich größeren Höhendifferenz.
 
 | t&m | _time and material_, Beauftragung von Dienstleistungen nach Zeit- und/oder Aufwand.
 
-|
-|
+| VENOM 
+| *VE*ry *NO*r*M*al system, das integrierte ERP, CRM und Abrechnungssystem der ->SAMM Inc.
+
 |===
