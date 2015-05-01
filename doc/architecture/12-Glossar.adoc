@@ -16,7 +16,7 @@ Angebots- und Rechnungsinformationen gelten für einige Geschäftsbereiche der S
 dafür Fristen von 15 Jahren.
 
 | BAFA 
-| http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle.
+| http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle]
 
 | BI 
 | _business intelligence_, Verfahren und Prozesse zur Sammlung und Auswertung betriebswirtschaftlich relevanter Daten mit dem Ziel, bessere operative oder strategische Entscheidungen treffen zu können. BI wertet mit entsprechender Software Daten über das eigene Unternehmen, die Mitbewerber sowie die Marktentwicklung aus.
