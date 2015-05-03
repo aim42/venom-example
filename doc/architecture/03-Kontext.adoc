@@ -17,14 +17,17 @@ image::03-context.png["Business-Context", title="Business Context"]
 | Nachbar | Beschreibung
 | Produkthersteller
 | Küchen-, Möbel-, Lagersystemhersteller. Stellen Produktdaten und Verfügbarkeitsdaten bereit,
-teilweise Konfigurationsdienste oder -komponenten, die in VENOM integriert.
+teilweise Konfigurationsdienste oder -komponenten, die in VENOM integriert werden.
 
 | externe Partner für Aufbau u. Inbetriebnahme
-| Handwerker, Monteure, Ingenieurbüros, teilweise Gutachter. Insbesondere werden hier Termine und Verfügbarkeiten abgestimmt.  
+| Handwerker, Monteure, Ingenieurbüros, teilweise Gutachter. 
+Insbesondere werden hier Termine und Verfügbarkeiten abgestimmt. 
+Allgemeine organisatorische und kaufmännische Fragen der Zusammenarbeit werden
+im Vorfeld vertraglich geregelt bzw. über die Partner-Schnittstelle erfragt.  
 
 | Transportunternehmen
 | Angebotsanfragen, Buchung und Beauftragung von Transportkapazitäten. In der Regel arbeitet VENOM mit einigen Speditionen zusammen, in Ausnahmefällen
-werden Transportunternehmer direkt beauftragt. Für Kleinbestellungen werden direkt entsprechende Versender (Post etc ) beauftragt.
+werden Transportunternehmer direkt beauftragt. Für Kleinbestellungen werden direkt entsprechende Versender (Post, etc. ) beauftragt.
 
 | Data Warehouse
 | Angebote, Aufträge, Marketingkampagnen zur Auswertung und 
