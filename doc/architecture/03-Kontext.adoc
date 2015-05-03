@@ -13,7 +13,7 @@ Der Stereotyp &laquo;Category&raquo; bezeichnet Schnittstellen, zu denen es unte
 Varianten oder Anbieter gibt.
 
 
-[options="header", cols="2,4"]
+[options="header", cols="2,5"]
 .Fachlicher Kontext
 |===
 | Nachbar | Beschreibung
@@ -34,6 +34,10 @@ werden Transportunternehmer direkt beauftragt. Für Kleinbestellungen werden dir
 | Data Warehouse
 | Angebote, Aufträge, Marketingkampagnen zur Auswertung und 
 Entscheidungsunterstützung (Business Intelligence).
+
+| Accounting
+| Buchhaltung, unter anderem SAP. Relevante Buchungen werden in das jeweilige Buchhaltungssystem
+  geschrieben.
 
 | Marktforschung
 | Konkurrenzanalyse, Auswertung von Web-Analytics, Preisbeobachtung

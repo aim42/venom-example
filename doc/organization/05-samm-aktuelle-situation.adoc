@@ -60,6 +60,10 @@ kontinuierlich gesunken.
 * Die Menge kritischer Produktionsfehler (Prio-1, d.h. System war für Endkunden
 oder prozessrelevante Beteiligte zu Geschäftszeiten nicht verfügbar) stieg in
 dieser Zeit signifikant an.
+* Im Konzern werden immer noch mehrere unterschiedliche Buchhaltungssysteme eingesetzt,
+  woraus schwieriges und teilweise langsames _financial reporting_ resultiert. 
+  Müsste in VENOM vereinheitlicht werden.
+
 
 [[abb-kpis-over-time]]
 image::05-KPI-over-time.png[title="Kritische Fehler und Entwicklungsgeschwindigkeit"]
