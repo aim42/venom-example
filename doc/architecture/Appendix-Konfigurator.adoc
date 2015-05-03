@@ -41,7 +41,7 @@ In ähnlicher Form, jedoch ergänzt durch Expertensysteme zur Planung sowie die 
 Lieferanten und Logistikpartner, stellen sich die SAMM Fachexperten die entsprechende VENOM Erweiterung vor.
 
 [[garden-diagram]]
-image::GARDENA-my_garden.jpg[title="Beispiel (erstellt mit myGarden(C) von GARDENA(R)"]
+image::GARDENA-my_garden.jpg[title="Beispiel, erstellt mit myGarden(C) von GARDENA(R)"]
 
 
 .Konfiguratoren in der Realität 
