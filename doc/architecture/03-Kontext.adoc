@@ -40,6 +40,18 @@ Entscheidungsunterstützung (Business Intelligence).
 | Manche Produkte (etwa: Komplexe pharmazietaugliche Transportsysteme) können in einigen Ländern/Regionen Ausfuhrrestriktionen unterliegen. Hierüber können die Behörden entsprechende Anfragen stellen bzw. erhalten dazu Resultate.
 In Deutschland ist das das http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle, BAFA].
 
+| (Kredit)-Rating
+| Bonitätsprüfung und Risikobewertung (Rating oder Scoring) von Kunden, beispielsweise durch Kreditkartenprüfung
+  oder Bonitätsauskunft. Je nach Kundenart (Privat-, Firmenkunde, Organisationen) werden hier verschiedene
+  Prüfungen durchgeführt. Verschiedene Anbieter, je nach Land. In Deutschland beispielsweise
+  http://www.arvato-infoscore.de/[Arvato-InfoScore] oder
+  https://www.schufa4b.de[Schufa Holding]. Diese Schnittstellen sind durch die jeweiligen Anbieter vorgegeben.
+
+
+| Zahlungsabwicklung
+|
+
+
 |===
 
 

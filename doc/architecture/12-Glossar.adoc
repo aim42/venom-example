@@ -58,6 +58,9 @@ für die Konfiguratoren von Apothekensystemen.
 | SAMM
 | Sell And Make Money. Eingetragenes Marken- und Warenzeichen (C) und (R) SAMM Inc. 
 
+| Scoring
+| Variante der Bonitätsprüfung: Scores sind Wert von 1 bis 100, der die (statistische) Wahrscheinlichkeit angibt, 
+  dass ein Kredit bedient wird. Je niedriger der Wert, desto größer die Ausfallwahrscheinlichkeit. 
 
 | Sonderkonfiguration
 | Eine über den erwarteten Konfigurationsumfang hinausgehende,
