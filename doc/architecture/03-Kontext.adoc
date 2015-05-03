@@ -9,6 +9,8 @@ Die folgenden Unterkapitel zeigen die Einbettung unseres Systems in seine Umgebu
 
 image::03-context.png["Business-Context", title="Business Context"]
 
+Der Stereotyp &laquo;Category&raquo; bezeichnet Schnittstellen, zu denen es unterschiedliche Ausprägungen,
+Varianten oder Anbieter gibt.
 
 
 [options="header", cols="2,4"]
@@ -48,8 +50,14 @@ In Deutschland ist das das http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirts
   https://www.schufa4b.de[Schufa Holding]. Diese Schnittstellen sind durch die jeweiligen Anbieter vorgegeben.
 
 
-| Zahlungsabwicklung
-|
+| Payment
+| Externe Dienstleistungen in Bezug auf Zahlungen und Zahlungsabwicklung. Unterschiedliche Anbieter,
+  unter anderem 
+  http://www.arvato-infoscore.de/dienstleistungen/zahlungsabwicklung/[Arvato-InfoScore],
+  https://www.paypal.com[PayPal] und
+  https://www.paymill.com/de/[PayMill], sowie 
+  http://www.bundesbank.de/Navigation/DE/Aufgaben/Unbarer_Zahlungsverkehr/SEPA/sepa.html[SEPA]-Schnittstellen zu diversen Banken. In kritischen Fällen auch Beauftragung von 
+  http://inkasso.de/[Inkassoleistungen].
 
 
 |===
