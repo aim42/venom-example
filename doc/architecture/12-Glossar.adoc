@@ -35,6 +35,9 @@ dafür Fristen von 15 Jahren.
  relevante Informationen über exportregulierte Projekte abrufen können, u.a. 
  Baupläne, Stücklisten, Artikelbeschreibungen, Lieferanten- und Transportdetails.
 
+| iBOSS
+| ursprüngliche Bezeichnung des _integrierten Betriebs- und Online Software Systems_,
+die nach einer Petition der Mitarbeiter seit 2002 nicht mehr verwendet wird.
 
 | Konfigurator 
 | Ermöglicht Endbenutzern den Entwurf bzw. Konfiguration komplexer Produkte.
