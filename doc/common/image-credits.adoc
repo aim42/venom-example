@@ -21,3 +21,5 @@ https://openclipart.org/user-detail/dear_theophilus[Dear-theophilus], used for t
 * https://openclipart.org/detail/176510/comicstyle-shelves[comic shelves] by 
 https://openclipart.org/user-detail/rubejar[rubejar], used for the example configurator
 
+* http://mygarden.gardena.com/de/[MyGarden von GARDENA(C)], a powerful online garden designer. It was used
+to create the <<garden-diagram>> in the example configurator section.
