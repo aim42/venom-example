@@ -3,7 +3,7 @@
 
 
 
-[cols="1,2" options="header"]
+[cols="1,4" options="header"]
 .Glossar
 |===
 |Begriff
@@ -11,7 +11,9 @@
 
 | Archivierungspflicht
 | SAMM ist gesetzlich verpflichtet, Angebote, Aufträge und Abrechnungsinformationen
-für die jeweils dafür vorgeschriebenen Zeiträume aufzuheben. Zur Aufbewahrung von
+für die jeweils dafür vorgeschriebenen Zeiträume zu archivieren, ebenso
+die Stammdaten gewerblicher Kunden für Projekte/Produkte mit Exportbeschränkung (->ECI).
+Zur Aufbewahrung von
 Angebots- und Rechnungsinformationen gelten für einige Geschäftsbereiche der SAMM
 dafür Fristen von 15 Jahren.
 
