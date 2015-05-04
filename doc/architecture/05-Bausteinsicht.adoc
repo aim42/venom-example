@@ -19,14 +19,66 @@ massiv geprägt durch die Historie von VENOM:
 
 Enthaltene Bausteine::
 
-[cols="1,4" options=""]
-.HtmlSanityChecker building blocks
+[cols="1,4,4" options="header"]
+.VENOM Whitebox (Level 1)
 |===
-| <<Sales Frontend>> | Benutzeroberfläche für Auswahl + Kauf der Produkte
+| Name | Verantwortung | Bemerkung 
+
+| ATLAS Logistik | 
+| Früher eine Standardsoftware, heute für VENOM und die SAMM Produktpalette optimierte
+  Lösung. Stellt die zeitgerechte Lieferung sämtlicher für ein Produkt benötigten Teile
+  von sämtlichen Herstellern bzw. Lagerorten an den Zielort sicher.
+
+| <<Configurator Shell>>| Fassade für unterschiedliche Konfiguratoren 
+| Die Konfiguratoren werden in die unterschiedlichen Sales-Frontends integriert.
+
+| <<Optical Archive>> (Langzeitarchiv) | Archivsystem für revisionssichere Langzeitspeicherung 
+| Kombination aus Hard- und Software, 
+
+| <<PK-GK-Datenbank>> 
+| Verwaltung der Stammdaten von Privat- und Geschäftskunden
+| CRUD-Operationen, Backup, selbständige Archivierung der relevanten Daten im <<Optical Archive, Langzeitarchiv>>.
+
+| <<Pricing Engine>> 
+| Ermittelt Gesamtpreise für komplexe Produkte.
+| Faktisch ein Expertensystem zur Optimierung von Angebot und Nachfrage:
+  Kombiniert Vertragsoptionen von Lieferanten/Partnern sowie Kunden, Rabatte, Gutscheine
+  sowie Verfügbarkeiten. 
+
+| <<Sales Frontend PG-GK>> 
+| Benutzeroberfläche für Auswahl, Konfiguration + Kaufabwicklung von Produkten für Privat- und Firmenkunden.
+| 
+
+| Voucher
+| Gutscheine für Privatkunden, Anlegen von Gutscheinaktionen, Verwaltung individueller Gutscheine.
+| 
+
 |===
 
-==== _Sales Frontend_ (Blackbox)
 
-==== _Pricing Engine_ (Blackbox)
+[[Optical Archive]]
+==== Optical Archive (Langzeitarchiv)
+Revisionssichere Archivierung, elektronische Aufbewahrung geschäftsrelevanter Daten.
+Erfüllt die Anforderungen des (deutschen) Handelsgesetzbuches (§239, §257 HGB) an die 
+sichere und ordnungsgemäße Aufbewahrung von kaufmännischen Dokumenten.
+
+Basiert auf http://www.emc.com/data-protection/centera.htm[EMC-Centera].
+
+[WARNING]
+--
+
+-- 
+
+==== PK-GK-Datenbank
+
+
+
+==== Pricing Engine 
+
+
+[[Sales Frontend PK-GK]]
+==== Sales Frontend Private + Corporate
+
+
 
 
