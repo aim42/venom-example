@@ -32,6 +32,11 @@ dafür Fristen von 15 Jahren.
 
 | CF | _customer facing_, Systeme oder Anwendungen für Kunden
 
+| CTI | _computer telephony integration_, Integration und Koordination von Interaktionen über Telefon und Computer. Für VENOM ist das die automatische Weiterleitung bei 
+sehr komplexen Produktkonfigurationen an den Telefonsupport, Scheduling von Rückrufwünschen
+sowie die optionale _ask the expert_ Funktion zur Kontrolle und Überprüfung von Produkten
+vor der Beauftragung.
+
 | ECI 
 | _Export Control Interface_, Standardschnittstelle, über die Behörden 
  relevante Informationen über exportregulierte Projekte abrufen können, u.a. 
@@ -47,6 +52,10 @@ die nach einer Petition der Mitarbeiter seit 2002 nicht mehr verwendet wird.
  
 
 | Kunden | Privatkunden, Benutzergruppen, Firmenkunden, Behörden (staatliche Organisationen), Organisationen (-> NPOs)
+
+| NGO | _non government organization_ 
+| nichtstaatliche Organisationen, beispielsweise Verbände, Vereine, Gewerkschaften oä, die nicht
+  als Unternehmen geführt werden. 
 
 | NPO | _non profit organization_, Hilfsorganisationen oder gemeinnützige
 Organisationen/Vereine. Beispiele: 
