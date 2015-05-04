@@ -62,7 +62,7 @@ asciidoctor {
     ]
 
 
-    println "arcImageDir = " + "${srcDir}/architecture/images"
+  //  println "arcImageDir = " + "${srcDir}/architecture/images"
 
     resources {
         // include architecture diagrams
