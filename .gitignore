@@ -2,3 +2,4 @@ build
 .gradle
 VENOM.vpp.working
 *.vpp~*
+VENOM.vpp.bak
