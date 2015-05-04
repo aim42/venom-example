@@ -24,13 +24,17 @@ Enthaltene Bausteine::
 |===
 | Name | Verantwortung | Bemerkung 
 
-| ATLAS Logistik | 
+| ATLAS Logistik | Teil- bzw. vollautomatische Generierung und Vergabe von Transportaufträgen
 | Früher eine Standardsoftware, heute für VENOM und die SAMM Produktpalette optimierte
   Lösung. Stellt die zeitgerechte Lieferung sämtlicher für ein Produkt benötigten Teile
   von sämtlichen Herstellern bzw. Lagerorten an den Zielort sicher.
 
 | <<Configurator Shell>>| Fassade für unterschiedliche Konfiguratoren 
-| Die Konfiguratoren werden in die unterschiedlichen Sales-Frontends integriert.
+| Die Konfiguratoren werden in die unterschiedlichen Sales-Frontends integriert. 
+  Enthält auch die (regelgestützten) Expertensysteme und die ->CTI Anbindung.
+
+| eGov Shop| Frontend für Behörden und Organisationen 
+| Speziell entwickelt für 
 
 | <<Optical Archive>> (Langzeitarchiv) | Archivsystem für revisionssichere Langzeitspeicherung 
 | Kombination aus Hard- und Software, 
@@ -44,6 +48,15 @@ Enthaltene Bausteine::
 | Faktisch ein Expertensystem zur Optimierung von Angebot und Nachfrage:
   Kombiniert Vertragsoptionen von Lieferanten/Partnern sowie Kunden, Rabatte, Gutscheine
   sowie Verfügbarkeiten. 
+
+
+| Sales Backend Government| Abwicklung von eCommerce Transaktionen für Behörden und
+Organisationen sowie Speicherung der entsprechenden Daten
+| Ursprünglich von Blau&Partner, danach von ATLAS Software entwickeltes System für
+  eCommerce mit Behörden und staatsnahen Organisationen. Erweitert für ->NPOs. Benötigt
+  eGov-Shop als Frontend.
+
+|||
 
 | <<Sales Frontend PG-GK>> 
 | Benutzeroberfläche für Auswahl, Konfiguration + Kaufabwicklung von Produkten für Privat- und Firmenkunden.
@@ -66,7 +79,10 @@ Basiert auf http://www.emc.com/data-protection/centera.htm[EMC-Centera].
 
 [WARNING]
 --
-
+Durch einen gravierenden Softwarefehler wurden zwischen 2001 und 2004 falsche Stamm-, Auftrags-
+und Buchungsdaten geschrieben. Der Fehler wurde erkannt und behoben, jedoch sind die betroffenen
+fehlerhaften Datensätze immer noch im Archiv enthalten und können bzw. dürfen nicht überschrieben
+werden. Abfragen auf Daten aus diesem Zeitraum sind grundsätzlich zu überprüfen.
 -- 
 
 ==== PK-GK-Datenbank
@@ -75,6 +91,9 @@ Basiert auf http://www.emc.com/data-protection/centera.htm[EMC-Centera].
 
 ==== Pricing Engine 
 
+
+==== Sales Backend Government
+In C/C++ entwickeltes eCommerce System für Behörden. Enthält intern eine proprietäre Datenbank
 
 [[Sales Frontend PK-GK]]
 ==== Sales Frontend Private + Corporate
