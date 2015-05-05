@@ -6,15 +6,13 @@
 
 === Whitebox Gesamtsystem
 
-image::05-whitebox-level-1.jpg["Whitebox-Gesamtsystem", title="Whitebox Gesamtsystem"]
+image::VENOM-Level-1.png["Whitebox-Gesamtsystem", title="Whitebox Gesamtsystem"]
 
 Begründung::
 
-Primär _funktionale Zerlegung_ zur Trennung von Verantwortlichkeiten,
-massiv geprägt durch die Historie von VENOM:
+Primär _funktionale Zerlegung_ zur Trennung von Verantwortlichkeiten entlang
+der wesentlichen Anwendungsfälle, massiv geprägt durch die <<Historie>> von VENOM.
 
-* TODO
-* TODO
 
 
 Enthaltene Bausteine::
