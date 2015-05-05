@@ -75,7 +75,7 @@ ziehen substantielle Test- und Bugfixing-Aufwände nach sich.
 (Prio-1 Produktionsfehler) nimmt zu.
 
 * Die Verlässlichkeit von Aufwandsschätzungen der Entwicklungsteams nimmt ab.
-   mangelhafter Qualität von Dokumentation
+* Mangelhafte Qualität von Dokumentation
 
 
 
