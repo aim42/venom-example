@@ -30,6 +30,7 @@ buildscript {
 ext {
     srcDir  = "$projectDir/doc"
     targetDir = "$buildDir"
+    javaVersion = System.getProperty("java.version")
 }
 
 // =========== asciidoctor stuff ===============
@@ -55,10 +56,11 @@ asciidoctor {
             numbered: true,
             'source-highlighter': 'coderay',
             'coderay-css': 'class',
+            'javaVersion': "$javaVersion"
             // style definitions currently not needed here
             // stylesheet: 'aim42.css',
             // stylesdir: "$srcDir/resources/css/"
-
+            //java_version: "$java_version"
     ]
 
 
