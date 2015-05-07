@@ -27,6 +27,10 @@ Insbesondere werden hier Termine und Verfügbarkeiten abgestimmt.
 Allgemeine organisatorische und kaufmännische Fragen der Zusammenarbeit werden
 im Vorfeld vertraglich geregelt bzw. über die Partner-Schnittstelle erfragt.  
 
+| Telephone, Call-Center | (internes) Call-Center für Post-Sales und Support-Aufgaben. Behandeln Rückrufwünsche und Anfragen zu Produkten sowie Unterstützung gerade online
+laufender Konfigurationen. Hier arbeiten einige der hervorragenden Experten von SAMM,
+um Kunden bei hochgradig komplexen Produkten zu unterstützen.
+
 | Transportunternehmen
 | Angebotsanfragen, Buchung und Beauftragung von Transportkapazitäten. In der Regel arbeitet VENOM mit einigen Speditionen zusammen, in Ausnahmefällen
 werden Transportunternehmer direkt beauftragt. Für Kleinbestellungen werden direkt entsprechende Versender (Post, etc. ) beauftragt.
