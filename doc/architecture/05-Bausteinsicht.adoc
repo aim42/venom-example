@@ -32,7 +32,9 @@ Enthaltene Bausteine::
   Enthält auch die (regelgestützten) Expertensysteme und die ->CTI Anbindung.
 
 | eGov Shop| Frontend für Behörden und Organisationen 
-| Speziell entwickelt für 
+| Speziell entwickelt für Arbeit in regulierten Umfeldern, d.h. mit erhöhten
+  Anforderungen an Comliance und Nachweispflichten sowie Auskunftspflicht 
+  (via ->ECI) 
 
 | <<Optical Archive>> (Langzeitarchiv) | Archivsystem für revisionssichere Langzeitspeicherung 
 | Kombination aus Hard- und Software, 
