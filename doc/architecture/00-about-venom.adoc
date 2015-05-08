@@ -6,7 +6,7 @@
 Diese Dokumentation beschreibt die Architektur eines (fiktiven) Softwaresystems.
 Es dient als Beispiel für:
 
-* Architekturdokumentation gemäß arc42
+* Architekturdokumentation gemäß http://arc42.de[arc42]
 * Systematische Verbesserung oder Evolution von Systemen gemäß http://aim42.org[aim42]
 
 
@@ -28,4 +28,4 @@ Boshaft ist daran nur, dass die hier beschriebenen Fehler und Probleme zwar erfu
 sind, aber in der Realität natürlich in ähnlicher Form vorkommen - hoffentlich weniger
 gehäuft.
 
-Ganz normal halt...
+Ganz normal halt... icon:smile-o[]
