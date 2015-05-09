@@ -10,19 +10,17 @@ buildscript {
     // these are the BUILDSCRIPT deps - required to execute
     // build targets and -operations
     repositories {
-        maven {
-            name 'Bintray Asciidoctor repo'
-            url  'http://dl.bintray.com/content/aalmiray/asciidoctor'
-        }
         jcenter()
-        mavenCentral()
+        //mavenCentral()
     }
 
     dependencies {
 //        classpath ('org.aim42:HtmlSanityCheck-gradle-plugin:0.5.3')
+
         classpath ( group: 'org.asciidoctor',
                     name: 'asciidoctor-gradle-plugin',
                     version: '1.5.2')
+
     }
 }
 
