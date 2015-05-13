@@ -100,11 +100,29 @@ weitere notwendige Details sind bekannt, ebenso Parameter der Apotheke (Beschaff
 
 === Qualitätsziele
 
-TODO:
+Sind nur in Auszügen explizit bekannt. 
 
-Sind für VENOM im Einzelnen nicht bekannt.
+[options="header", cols="1,2,6"]
+.Qualitätsziele
+|===
+| Prio | Qualitätsmerkmal | Szenario
+a| 1    | Entwicklungsgeschwindigkeit 
+    | Neue Features sollen möglichst schnell umgesetzt werden können:
+      * _einfache_ Features innerhalb von 2-3 Tagen
+      * _mittlere_ Features innerhalb von 5-15 Tagen
+      * Behebung kritischer Fehler innerhalb von 4-8 Stunden
 
+| 1    | Korrektheit  
+    | Es lassen sich nur sachlich/fachlich korrekte Produkte konfigurieren,
+      d.h. solche, die technisch durchführbar/herstellbar sind: Benutzer
+      können unmögliche/illegale Produkte nicht konfigurieren bzw. nicht bestellen.
 
+| 2   | Performance  
+    | VENOM gibt eine verbindliche Auskünfte über Herstellbarkeit, Lieferbarkeit
+      und Inbetriebnehmbarkeit für 90% aller Produkte/Anfragen innerhalb von maximal 60 Sekunden. Die übrigen 10% (schwierige) Anfragen können zeitverzögert oder
+      vorläufig innerhalb von 4h erfolgen. 
+
+|===
 
 
 === Stakeholder
