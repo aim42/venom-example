@@ -9,6 +9,8 @@
 |Begriff
 |Definition
 
+| AP | -> Archivierungspflicht
+
 | Archivierungspflicht
 | SAMM ist gesetzlich verpflichtet, Angebote, Aufträge und Abrechnungsinformationen
 für die jeweils dafür vorgeschriebenen Zeiträume zu archivieren, ebenso
@@ -24,7 +26,7 @@ dafür Fristen von 15 Jahren.
   in VENOM integriert. Sehr erfolgreich mit öffentlichen Unternehmen und Behörden
   weltweit.
 
-| BAFA 
+| [[BAFA]] BAFA 
 | http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle]
 
 | BI 
@@ -37,7 +39,7 @@ sehr komplexen Produktkonfigurationen an den Telefonsupport, Scheduling von Rüc
 sowie die optionale _ask the expert_ Funktion zur Kontrolle und Überprüfung von Produkten
 vor der Beauftragung.
 
-| ECI 
+| [[ECI]] ECI 
 | _Export Control Interface_, Standardschnittstelle, über die Behörden 
  relevante Informationen über exportregulierte Projekte abrufen können, u.a. 
  Baupläne, Stücklisten, Artikelbeschreibungen, Lieferanten- und Transportdetails.

@@ -106,11 +106,12 @@ Sind nur in Auszügen explizit bekannt.
 .Qualitätsziele
 |===
 | Prio | Qualitätsmerkmal | Szenario
-a| 1    | Entwicklungsgeschwindigkeit 
-    | Neue Features sollen möglichst schnell umgesetzt werden können:
-      * _einfache_ Features innerhalb von 2-3 Tagen
-      * _mittlere_ Features innerhalb von 5-15 Tagen
-      * Behebung kritischer Fehler innerhalb von 4-8 Stunden
+| 1    | Entwicklungsgeschwindigkeit 
+a| Neue Features sollen möglichst schnell umgesetzt werden können:
+
+* _einfache_ Features innerhalb von 2-3 Tagen
+* _mittlere_ Features innerhalb von 5-15 Tagen
+* Behebung kritischer Fehler innerhalb von 4-8 Stunden
 
 | 1    | Korrektheit  
     | Es lassen sich nur sachlich/fachlich korrekte Produkte konfigurieren,
@@ -122,8 +123,15 @@ a| 1    | Entwicklungsgeschwindigkeit
       und Inbetriebnehmbarkeit für 90% aller Produkte/Anfragen innerhalb von maximal 60 Sekunden. Die übrigen 10% (schwierige) Anfragen können zeitverzögert oder
       vorläufig innerhalb von 4h erfolgen. 
 
+| 3 |  Auskunftsfähigkeit
+    | VENOM bearbeitet einige archivierungspflichtige Typen von Daten (AP-Daten). 
+      Interne und berechtigte externe Anfragen nach AP-Daten können bis zu 15 Jahre nach Erzeugung dieser Daten innerhalb von maximal 30 Sekunden beantwortet werden. Dies betrifft insbesondere -><<BAFA>> oder -><<ECI>> Anfragen.
 |===
 
+Für die Einstufung der Features in _einfach_ und _mittel_ gelten folgende
+grobe Regeln:
+
+[]
 
 === Stakeholder
 
