@@ -28,6 +28,7 @@ Ferner werden jetzt neben der Materialauswahl auch Dinge wie Scharniere, Türen,
 Artikel können von unterschiedlichen Produzenten stammen und im SAMM-Konfigurator
 gemeinsam verwendet werden.
 
+
 === Gartenplanung
 
 In der Gartenplanung wird zur Auswahl von Pflanzen sowie der Zusammenstellung von

@@ -131,7 +131,14 @@ a| Neue Features sollen möglichst schnell umgesetzt werden können:
 Für die Einstufung der Features in _einfach_ und _mittel_ gelten folgende
 grobe Regeln:
 
-[]
+[horizontal]
+_einfach_:: kleine Ergänzungen oder Korrekturen, etwa Layout, Texte, einfache Zusatzoptionen, kleine Änderungen an Geschäfts- oder Validierungsregeln.
+Änderungen an Konfigurationsregeln.
+
+_mittel_:: Neue Produkte, die ähnlich zu bestehenden sind. Umfangreiche neue Geschäfts- oder Validierungsregeln, Anbindung neuer Partner.
+
+_groß_:: Grundlegende neue Funktionen (beispielsweise der <<Gartenplanung, Garten-Konfigurator>>)
+
 
 === Stakeholder
 
