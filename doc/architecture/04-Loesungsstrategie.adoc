@@ -27,8 +27,8 @@ Expertensystems (auf Basis der JBoss-Drools Regelengine).
 |===
 
 
-[QUESTION]
+[TIP]
 --
 Passen die Lösungsansätze zu den Geschäftszielen von SAMM Inc. 
-bzw. den <<Qualitätszielen>> von VENOM? 
+bzw. den <<Qualitätsziele, Qualitätszielen>> von VENOM? 
 --
