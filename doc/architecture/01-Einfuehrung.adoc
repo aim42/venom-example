@@ -160,35 +160,35 @@ image::00-venom-users.jpg[title="Benutzer und Benutzergruppen von VENOM"]
 |===
 | Rolle | Beschreibung | Ziel  | Bemerkungen
 | Private User
-|
+| Privatkunden, die für ihren Eigenbedarf Produkte konfigurieren und kaufen.
 |
 |
 
 | User Group
-|
+| (UGs) Benutzergruppen, wie etwa Vereine, Interessensgemeinschaften, Parteien
 |
 |
 
 | Corporate User
-|
+| (CUs) Unternehmen oder kommerzielle Organisationen
 |
 |
 
 | Government User
+| (GUs) Behörden oder regierungsnahe Organisationen
 |
-|
-|
+| Für GUs gelten für viele Produkte andere vertragliche Regelungen, 
+  Rabatte und Preise.
 
 | Operations
-|
-|
+| Betreiber und Administratoren von VENOM
+| Flexibilität hinsichtlich Betriebsumgebung
 |
 
 | SAMM interne User
-|
 | Buchhaltung, Controlling, Einkauf, Logistik, Marketing, Vertrieb, Legal,
 |
-
+| 
 
 |===
 
