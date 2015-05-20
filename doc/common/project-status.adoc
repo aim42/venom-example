@@ -9,3 +9,4 @@ image:https://img.shields.io/badge/Download-not available-lightgrey.svg[]
 -
 image:https://img.shields.io/badge/AsciiDoctor-{asciidoctor-version}-blue.svg[{asciidoctor-version}]
 image:https://img.shields.io/badge/Java-{javaVersion}-blue.svg[{javaVersion}]
+icon:twitter[1x] https://twitter.com/gernotstarke[@gernotstarke]
