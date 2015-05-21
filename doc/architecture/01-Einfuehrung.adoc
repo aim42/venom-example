@@ -89,6 +89,8 @@ und Verkaufsprozesse unterstützen, inklusive:
 * Verwaltung der dazu notwendigen Produkt- und Konfigurationsdaten
 * Kundenverwaltung (inklusive Verkaufshistorie und einfachen CRM Funktionen)
 * Angebotserstellung auf Basis getätiger Produktauswahl und -konfiguration
+* Verfeinerung und Optimierung von Konfigurationen durch
+  ein regelbasiertes Expertensystem.
 * Berücksichtigung individueller Vertrags- und Rabattgestaltung sowie Marketingkampagnen
 
 ==== Beispiele von Anwendungsfällen
@@ -97,6 +99,18 @@ und Verkaufsprozesse unterstützen, inklusive:
 weitere notwendige Details sind bekannt, ebenso Parameter der Apotheke (Beschaffenheit der PoS,
   Art der Kassensysteme etc.). VENOM ermittelt nach fertiggestellter Konfiguration innerhalb
   von max. 1 Minute einen verbindlichen Angebotspreis.
+
+
+==== Beispiele noch nicht umgesetzter Anforderungen
+
+* Ein Privatkunde konfiguriert ein Produkt. VENOM zeigt eine
+  Liste möglicher Alternativen (Vorschlags- oder Empfehlungsliste), 
+  ähnlich der "Andere Kunden kauften auch..." Übersicht anderer Webshops.
+
+* Ein Kunde lädt einen Grundrissplan hoch. VENOM unterbreitet
+  aus gestalterischer Sicht attraktive Vorschläge, sowohl
+  als Grundriss wie auch als photorealistische 3D-Darstellung. 
+
 
 === Qualitätsziele
 
