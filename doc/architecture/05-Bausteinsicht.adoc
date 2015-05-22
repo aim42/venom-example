@@ -98,6 +98,4 @@ In C/C++ entwickeltes eCommerce System für Behörden. Enthält intern eine prop
 [[Sales Frontend PK-GK]]
 ==== Sales Frontend Private + Corporate
 
-
-
-
+include::05-02-ConfiguratorShell.adoc[]

@@ -1,0 +1,15 @@
+
+==== Configurator Shell
+
+image::configurator-shell.png["Configurator-Shell", title="Configurator-Shell"]
+
+Begründung::
+
+Enthaltene Bausteine::
+
+[cols="1,4,4" options="header"]
+.Configurator-Shell (Whitebox, Level-2)
+|===
+| Name | Verantwortung | Bemerkung 
+
+|===
