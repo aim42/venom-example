@@ -29,6 +29,7 @@ u.a. https://www.pharmatechnik.de/k2[Pharmatechnik], http://www.rowa.de/[Carefus
 | Regelbasiertes Expertensystem (auf Basis http://www.drools.org/[JBoss-Drools]) zur Unterstützung von visuellen Konfiguratoren. 
 Ermittelt zu einer gegebenen Konfiguration Vorschläge sowohl zur inhaltlichen wie preislichen Verbesserung
 a| In den meisten Situationen prüft ConfEx, welche Änderungen an der bestehenden Konfiguration:
+
 . bei fast identischer Leistung _kostengünstiger_ wären, bzw.
 . bei fast identischem Preis _leistungsfähiger_ wären.
 
