@@ -3,7 +3,6 @@
 
 
 
-
 === Whitebox Gesamtsystem
 
 image::VENOM-Level-1.png["Whitebox-Gesamtsystem", title="Whitebox Gesamtsystem"]
@@ -95,7 +94,8 @@ werden. Abfragen auf Daten aus diesem Zeitraum sind grundsätzlich zu überprüf
 ==== Sales Backend Government
 In C/C++ entwickeltes eCommerce System für Behörden. Enthält intern eine proprietäre Datenbank
 
-[[Sales Frontend PK-GK]]
+
+[[Sales_Frontend_PK_GK]]
 ==== Sales Frontend Private + Corporate
 
 include::05-02-ConfiguratorShell.adoc[]
