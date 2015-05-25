@@ -27,7 +27,7 @@ dafür Fristen von 15 Jahren.
   weltweit.
 
 | [[BAFA]] BAFA 
-| http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle]
+| http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle^]
 
 | BI 
 | _business intelligence_, Verfahren und Prozesse zur Sammlung und Auswertung betriebswirtschaftlich relevanter Daten mit dem Ziel, bessere operative oder strategische Entscheidungen treffen zu können. BI wertet mit entsprechender Software Daten über das eigene Unternehmen, die Mitbewerber sowie die Marktentwicklung aus.
@@ -64,9 +64,9 @@ die nach einer Petition der Mitarbeiter seit 2002 nicht mehr verwendet wird.
 
 | NPO a| _non profit organization_, Hilfsorganisationen oder gemeinnützige
 Organisationen/Vereine. Beispiele: 
-http://www.drk.de/ueber-uns/auftrag.html[Rotes Kreuz], 
-http://www.cap-anamur.org/[Cap Anamur], 
-http://www.greenpeace.org/international/en/[Greenpeace]. 
+http://www.drk.de/ueber-uns/auftrag.html[Rotes Kreuz^], 
+http://www.cap-anamur.org/[Cap Anamur^], 
+http://www.greenpeace.org/international/en/[Greenpeace^]. 
 
 | PoS 
 | _Point of Sales_, der Verkaufsort von Waren. Relevant beispielsweise

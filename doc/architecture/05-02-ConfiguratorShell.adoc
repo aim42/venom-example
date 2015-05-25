@@ -17,8 +17,11 @@ Enthaltene Bausteine::
 | ApoConfig
 | Konfigurator für Apotheken-Einrichtung, insbesondere automatisierte Kommissionier- bzw. Lagersysteme.
 | Auch für automatisierte Versorgungsschränke in Kliniken.
-Stark regulierter Bereich, da z.B. in Deutschland das Apothekenrecht den weitgehend automatisierten Verkauf stark einschränkt. Integration mit verschiedenen Produktherstellern,
-u.a. https://www.pharmatechnik.de/k2[Pharmatechnik], http://www.rowa.de/[Carefusion/Rowa], http://www.apoforma.com/Home/Unternehmen.aspx[ApoForma] und anderen. 
+Stark regulierter Bereich, da z.B. in Deutschland das Apothekenrecht den weitgehend automatisierten Verkauf stark einschränkt. 
+Integration mit verschiedenen Produktherstellern, u.a. 
+https://www.pharmatechnik.de/k2[Pharmatechnik^], 
+http://www.rowa.de/[Carefusion/Rowa^], 
+http://www.apoforma.com/Home/Unternehmen.aspx[ApoForma^] und anderen. 
 
 | Furniture Configurator
 |
@@ -29,7 +32,7 @@ u.a. https://www.pharmatechnik.de/k2[Pharmatechnik], http://www.rowa.de/[Carefus
 |
 
 | [[ConfEx]] Configuration Expert (ConfEx)
-a| Regelbasiertes System (auf Basis http://www.drools.org/[JBoss-Drools]) zur Unterstützung von visuellen Konfiguratoren. 
+a| Regelbasiertes System (auf Basis http://www.drools.org/[JBoss-Drools^]) zur Unterstützung von visuellen Konfiguratoren. 
 Ermittelt zu einer gegebenen Konfiguration Vorschläge sowohl zur inhaltlichen wie preislichen Verbesserung. Teil des _Expertensystems_ (anderer Teil ist der <<Configuration-Validator>>)
 a| In den meisten Situationen prüft ConfEx, welche Änderungen an der bestehenden Konfiguration:
 
@@ -40,7 +43,7 @@ Rechtliche Einschränkungen kann ConfEx aktuell nur unzureichend berücksichtige
 (etwa bei Apotheken) Anfragen beim <<Configuration-Validator>> nötig.
 
 | [[Configuration-Validator]] Configuration Validator
-a| http://www.swi-prolog.org/[Prolog] basierte ->
+a| http://www.swi-prolog.org/[Prolog^] basierte ->
 <<Validierung>>. 
 | Teil des Expertensystems, gemeinsam mit <<ConfEx>>.
 

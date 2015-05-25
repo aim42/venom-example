@@ -6,8 +6,8 @@
 Diese Dokumentation beschreibt die Architektur eines (fiktiven) Softwaresystems.
 Es dient als Beispiel für:
 
-* Architekturdokumentation gemäß http://arc42.de[arc42]
-* Systematische Verbesserung oder Evolution von Systemen gemäß http://aim42.org[aim42]
+* Architekturdokumentation gemäß http://arc42.de[arc42^]
+* Systematische Verbesserung oder Evolution von Systemen gemäß http://aim42.org[aim42^]
 
 
 [NOTE]

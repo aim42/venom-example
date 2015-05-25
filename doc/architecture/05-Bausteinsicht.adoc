@@ -77,7 +77,7 @@ Revisionssichere Archivierung, elektronische Aufbewahrung geschäftsrelevanter D
 Erfüllt die Anforderungen des (deutschen) Handelsgesetzbuches (§239, §257 HGB) an die 
 sichere und ordnungsgemäße Aufbewahrung von kaufmännischen Dokumenten.
 
-Basiert auf http://www.emc.com/data-protection/centera.htm[EMC-Centera].
+Basiert auf http://www.emc.com/data-protection/centera.htm[EMC-Centera^].
 
 [WARNING]
 --
