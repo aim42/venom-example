@@ -35,7 +35,7 @@ Enthaltene Bausteine::
   Anforderungen an Comliance und Nachweispflichten sowie Auskunftspflicht 
   (via ->ECI) 
 
-| <<Optical Archive>> (Langzeitarchiv) | Archivsystem für revisionssichere Langzeitspeicherung 
+| <<Optical-Archive>> | Archivsystem für revisionssichere Langzeitspeicherung 
 | Kombination aus Hard- und Software, 
 
 | <<PK-GK-Datenbank>> 
@@ -68,7 +68,7 @@ Organisationen sowie Speicherung der entsprechenden Daten
 |===
 
 
-[[Optical Archive]]
+[[Optical-Archive]]
 ==== Optical Archive (Langzeitarchiv)
 Revisionssichere Archivierung, elektronische Aufbewahrung geschäftsrelevanter Daten.
 Erfüllt die Anforderungen des (deutschen) Handelsgesetzbuches (§239, §257 HGB) an die 
