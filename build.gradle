@@ -3,7 +3,7 @@
 // free software - without guarantee, use at your own risk
 // ========================================================
 
-println """compiling with Java ${System.getProperty("java.version")}"""
+println """compiling with Java ${System.getProperty("java.version")} at ${new Date().format("HH:mm:ss")}"""
 
 
 buildscript {
