@@ -89,7 +89,7 @@ wäre somit die Überbrückung einer deutlich größeren Höhendifferenz.
 
 | t&m | _time and material_, Beauftragung von Dienstleistungen nach Zeit- und/oder Aufwand.
 
-| Validierung
+| [[Validierung]] Validierung
 a| Überprüfung einer Konfiguration nach drei Kategorien: 
 
 * technische Korrektheit, z.B. Tragfähigkeit, Statik oä.
@@ -97,9 +97,9 @@ a| Überprüfung einer Konfiguration nach drei Kategorien:
 * betriebswirtschaftliche Prüfung, ob Ertrag, Risiko und
   Kundenkategorie in sinnvollen Relationen zueinander stehen.
 
-Durchgeführt durch den <<Configuration Validator>>.
+Durchgeführt durch den <<Configuration-Validator>>.
 
 | VENOM 
-| *VE*ry *NO*r*M*al system, das integrierte ERP, CRM und Abrechnungssystem der ->SAMM Inc.
+a| *VE*ry *NO*r*M*al system, das integrierte ERP, CRM und Abrechnungssystem der ->SAMM Inc.
 
 |===
