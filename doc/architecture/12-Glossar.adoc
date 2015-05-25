@@ -53,19 +53,23 @@ die nach einer Petition der Mitarbeiter seit 2002 nicht mehr verwendet wird.
  Teilweise durch Regel- oder Expertensysteme unterstützt, teilweise auch durch telefonische Beratung.
  
 
-| Kunden | Privatkunden, Benutzergruppen, Firmenkunden, Behörden (staatliche Organisationen), Organisationen (-> NPOs)
+| Kunden 
+| Privatkunden (private cus, Benutzergruppen, Firmenkunden, Behörden (staatliche Organisationen), Organisationen (-> NPOs)
 
-| NGO | _non government organization_ 
-| nichtstaatliche Organisationen, beispielsweise Verbände, Vereine, Gewerkschaften oä, die nicht
+| NGO 
+| _non government organization_,
+  nichtstaatliche Organisationen, beispielsweise Verbände,
+  Vereine, Gewerkschaften oä, die nicht
   als Unternehmen geführt werden. 
 
-| NPO | _non profit organization_, Hilfsorganisationen oder gemeinnützige
+| NPO a| _non profit organization_, Hilfsorganisationen oder gemeinnützige
 Organisationen/Vereine. Beispiele: 
 http://www.drk.de/ueber-uns/auftrag.html[Rotes Kreuz], 
 http://www.cap-anamur.org/[Cap Anamur], 
 http://www.greenpeace.org/international/en/[Greenpeace]. 
 
-| PoS | _Point of Sales_, der Verkaufsort von Waren. Relevant beispielsweise
+| PoS 
+| _Point of Sales_, der Verkaufsort von Waren. Relevant beispielsweise
 für die Konfiguratoren von Apothekensystemen.
 
 | SAMM
@@ -84,6 +88,16 @@ wäre somit die Überbrückung einer deutlich größeren Höhendifferenz.
 
 
 | t&m | _time and material_, Beauftragung von Dienstleistungen nach Zeit- und/oder Aufwand.
+
+| Validierung
+a| Überprüfung einer Konfiguration nach drei Kategorien: 
+
+* technische Korrektheit, z.B. Tragfähigkeit, Statik oä.
+* juristische Korrektheit, insbesondere Einhaltung gesetzlicher Rahmenbedingungen und -><<ECI>> Compliance 
+* betriebswirtschaftliche Prüfung, ob Ertrag, Risiko und
+  Kundenkategorie in sinnvollen Relationen zueinander stehen.
+
+Durchgeführt durch den <<Configuration Validator>>.
 
 | VENOM 
 | *VE*ry *NO*r*M*al system, das integrierte ERP, CRM und Abrechnungssystem der ->SAMM Inc.
