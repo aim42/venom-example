@@ -18,7 +18,7 @@ Enthaltene Bausteine::
 | Konfig-DB |
 | ORM |
 a| Optisches Archiv |
-| Datenbank | https://www.mysql.de/[^MySQL]
+| Datenbank | https://www.mysql.de/[MySQL^]
 |===
 
 ==== View Pipeline
