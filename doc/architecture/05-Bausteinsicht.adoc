@@ -100,7 +100,10 @@ In C/C++ entwickeltes eCommerce System für Behörden. Enthält intern eine prop
 
 [[Sales_Frontend_PK_GK]]
 ==== Sales Frontend Private + Corporate
-TODO
+Das Sales Frontend ist eine Multi-Page Web Application,
+die weitaus meisten Teile werden durch die 
+so genannte _View Pipeline_ mit Hilfe von 
+http://cocoon.apache.org/[Apache-Cocoon^] erzeugt.  
 
 
 include::05-02-ConfiguratorShell.adoc[]
