@@ -39,6 +39,10 @@ sehr komplexen Produktkonfigurationen an den Telefonsupport, Scheduling von Rüc
 sowie die optionale _ask the expert_ Funktion zur Kontrolle und Überprüfung von Produkten
 vor der Beauftragung.
 
+| [[CRUD]] CRUD
+| _create, read, update, delete_, die vier Grundoperationen
+  (persistenten) Daten und Datenstrukturen.
+  
 | [[ECI]] ECI 
 | _Export Control Interface_, Standardschnittstelle, über die Behörden 
  relevante Informationen über exportregulierte Projekte abrufen können, u.a. 
@@ -56,13 +60,14 @@ die nach einer Petition der Mitarbeiter seit 2002 nicht mehr verwendet wird.
 | Kunden 
 | Privatkunden (private cus, Benutzergruppen, Firmenkunden, Behörden (staatliche Organisationen), Organisationen (-> NPOs)
 
-| NGO 
+| [[NGO]] NGO 
 | _non government organization_,
   nichtstaatliche Organisationen, beispielsweise Verbände,
   Vereine, Gewerkschaften oä, die nicht
   als Unternehmen geführt werden. 
 
-| NPO a| _non profit organization_, Hilfsorganisationen oder gemeinnützige
+| [[NPO]] NPO 
+a| _non profit organization_, Hilfsorganisationen oder gemeinnützige
 Organisationen/Vereine. Beispiele: 
 http://www.drk.de/ueber-uns/auftrag.html[Rotes Kreuz^], 
 http://www.cap-anamur.org/[Cap Anamur^], 

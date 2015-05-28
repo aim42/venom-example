@@ -26,9 +26,14 @@ Enthaltene Bausteine::
   Lösung. Stellt die zeitgerechte Lieferung sämtlicher für ein Produkt benötigten Teile
   von sämtlichen Herstellern bzw. Lagerorten an den Zielort sicher.
 
+| Client Contracts 
+| TODO 
+|
+
 | <<Configurator Shell>>| Fassade für unterschiedliche Konfiguratoren 
 | Die Konfiguratoren werden in die unterschiedlichen Sales-Frontends integriert. 
   Enthält auch die (regelgestützten) Expertensysteme und die ->CTI Anbindung.
+
 
 | [[eGovShop]] eGov Shop
 | Frontend für Behörden und Organisationen 
@@ -36,9 +41,25 @@ Enthaltene Bausteine::
   Anforderungen an Comliance und Nachweispflichten sowie Auskunftspflicht 
   (via ->ECI) 
 
+
+| Marketing Campaigns
+| TODO
+|
+
 | <<Optical-Archive>> 
 | Archivsystem für revisionssichere Langzeitspeicherung 
 | Kombination aus Hard- und Software, 
+
+
+| Order & Fulfillment
+| TODO
+|
+
+
+| Partner Management
+| TODO
+|
+
 
 | <<PK-GK-Datenbank>> 
 | Verwaltung der Stammdaten von Privat- und Geschäftskunden
@@ -51,17 +72,30 @@ Enthaltene Bausteine::
   sowie Verfügbarkeiten. 
 
 
-| Sales Backend Government| Abwicklung von eCommerce Transaktionen für Behörden und
-Organisationen sowie Speicherung der entsprechenden Daten
+| Sales Backend Government
+| Abwicklung von eCommerce Transaktionen für Behörden und
+  Organisationen sowie Speicherung der entsprechenden Daten
 | Ursprünglich von Blau&Partner, danach von ATLAS Software entwickeltes System für
-  eCommerce mit Behörden und staatsnahen Organisationen. Erweitert für ->NPOs. Benötigt
-  <<eGov-Shop>> als Frontend.
+  eCommerce mit Behörden und staatsnahen Organisationen. 
+  Erweitert für -><<NPO,NPOs>>. Benötigt <<eGov-Shop>> als Frontend.
 
-|||
 
-| <<Sales_Frontend_PK_GK>> 
+| Sales Backend Private + Corporate
+| Abwicklung von Verkäufen für Privat- und Firmenkunden, 
+  ebenfalls -><<NGO,NGOs>>.
+| 
+
+
+| <<Sales_Contracts_DB, Sales & Contracts Database>>
+| Speichert Verkaufs- und Vertragsdaten.
+| Daten liegen verteilt in einer AS400 Datenbank sowie einer 
+  relationalen Datenbank. Arbeitet zusammen mit dem <<Optical-Archive>>.
+
+
+| <<Sales_Frontend_PK_GK, Sales Frontend Private + Corporate>> 
 | Benutzeroberfläche für Auswahl, Konfiguration + Kaufabwicklung von Produkten für Privat- und Firmenkunden.
 | 
+
 
 | Voucher
 | Gutscheine für Privatkunden, Anlegen von Gutscheinaktionen, Verwaltung individueller Gutscheine.
@@ -97,6 +131,26 @@ TODO
 ==== Sales Backend Government
 In C/C++ entwickeltes eCommerce System für Behörden. Enthält intern eine proprietäre Datenbank
 
+
+[[Sales_Contracts_DB]]
+==== Sales & Contracts Database
+Verkaufs- und Vertragsdaten gehören zu den wichtigsten Daten,
+mit denen VENOM arbeitet. 
+
+TODO: (verteiltes, inperformantes Persistenzkonzept)
+
+[WARNING]
+--
+Aus _historischen Gründen_ liegen die Verkaufs- und Vertragsdaten
+verteilt auf unterschiedlichen Speichermedien, was u.a. zu folgenden
+gravierenden Problemen führt:
+
+* mangelnde Verständlichkeit und somit stark überhöhte Aufwände
+bei notwendigen Erweiterungen oder Änderungen an Datenstrukturen
+oder Zugriffsoperationen (etwa: Reporting).
+* mangelnde Qualität (Performance, Robustheit, Verfügbarkeit, Sicherheit)
+bei sämtlichen -><<CRUD>>-Operationen auf diesen Daten.
+--
 
 [[Sales_Frontend_PK_GK]]
 ==== Sales Frontend Private + Corporate
