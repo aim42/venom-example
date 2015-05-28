@@ -89,7 +89,8 @@ Enthaltene Bausteine::
 | <<Sales_Contracts_DB, Sales & Contracts Database>>
 | Speichert Verkaufs- und Vertragsdaten.
 | Daten liegen verteilt in einer AS400 Datenbank sowie einer 
-  relationalen Datenbank. Arbeitet zusammen mit dem <<Optical-Archive>>.
+  relationalen Datenbank. Arbeitet zusammen mit dem <<Optical-Archive>>,
+  sowie der <<PK-GK-Datenbank>>.
 
 
 | <<Sales_Frontend_PK_GK, Sales Frontend Private + Corporate>> 
