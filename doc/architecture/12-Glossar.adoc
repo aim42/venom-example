@@ -42,7 +42,7 @@ vor der Beauftragung.
 | [[CRUD]] CRUD
 | _create, read, update, delete_, die vier Grundoperationen
   (persistenten) Daten und Datenstrukturen.
-  
+
 | [[ECI]] ECI 
 | _Export Control Interface_, Standardschnittstelle, über die Behörden 
  relevante Informationen über exportregulierte Projekte abrufen können, u.a. 
@@ -72,6 +72,11 @@ Organisationen/Vereine. Beispiele:
 http://www.drk.de/ueber-uns/auftrag.html[Rotes Kreuz^], 
 http://www.cap-anamur.org/[Cap Anamur^], 
 http://www.greenpeace.org/international/en/[Greenpeace^]. 
+
+| [[Partner]] Partner
+a| * _Dienstleister_ für kundenindividuellen Aufbau, Abnahme, Inbetriebnahme
+   * _Lieferanten_ für Produkte oder Bauteile
+
 
 | PoS 
 | _Point of Sales_, der Verkaufsort von Waren. Relevant beispielsweise
