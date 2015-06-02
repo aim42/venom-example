@@ -1,4 +1,14 @@
 
 == Laufzeitsicht
 
+TODO: Einige typische Anwendungsfälle erklären
 
+* Privatkunde konfiguriert Sitzmöbel
+
+* Privatkunde konfiguriert Schwrankwand 
+(mit Raumplan-Upload, Bilderkennung sowie 
+Unterstützung durch Expertensystem)
+
+* Geschäftskunde konfiguriert Transport- und Lagersystem
+
+* Marketing wertet Kampagne aus
