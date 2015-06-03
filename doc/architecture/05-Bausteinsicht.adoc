@@ -27,7 +27,11 @@ Enthaltene Bausteine::
   von sämtlichen Herstellern bzw. Lagerorten an den Zielort sicher.
 
 | Client Contracts 
-| TODO 
+| Verträge mit Privatkunden: 
+  Backoffice-Mitarbeiter können hier Verträge bearbeiten bzw. ändern, 
+  Mitarbeiter des Call-Centers können Teile von Verträgen einsehen.
+  Eingescannte Altverträge bzw. anwaltlicher Schriftverkehr wird über
+  eine Schnittstelle dieser Komponente gelesen - die eigentliche Speicherung erfolgt in der <<PK-GK-Datenbank>>.
 |
 
 | <<Configurator Shell>>| Fassade für unterschiedliche Konfiguratoren 
@@ -57,7 +61,7 @@ Enthaltene Bausteine::
 
 
 | Partner Management
-| TODO
+| Verwaltung von Partner
 |
 
 
@@ -123,14 +127,14 @@ werden. Abfragen auf Daten aus diesem Zeitraum sind grundsätzlich zu überprüf
 -- 
 
 ==== PK-GK-Datenbank
-TODO
+Relationale Datenbank zur Speicherung von Privat- und Firmenkunden-Daten.
 
 
 ==== Pricing Engine 
 TODO
 
 ==== Sales Backend Government
-In C/C++ entwickeltes eCommerce System für Behörden. Enthält intern eine proprietäre Datenbank
+In C/C++ entwickeltes eCommerce System für Behörden. 
 
 
 [[Sales_Contracts_DB]]
@@ -143,7 +147,8 @@ TODO: (verteiltes, inperformantes Persistenzkonzept)
 [WARNING]
 --
 Aus _historischen Gründen_ liegen die Verkaufs- und Vertragsdaten
-verteilt auf unterschiedlichen Speichermedien, was u.a. zu folgenden
+verteilt auf unterschiedlichen Speichermedien bzw. in unterschiedlichen
+Komponenten (u.a. Client-Contracts), was u.a. zu folgenden
 gravierenden Problemen führt:
 
 * mangelnde Verständlichkeit und somit stark überhöhte Aufwände
