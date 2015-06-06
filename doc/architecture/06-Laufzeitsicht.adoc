@@ -3,12 +3,20 @@
 
 TODO: Einige typische Anwendungsfälle erklären
 
-* Privatkunde konfiguriert Sitzmöbel
+=== Privatkunde kauft Sitzmöbel
+Einfacher Anwendungsfall, ohne Bilderkennung, sehr einfache
+Regelwerke, einfache Logistik- und Aufbauplanung, keine juristischen Einschränkungen
 
-* Privatkunde konfiguriert Schwrankwand 
+image::PK-buys-seating.png[title="Privatkunde kauft Sitzmöbel"]
+
+Erläuterung::
+
+
+* Privatkunde konfiguriert Schrankwand 
 (mit Raumplan-Upload, Bilderkennung sowie 
 Unterstützung durch Expertensystem)
 
 * Geschäftskunde konfiguriert Transport- und Lagersystem
 
 * Marketing wertet Kampagne aus
+
