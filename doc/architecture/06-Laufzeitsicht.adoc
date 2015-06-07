@@ -7,15 +7,42 @@ TODO: Einige typische Anwendungsfälle erklären
 Einfacher Anwendungsfall, ohne Bilderkennung, sehr einfache
 Regelwerke, einfache Logistik- und Aufbauplanung, keine juristischen Einschränkungen
 
-image::PK-buys-seating.png[title="Privatkunde kauft Sitzmöbel"]
 
 Erläuterung::
+. Anmelden (ohne Anmeldung ist kein Zugriff auf die Expertensysteme möglich)
+. Produktgruppe bzw. Produkt auswählen 
+. Passender grafischer Konfigurator wird mit den Produktdaten vorbereitet und angezeigt ('getProductConfigurator')
+. Benutzer konfiguriert Produkt, zwischenzeitlich ggfs. Zugriff auf zusätzliche Produktdaten, das Expertensystem oder die PricingEngine.
+. Bei Bedarf: VENOM schlägt Verbesserungen vor (etwa zur Verbesserung der Leistung bei identischem Preis oder Senkung des Preises bei identischer Leistung)
+. VENOM holt ein verbindliches Angebot für Aufbau- und Lieferleistung ein. 
 
 
-* Privatkunde konfiguriert Schrankwand 
-(mit Raumplan-Upload, Bilderkennung sowie 
-Unterstützung durch Expertensystem)
+image::PK-buys-seating.png[title="Privatkunde kauft Sitzmöbel"]
 
+=== Privatkunde konfiguriert Schrankwand 
+Mit Raumplan-Upload, Bilderkennung sowie umfangreicher 
+Unterstützung durch Expertensystem
+
+TODO
+
+=== Anpassung von VENOM an neue Produkteigenschaften
+Oftmals müssen bei Produktänderungen seitens der Hersteller
+auch die Konfiguratoren, Konfigurationsregeln oder
+die Benutzeroberfläche angepasst werden.
+
+Dazu sind (grob) folgende Schritte notwendig:
+
+. Anpassung der Produktparameter in den 
+.. betroffenen Sales Frontends (PK-GK oder eGov)
+.. Backends, insbesondere den dort enthaltenen Produktdatenbanken.
+
+
+[WARNING]
+--
+Aus Sicht einiger Fachbereiche von SAMM Inc, insbesondere dem Vertrieb (Delivery/Sales) dauern diese Anpassungen viel zu lange: Mindestens 80% aller Produktänderungen und -anpassungen sollten aus deren Sicht rein konfigurativ durch die Fachabteilungen bzw. Produktexperten selbst umsetzbar sein, komplett ohne Eingriff der IT. Stand heute sind sämtliche (!) Produktanpassungen auf IT-Entwicklung angewiesen. 
+--
+
+.TODO List
 * Geschäftskunde konfiguriert Transport- und Lagersystem
 
 * Marketing wertet Kampagne aus
