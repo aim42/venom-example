@@ -82,6 +82,10 @@ a| * _Dienstleister_ für kundenindividuellen Aufbau, Abnahme, Inbetriebnahme
 | _Point of Sales_, der Verkaufsort von Waren. Relevant beispielsweise
 für die Konfiguratoren von Apothekensystemen.
 
+| RPM
+| http://www.rpm.org/[Redhat Package Manager^]. 
+Aus der Originaldokumentation: "_The RPM Package Manager (RPM) is a command line driven package management system capable of installing, uninstalling, verifying, querying, and updating computer software packages._"
+
 | SAMM
 | Sell And Make Money. Eingetragenes Marken- und Warenzeichen (C) und (R) SAMM Inc. 
 
