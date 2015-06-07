@@ -82,11 +82,13 @@ Enthaltene Bausteine::
 | Ursprünglich von Blau&Partner, danach von ATLAS Software entwickeltes System für
   eCommerce mit Behörden und staatsnahen Organisationen. 
   Erweitert für -><<NPO,NPOs>>. Benötigt <<eGov-Shop>> als Frontend.
+  Die Datenhaltung der hierüber verkauften Produkte erfolgt
+  in einer C++ Objektdatenbank (http://www.eyedb.org/[EyeDB^]).
 
 
 | Sales Backend Private + Corporate
 | Abwicklung von Verkäufen für Privat- und Firmenkunden, 
-  ebenfalls -><<NGO,NGOs>>.
+  ebenfalls -><<NGO,NGOs>>. Enthält eine (relationale) Produktdatenbank auf Basis MySQL.
 | 
 
 
@@ -109,6 +111,14 @@ Enthaltene Bausteine::
 |===
 
 
+[WARNING]
+--
+Nach aktuellem Stand sind Produktdaten verteilt auf die beiden
+Sales-Backends. Einige Produkte bzw. Produktarten müssen in beiden
+Backends gepflegt werden - eine Konsolidierung der Datenbestände
+wird von den Fachbereichen Supply und Partner-Relations schon 
+seit langem eingefordert.
+--
 
 [[Optical-Archive]]
 ==== Optical Archive (Langzeitarchiv)
@@ -135,6 +145,10 @@ TODO
 
 ==== Sales Backend Government
 In C/C++ entwickeltes eCommerce System für Behörden. 
+Verwendet die Objektdatenbank (OODBMS) 
+http://www.eyedb.org/[EyeDB^] zur Speicherung von Daten.
+
+Anmerkung: Innerhalb der existieren seit längerer Zeit
 
 
 [[Sales_Contracts_DB]]
