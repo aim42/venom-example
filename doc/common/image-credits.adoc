@@ -6,7 +6,7 @@
 VENOM logo (c) 2015 by Gernot Starke. Use only with written permission.
 
 
-https://openclipart.org[openclipart.org] provides free cliparts. 
+https://openclipart.org[Openclipart.org] provides free cliparts. 
 Each artist at Openclipart releases all rights to the images they share at Openclipart. 
 Unlimited commercial use of these cliparts is allowed.
 
@@ -22,4 +22,4 @@ https://openclipart.org/user-detail/dear_theophilus[Dear-theophilus], used for t
 https://openclipart.org/user-detail/rubejar[rubejar], used for the example configurator
 
 * http://mygarden.gardena.com/de/[MyGarden von GARDENA(C)], a powerful online garden designer. It was used
-to create the <<garden-diagram>> in the example configurator section.
+to create the diagram in the example configurator section.
