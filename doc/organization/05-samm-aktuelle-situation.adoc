@@ -63,7 +63,9 @@ dieser Zeit signifikant an.
 * Im Konzern werden immer noch mehrere unterschiedliche Buchhaltungssysteme eingesetzt,
   woraus schwieriges und teilweise langsames _financial reporting_ resultiert. 
   Müsste in VENOM vereinheitlicht werden.
-
+* Die Speicherung von Produktdaten erfolgt in zwei unterschiedlichen Datenbanken
+(der relationalen MySQL-DB für PK/GK Kunden sowie der Objektdatenbank http://www.eyedb.org/[EyeDB]
+für E-Government Daten.  )
 
 [[abb-kpis-over-time]]
 image::05-KPI-over-time.png[title="Kritische Fehler und Entwicklungsgeschwindigkeit"]
