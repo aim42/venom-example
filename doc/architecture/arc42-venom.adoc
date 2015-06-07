@@ -5,6 +5,7 @@
 :toc-title: Inhaltsverzeichnis
 // toc-title definition MUST follow document title without blank line!
 
+
 // configure DE settings for asciidoc
 include::../common/asciidoctor-language-settings.config[]
 
