@@ -20,7 +20,7 @@ buildscript {
         classpath ( group: 'org.asciidoctor',
                     name: 'asciidoctor-gradle-plugin',
                     version: '1.5.2')
- //       classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.6'
+// classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.6'
 
     }
 }
@@ -51,12 +51,13 @@ asciidoctor {
             doctype: 'book',
             icons: 'font',
             toc: 'left',
-            sectlink: true,
-            sectanchors: true,
-            numbered: true,
+            sectlink : true,
+            sectanchors : true,
+            numbered : true,
             'source-highlighter': 'coderay',
-            'javaVersion': "$javaVersion",
-            'currentDate': "$currentDate"
+            //'imagesdir'         :'./images',
+            'javaVersion'       : "$javaVersion",
+            'currentDate'       : "$currentDate"
  
    ]
 
