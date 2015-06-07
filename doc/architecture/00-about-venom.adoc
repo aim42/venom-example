@@ -15,7 +15,9 @@ Es dient als Beispiel für:
 Ähnlichkeiten mit bestehenden Systemen sind rein zufällig und nicht beabsichtigt.
 ====
 
-[small]#Erstellt von Gernot Starke, icon:twitter[1x] https://twitter.com/gernotstarke[@gernotstarke]#
+// mention author
+include::../common/authored-by.adoc[]
+
 
 == Warum "VENOM"?
 

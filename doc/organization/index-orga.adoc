@@ -18,12 +18,16 @@ include::../common/header.adoc[]
 a|  [NOTE]
 ====
 Dieses Dokument beschreibt ein fiktives Unternehmen.
-Ähnlichkeiten mit bestehenden Systemen sind rein zufällig und nicht beabsichtigt.
-Entwickelt zur Illustration von http://aim42.org[aim42]-Praktiken.
+[small]#Ähnlichkeiten mit bestehenden Systemen sind rein zufällig und nicht beabsichtigt.
+Entwickelt zur Illustration von http://aim42.org[aim42^]-Praktiken sowie der Nutzung des http://arc42.de[arc42^]-Templates.# 
+
+include::../common/authored-by.adoc[]
 ====
 | image:aim42-logo.png[aim42, link={aim42-url}]
 |===
 
+
+// build status, version etc.
 include::../common/project-status.adoc[]
 
 
