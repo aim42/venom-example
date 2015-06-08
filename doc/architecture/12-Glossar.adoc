@@ -82,6 +82,9 @@ a| * _Dienstleister_ für kundenindividuellen Aufbau, Abnahme, Inbetriebnahme
 | _Point of Sales_, der Verkaufsort von Waren. Relevant beispielsweise
 für die Konfiguratoren von Apothekensystemen.
 
+| [[Puppet]] Puppet
+| http://www.infoq.com/articles/introduction-puppet[Puppet^] 
+ist ein (Open-Source) Werkzeug zur Systemkonfiguration. Wesentlicher Anwendungszweck ist die automatisierte Konfigurationen mehrerer Computer via Netzwerk, etwa zur Installation neuer Versionen. 
 
 | [[RPM]] RPM
 | http://www.rpm.org/[Redhat Package Manager^]. System zur Verteilung komplexer Softwaresysteme. 
