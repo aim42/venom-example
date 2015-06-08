@@ -82,12 +82,15 @@ a| * _Dienstleister_ für kundenindividuellen Aufbau, Abnahme, Inbetriebnahme
 | _Point of Sales_, der Verkaufsort von Waren. Relevant beispielsweise
 für die Konfiguratoren von Apothekensystemen.
 
-| RPM
-| http://www.rpm.org/[Redhat Package Manager^]. 
-Aus der Originaldokumentation: "_The RPM Package Manager (RPM) is a command line driven package management system capable of installing, uninstalling, verifying, querying, and updating computer software packages._"
+
+| [[RPM]] RPM
+| http://www.rpm.org/[Redhat Package Manager^]. System zur Verteilung komplexer Softwaresysteme. 
+Aus der Originaldokumentation: "_The RPM Package Manager (RPM) is a command line driven package management system capable of installing, uninstalling, verifying, querying, and updating computer software packages._". 
+Mehr zum Thema http://www.rpm.org/max-rpm/ch-intro-to-rpm.html#S1-INTRO-TO-RPM-WHAT-ARE-PACKAGES[_Packages_^]  
 
 | SAMM
-| Sell And Make Money. Eingetragenes Marken- und Warenzeichen (C) und (R) SAMM Inc. 
+| Sell And Make Money. Eingetragenes Marken- und Warenzeichen (C) und (R) SAMM Inc.
+image:samm-logo.png[Samm Inc., 100] 
 
 | Scoring
 | Variante der Bonitätsprüfung: Scores sind Wert von 1 bis 100, der die (statistische) Wahrscheinlichkeit angibt, 
