@@ -32,3 +32,8 @@ sind, aber in der Realität natürlich in ähnlicher Form vorkommen - hoffentlic
 gehäuft.
 
 Ganz normal halt... icon:smile-o[]
+
+
+[small]#Das VENOM System hat nichts mit der gleichnamigen Sicherheitslücke 
+http://venom.crowdstrike.com/[_Virtualized Environment Neglegted Operations Manipulation_^]) zu tun, bei der Angreifer über das virtuelle Floppy-Laufwerk Root-Zugriff auf den
+Virtualisierungs-Host erhalten können.#
