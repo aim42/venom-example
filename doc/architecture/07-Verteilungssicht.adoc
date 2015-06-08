@@ -1,5 +1,31 @@
 
 == Verteilungssicht
 
+Der IT-Betrieb liegt komplett in der Verantwortung der Sure Data Inc.,
+einer Beteiligung der SAMM Inc. Sure Data verantwortet ebenfalls die
+Details der Hardware-Infrastruktur.
 
+IT-Entwicklung paketiert und übergibt Releases von VENOM als <<RPM>>-Pakete.
+
+Teilweise kommt Puppet zum Einsatz.
+
+[WARNING]
+--
+Aus Sicht der IT-Entwicklung dauert die Inbetriebnahme übergebener Releases
+mit 7-14 Tage deutlich zu lange. Die Administratoren von Sure Data als
+VENOM Betreiber hingegen klagen über mangelhafte Release- und Betriebsdokumention
+sowie zu geringe Qualität. Sie müssen bei jedem Release hohe manuelle Aufwände
+in Test, Detailkonfiguration und Installation investieren.  
+--
+
+[WARNING]
+--
+Releases sind sowohl für SAMM wie Sure Data mit ständig steigenden
+manuellen Aufwänden verbunden, hochgradig fehleranfällig und für alle
+Beteiligten unbefriedigend und stressig.
+--
+
+=== Vorgehen
+
+Das Vorgehen beim Deployment ist etwa folgendes: 
 
