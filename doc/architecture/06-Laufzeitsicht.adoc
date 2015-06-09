@@ -19,22 +19,71 @@ Erläuterung::
 
 image::PK-buys-seating.png[title="Privatkunde kauft Sitzmöbel"]
 
-=== Privatkunde konfiguriert Schrankwand 
+[[PE-ermittelt-Verkaufspreis]]
+=== Pricing Engine ermittelt Verkaufspreis für GK
+
+Preise ergeben sich aus folgenden Parametern:
+
+* Verkaufspreisen der Einzelprodukte korrigiert um
+* Konfigurationsauf- bzw. Abschläge,
+* Pauschalen Rabatten aufgrund von Verträgen
+* Speziellen Rabatten wie 
+** Mengenstaffeln
+** Gutscheine (Voucher)
+** Kampagnen (seitens Marketing)
+** besondere Produktkombinationen
+* Scoring der Kunden (Risikoaufschläge für negative Historie, Abzüge für positive Historie)
+
+
+Voraussetzung::
+
+Produkt ist ausgewählt, Geschäftskunde befindet sich in Konfigurationsprozess.
+
+Erläuterung::
+
+Ablauf in der <<Pricing Engine>> ist etwa folgender:
+
+PricingEngine prüft:
+
+. (bei OrderFulfillment und SalesBackend-PK-GK) Kundenhistorie, 
+   um Scoring-Parameter zu ermitteln
+. (bei <<Configurator Shell>>)  
+.. ob Konfiguration gültig ist,
+.. welche aufschlags- bzw. abzugsfähigen Konfigurationsparameter vorliegen
+.. ob rabatt- oder aufschlagsfähige Produktkombinationen vorliegen
+. (via SalesBackend-PK-GK) Verträge, ob Rabatte möglich oder notwendig sind
+. Voucher (falls Kunde Gutschein angegeben hat)
+. (bei Marketing) ob aktuell Kampagnen für das jeweilige Produkt laufen
+
+Im Falle von _ungültigen_ Produkten oder Konfigurationen liefert die PricingEngine
+ein _NoPP_ (no-price-possible) als Ergebnis.
+
+=== Kunde konfiguriert Schrankwand 
 Mit Raumplan-Upload, Bilderkennung sowie umfangreicher 
-Unterstützung durch Expertensystem
+Unterstützung durch Expertensystem. Praktisch identisch für alle Kundensegmente,
+lediglich Preise werden anders berechnet.
 
 TODO
 
 === Anpassung von VENOM an neue Produkteigenschaften
 Oftmals müssen bei Produktänderungen seitens der Hersteller
 auch die Konfiguratoren, Konfigurationsregeln oder
-die Benutzeroberfläche angepasst werden.
+die Benutzeroberfläche angepasst werden (tritt 1-5 mal monatlich auf). 
 
-Dazu sind (grob) folgende Schritte notwendig:
+Dazu sind (grob) folgende Schritte seitens der Entwicklung notwendig:
 
 . Anpassung der Produktparameter in den 
-.. betroffenen Sales Frontends (PK-GK oder eGov)
-.. Backends, insbesondere den dort enthaltenen Produktdatenbanken.
+.. betroffenen Sales Frontends, PK-GK und/oder eGov (PHP und/oder JavaScript)
+.. Backends, insbesondere den dort enthaltenen Produktdatenbanken
+(Java, C/C++, SQL)
+. Anpassung der Preisparameter in der <<Pricing Engine>> (Haskell)
+. Erweiterung/Anpassung der Konfigurationsregeln in <<Configurator Shell>> (Drools + Java). 
+. Anpassung der Validierungsregeln (Prolog) 
+. Anpassen der automasierten und manuellen Testfälle/Testdaten.
+
+Manche dieser Produktupdates werden über Marketing-Kampagnen oder Gutscheine (Voucher) beworben, in seltenen Fällen sind dann Änderungen an den jeweiligen
+Komponenten nötig.
+
 
 
 [WARNING]
@@ -43,6 +92,7 @@ Aus Sicht einiger Fachbereiche von SAMM Inc, insbesondere dem Vertrieb (Delivery
 --
 
 .TODO List
+* Erstellen eines VENOM Releases
 * Geschäftskunde konfiguriert Transport- und Lagersystem
 
 * Marketing wertet Kampagne aus
