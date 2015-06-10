@@ -36,9 +36,10 @@ Passen die Lösungsansätze zu den Geschäftszielen von SAMM Inc.
 bzw. den <<Qualitätsziele, Qualitätszielen>> von VENOM? 
 --
 
-[WARNUNG]
+[WARNING]
 --
 Die starke Heterogenität der zugekauften Systeme führt 
 zu vielfältigen Integrationsproblemen, erfordert immens breites
-Know-How seitens der IT-Entwicklung, verlangsamt Entwicklungs- und Testzeiten.
+Know-How seitens der IT-Entwicklung, verlangsamt Entwicklungs- und Testzeiten. Die Anforderung
+nach hoher Entwicklungsgeschwindigkeit ist damit aus Sicht der Fachbereiche *nicht erfüllt*.
 --
