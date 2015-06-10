@@ -5,9 +5,11 @@ Der IT-Betrieb liegt komplett in der Verantwortung der Sure Data Inc.,
 einer Beteiligung der SAMM Inc. Sure Data verantwortet ebenfalls die
 Details der Hardware-Infrastruktur.
 
-IT-Entwicklung paketiert und übergibt Releases von VENOM als <<RPM>>-Pakete.
+* IT-Entwicklung paketiert und übergibt Releases von VENOM als <<RPM>>-Pakete.
+Dabei kommt <<Puppet>> zum Einsatz.
+* Releases werden langfristig geplant, aktuell 4-5 _Milestone-Releases_ pro Jahr.
+* Bugfixes werden ad-hoc an den Betrieb übergeben, seit 2014 fast wöchentlich.
 
-Teilweise kommt Puppet zum Einsatz.
 
 [WARNING]
 --
@@ -25,7 +27,5 @@ manuellen Aufwänden verbunden, hochgradig fehleranfällig und für alle
 Beteiligten unbefriedigend und stressig.
 --
 
-=== Vorgehen
 
-Das Vorgehen beim Deployment ist etwa folgendes: 
 
