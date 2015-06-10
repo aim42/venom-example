@@ -57,6 +57,14 @@ Im Falle von _ungültigen_ Produkten oder Konfigurationen liefert die PricingEng
 ein _NoPP_ (no-price-possible) als Ergebnis.
 
 
+[WARNING]
+--
+Da die PricingEngine intensiv mit anderen Bausteinen zusammenarbeiten muss, sind
+häufig Schnittstellenänderungen erforderlich. Aufgrund der Arbeitsteilung zwischen
+Berlin und Ungarn kommt es dabei immer wieder zu starken Zeitverzögerungen,
+da die ungarische Haskell-Entwicklerin nur halbtags arbeitet.
+--
+
 === Kunde konfiguriert Schrankwand 
 Mit Raumplan-Upload, Bilderkennung sowie umfangreicher 
 Unterstützung durch Expertensystem. Praktisch identisch für alle Kundensegmente,

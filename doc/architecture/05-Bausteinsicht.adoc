@@ -73,7 +73,7 @@ Enthaltene Bausteine::
 | Ermittelt Gesamtpreise für komplexe Produkte.
 | Faktisch ein Expertensystem zur Optimierung von Angebot und Nachfrage:
   Kombiniert Vertragsoptionen von Lieferanten/Partnern sowie Kunden, Rabatte, Gutscheine
-  sowie Verfügbarkeiten. 
+  sowie Verfügbarkeiten. Siehe auch  <<PE-ermittelt-Verkaufspreis, Ablauf der Preisfindung für GK>>.
 
 
 | Sales Backend Government
@@ -141,7 +141,22 @@ Relationale Datenbank zur Speicherung von Privat- und Firmenkunden-Daten.
 
 
 ==== Pricing Engine 
-TODO
+Die Pricing Engine ist eine in Haskell (rein funktional) implementierte Komponente
+zur finalen Bestimmung von Verkaufspreisen. Diese Preise werden Grundlage der 
+(rechtlich bindenden!) Angebote. Fehlerhafte Preisbestimmung kann daher zu gravierenden
+Verlusten oder zur Verärgerung von Kunden führen.
+
+Das <<PE-ermittelt-Verkaufspreis,Vorgehen zur Berechnung>> ist in der Laufzeitsicht
+skizziert.
+
+[WARNING]
+--
+Know-How zu Haskell ist in der Organisation fast ausschließlich in der ungarischen Tochterfirma
+Samm Magyar vorhanden. Der ursprüngliche Entwickler hat die Firma vor Jahren verlassen, eine 
+Kollegin hat sich recht gut eingearbeitet. Die deutschen Entwickler haben aufgrund der hohen
+Arbeitsbelastung durch andere Aufgaben in den letzten Jahren keine Zeit gefunden, die PricingEngine
+gut genug zu verstehen. 
+--
 
 ==== Sales Backend Government
 In C/C++ entwickeltes eCommerce System für Behörden. 
