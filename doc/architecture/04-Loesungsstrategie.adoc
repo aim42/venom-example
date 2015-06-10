@@ -17,6 +17,9 @@ a| Entwicklungsgeschwindigkeit: Neue Features sollen möglichst schnell umgesetz
 | Integration der spezialisierten Anwendungen der zugekauften Unternehmen. 
 
 
+| Kostengünstige Entwicklung
+| Wiederverwendung der Anwendungen der zugekauften Unternehmen.
+
 | Korrektheit: Es lassen sich nur sachlich/fachlich korrekte Produkte konfigurieren
 | Integration eines durch externalisierte Regeln konfigurier- und erweiterbaren
 Expertensystems (auf Basis der JBoss-Drools Regelengine).
@@ -31,4 +34,11 @@ Expertensystems (auf Basis der JBoss-Drools Regelengine).
 --
 Passen die Lösungsansätze zu den Geschäftszielen von SAMM Inc. 
 bzw. den <<Qualitätsziele, Qualitätszielen>> von VENOM? 
+--
+
+[WARNUNG]
+--
+Die starke Heterogenität der zugekauften Systeme führt 
+zu vielfältigen Integrationsproblemen, erfordert immens breites
+Know-How seitens der IT-Entwicklung, verlangsamt Entwicklungs- und Testzeiten.
 --
