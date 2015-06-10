@@ -1,27 +1,4 @@
 
 == Qualitätsszenarien
 
-
-
-
-=== Qualitätsbaum
-
-
-
-
-=== Bewertungsszenarien
-
-
-[options="header"]
-.Bewertungsszenarien
-|===
-|Szenario |Auslöser |Metrik
-
-|
-|
-|
-
-|
-|
-|
-|===
+TODO
