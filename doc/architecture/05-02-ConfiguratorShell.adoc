@@ -59,6 +59,13 @@ _Expertenwissen_ ist auf zwei komplett unterschiedliche Technologien verteilt (J
 Pflege und Erweiterung oftmals schwierig. Immer wieder lehnt der <<Configuration-Validator>> an sich gültige Konfigurationen als ungültig ab (meist aus vermeintlich wirtschaftlichen Gründen), andererseits wurden auch rechtlich ungültige
 Konfigurationen schon als valide bestätigt. Dies führte in
 der Vergangenheit zu fehlerhaften Angeboten und hohen Strafzahlungen.
+--
 
+[WARNING]
+--
+Da die Validierung von Produkten auch in die Preisbestimmung eingeht, führen fehlerhafte
+Validierungen möglicherweise zur Bestimmung abstrus falscher Verkaufspreise, bzw. sogar
+der (fehlerhaften) Ablehnung an sich gültiger Verkäufe - und damit auch zu
+entgangenen Umsätzen/Erträgen.
 --
 
