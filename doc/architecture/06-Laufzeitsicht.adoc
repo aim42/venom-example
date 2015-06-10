@@ -1,8 +1,6 @@
 
 == Laufzeitsicht
 
-TODO: Einige typische Anwendungsfälle erklären
-
 === Privatkunde kauft Sitzmöbel
 Einfacher Anwendungsfall, ohne Bilderkennung, sehr einfache
 Regelwerke, einfache Logistik- und Aufbauplanung, keine juristischen Einschränkungen
@@ -57,6 +55,7 @@ PricingEngine prüft:
 
 Im Falle von _ungültigen_ Produkten oder Konfigurationen liefert die PricingEngine
 ein _NoPP_ (no-price-possible) als Ergebnis.
+
 
 === Kunde konfiguriert Schrankwand 
 Mit Raumplan-Upload, Bilderkennung sowie umfangreicher 
