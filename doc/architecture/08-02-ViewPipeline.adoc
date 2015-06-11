@@ -1,5 +1,6 @@
-==== View Pipeline
-HTML-Views werden durch eine 
+=== View Pipeline
+HTML-Views werden durch eine Pipes&Filter Architektur basierend auf dem Apache-Cocoon
+Framework dargestellt.
 
 Aus der Dokumentation von http://cocoon.apache.org[Apache-Cocoon^]:
 ____
