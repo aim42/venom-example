@@ -30,7 +30,7 @@ Enthält sämtliche Verkaufsdaten, Angebote, Verträge, historisierte Stammdaten
 | Stammdaten von Privat- und Geschäftskunden, https://www.mysql.de/[MySQL^]
 
 | Sales Backend PK-GK
-| Primär relevant für Konfiguration von Queries innerhalb 
+| Primär relevant für Konfiguration von Queries innerhalb PK/GK.
 
 | Sales Backend Government (EyeDB)
 | Verkaufte Produkte, Konfigurationen, Preise sowie
@@ -46,6 +46,12 @@ Enthält sämtliche Verkaufsdaten, Angebote, Verträge, historisierte Stammdaten
 * typische Queries erläutern
 ** Suche nach alten Aufträgen eines Kunden
 ** Suche nach Verkäufen & Konfigurationen eines Produktes
-** Suche nach 
+** Suche nach dem Status ausfuhrbeschränkter Produkte/Aufträge
 
+==== Fachliches Datenmodell
+In einem informellen Brainstorming hat eine interne Arbeitsgruppe einen Vorschlag
+für ein grobes fachliches Datenmodell erarbeitet, das als Grundlage für eine
+zukünftige Konsolidierung der vorhandenen Datenquellen und -senken dienen könnte.
+
+image::VENOMBOM.png[title="Draft: Fachliches Datenmodell"]
 
