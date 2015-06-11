@@ -1,8 +1,6 @@
 
 == Konzepte
 
-=== Technische Konzepte
-
 include::08-02-Persistence.adoc[]
 
 include::08-02-ViewPipeline.adoc[]
