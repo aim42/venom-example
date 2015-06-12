@@ -24,7 +24,7 @@ a| Entwicklungsgeschwindigkeit: Neue Features sollen möglichst schnell umgesetz
 | Integration eines durch externalisierte Regeln konfigurier- und erweiterbaren
 Expertensystems (auf Basis der JBoss-Drools Regelengine).
  
-| Langfristige Auskunftsfähigkeit: Interne und berechtigte externe Anfragen nach AP-Daten können bis zu 15 Jahre nach Erzeugung dieser Daten innerhalb von maximal 30 Sekunden beantwortet werden. 
+| Langfristige Auskunftsfähigkeit: Interne und berechtigte externe Anfragen nach <<AP>>-Daten können bis zu 15 Jahre nach Erzeugung dieser Daten innerhalb von maximal 30 Sekunden beantwortet werden. 
 | Speicherung sämtlicher Angebots- und Auftragsdaten auf Write-Once Datenspeichern
 (zur Zeit: optische Speichermedien), so daß diese Daten niemals versehentlich gelöscht werden können.
 |===
