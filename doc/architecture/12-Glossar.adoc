@@ -9,7 +9,7 @@
 |Begriff
 |Definition
 
-| AP | -> Archivierungspflicht
+| [[AP]] AP | -> Archivierungspflicht
 
 | Archivierungspflicht
 | SAMM ist gesetzlich verpflichtet, Angebote, Aufträge und Abrechnungsinformationen
