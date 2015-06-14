@@ -61,13 +61,14 @@ Enthaltene Bausteine::
 
 
 | Partner Management
-| Verwaltung von Partner
+| Verwaltung von Partnern (Adressen, Kontaktdaten, Produktfamilien,
+  )
 |
 
 
 | <<PK-GK-Datenbank>> 
 | Verwaltung der Stammdaten von Privat- und Geschäftskunden
-| CRUD-Operationen, Backup, selbständige Archivierung der relevanten Daten im <<Optical Archive, Langzeitarchiv>>.
+| CRUD-Operationen, Backup, selbständige Archivierung der relevanten Daten im <<Optical-Archive, Langzeitarchiv>>.
 
 | <<Pricing Engine>> 
 | Ermittelt Gesamtpreise für komplexe Produkte.
@@ -94,8 +95,7 @@ Enthaltene Bausteine::
 
 | <<Sales_Contracts_DB, Sales & Contracts Database>>
 | Speichert Verkaufs- und Vertragsdaten.
-| Daten liegen verteilt in einer AS400 Datenbank sowie einer 
-  relationalen Datenbank. Arbeitet zusammen mit dem <<Optical-Archive>>,
+| Daten liegen in einer relationalen Datenbank. Arbeitet zusammen mit dem <<Optical-Archive>>,
   sowie der <<PK-GK-Datenbank>>.
 
 
