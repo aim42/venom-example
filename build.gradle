@@ -10,12 +10,18 @@ buildscript {
     // these are the BUILDSCRIPT deps - required to execute
     // build targets and -operations
     repositories {
+      maven {
+            url "https://plugins.gradle.org/m2/"
+        }
         jcenter()
-        //mavenCentral()
     }
 
     dependencies {
 //        classpath ('org.aim42:HtmlSanityCheck-gradle-plugin:0.5.3')
+
+        classpath ( group: 'gradle.plugin.org.aim42',
+                    name: 'htmlSanityCheck',
+                    version: '0.9.3')
 
         classpath ( group: 'org.asciidoctor',
                     name: 'asciidoctor-gradle-plugin',
@@ -33,6 +39,11 @@ ext {
     currentDate = new Date().format("d. MMM yyyy")
 }
 
+
+// where HTMLSanityCheck checking results ares stored
+def checkingResultsPath = "$buildDir/report/htmlchecks"
+
+
 // =========== asciidoctor stuff ===============
 apply plugin: 'org.asciidoctor.convert'
 
@@ -44,9 +55,9 @@ asciidoctor {
 
     sources  { include "architecture/arc42-venom.adoc",
                        "organization/index-orga.adoc" }
-   
+
     backends 'html5' //,'pdf'
-   
+
     attributes = [
             doctype: 'book',
             icons: 'font',
@@ -58,7 +69,7 @@ asciidoctor {
             //'imagesdir'         :'./images',
             'javaVersion'       : "$javaVersion",
             'currentDate'       : "$currentDate"
- 
+
    ]
 
 
@@ -84,4 +95,27 @@ asciidoctor {
 
 defaultTasks 'asciidoctor'
 
+// ========================================================
+apply plugin: 'org.aim42.htmlSanityCheck'
 
+
+htmlSanityCheck {
+
+    // ensure asciidoctor->html runs first
+    // and images are copied to build directory
+
+    dependsOn asciidoctor
+
+    sourceDir = new File( "$targetDir/html5" )
+
+    // files to check, in Set-notation
+    sourceDocuments = [ "architecture/arc42-venom.html",
+                        "organization/index-orga.html"]
+
+    // where to put results of sanityChecks...
+    checkingResultsDir = new File( checkingResultsPath )
+
+    // false: restrict checks to local resources
+    // true:  also check external (e.g. http, https...) links.
+    checkExternalLinks = false
+}
