@@ -133,8 +133,8 @@ daher auch nicht geliefert.
 Codequalität (u.a. Verletzung von Coding-Styleguides oder -Standards
 oder Abweichung von etablierten technischen Konzepten) und fordern
 Überarbeitung oder Neuentwicklung von Komponenten.
-* IT-Management hält diese Beschwerden den Ausdruck der Ablehnung der
-Sourcing-Prozesse.
+* IT-Management interpretiert diese Beschwerden primär als Ablehnung der
+Sourcing-Prozesse (!!)
 --
 
 

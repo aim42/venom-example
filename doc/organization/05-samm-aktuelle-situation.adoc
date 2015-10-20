@@ -49,6 +49,8 @@ Transaktionen, Konfiguration sowie Benutzeroberflächen.
 ** übermäßige Komplexität im gesamten System.
 ** übermäßige Heterogenität, unter anderem aufgrund der vielen Altsysteme.
 ** unzureichende automatische Tests, geringe Menge an Unit-Tests.
+** massiv unzureichende innere Konsistenz und Standardisierung innerhalb von Softwarearchitektur und -entwicklung (_rotten architecture_)
+
 
 === Situation der IT
 (hier bezogen auf die _customer facing systems_, insbesondere VENOM)
