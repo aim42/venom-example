@@ -19,7 +19,7 @@ Es dient als Beispiel für:
 include::../common/authored-by.adoc[]
 
 
-== Warum "VENOM"?
+=== Warum "VENOM"?
 
 _venom (Engl.): Gift, Giftigkeit, Bosheit._
 
@@ -35,5 +35,5 @@ Ganz normal halt... icon:smile-o[]
 
 
 [small]#Das VENOM System hat nichts mit der gleichnamigen Sicherheitslücke 
-http://venom.crowdstrike.com/[_Virtualized Environment Neglegted Operations Manipulation_^]) zu tun, bei der Angreifer über das virtuelle Floppy-Laufwerk Root-Zugriff auf den
-Virtualisierungs-Host erhalten können.#
+http://venom.crowdstrike.com/[_Virtualized Environment Neglegted Operations Manipulation_^]) zu tun, bei der Angreifer über das virtuelle Floppy-Laufwerk unbeschränkten Zugriff (_root-access_) auf den
+Virtualisierungshost erhalten können.#
