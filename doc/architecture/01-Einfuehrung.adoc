@@ -31,11 +31,11 @@ branchenorientierten Vertragsmodellen.
 Beispiel 1:: Für die Lagerung von Medikamenten in Apotheken werden immer mehr
 Lagerautomaten verwendet: Rezepte werden an der Theke eingescannt und der Lagerautomat
 transportiert die entsprechende Medikamentenpackung automatisch an den Point-of-Sale.
-Solche Systeme kosten direkt beim Hersteller 150.000-500.000 Euro. SAMM kann
-in vielen Fällen solche Systeme für 90.000-300.000 an die Apotheken verkaufen.
+Solche Systeme kosten direkt beim Hersteller 150.000-500.000€. SAMM kann
+in vielen Fällen solche Systeme für 90.000-300.000€ an die Apotheken verkaufen.
 
-Beispiel 2:: Komplettausstattungen spezieller Großküchen (etwa für Krankenhäusern,
-  im Justizvollzug, Betriebskantinen) bietet SAMM in der Regel ca. 30% günstiger
+Beispiel 2:: Komplettausstattungen spezieller Großküchen (etwa für Krankenhäuser,
+  im Justizvollzug oder für Betriebskantinen) bietet SAMM in der Regel ca. 30% günstiger
   als Möbelhäuser oder Hersteller an.
 
 Beispiel 3:: Für Einzelpersonen ist die Konfiguration spezieller Schränke oder Regale
