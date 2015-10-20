@@ -33,9 +33,11 @@ http://www.escpeurope.eu/uploads/media/WP_58_Bick.pdf[Ecole Supérieure de Comme
 (_cross border business process outsourcing_)
 
 * Hohe laufende Aufwände (Personal und Geld) in ertragsarmen Bereichen
-* Inakzeptabel schlechte _time to market_ bei innovativen Produktideen
- (bereits mehrfach wurden hervorragende Ansätze zu langsam umgesetzt, so
- dass Mitbewerber ähnliche Ideen bereits am Markt hatten).
+
+* anchor:time-to-market[] Inakzeptabel schlechte _time-to-market_ bei innovativen Produktideen:
+ Bereits mehrfach wurden hervorragende Ansätze derartig langsam umgesetzt,
+ dass Mitbewerber ähnliche Ideen schneller am Markt hatten und SAMM somit
+ den Markteintritt verpasst hatte.
 
 * Gemeinsam mit internationalen Technologiepartnern und eigenen Experten
 einige vielversprechende Innovationen kurz vor Markt-/Produktionsreife:
@@ -59,6 +61,8 @@ Abbildung <<abb-kpis-over-time>> in kompakter Form zusammen:
 
 * Die Entwicklungsgeschwindigkeit der CS-Teams ist in den letzten Jahren
 kontinuierlich gesunken.
+** Dadurch steigen die Kosten-pro-fachlichem-Feature kontinuierlich an
+** siehe auch <<time-to-market, Time-to-Market>>
 * Die Menge kritischer Produktionsfehler (Prio-1, d.h. System war für Endkunden
 oder prozessrelevante Beteiligte zu Geschäftszeiten nicht verfügbar) stieg in
 dieser Zeit signifikant an.

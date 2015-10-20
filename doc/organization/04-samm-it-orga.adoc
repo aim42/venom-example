@@ -138,6 +138,6 @@ Sourcing-Prozesse (!!)
 --
 
 
-=== IT-Betrieb
-
-Siehe auch VENOM-Architekturdokumentation, insbesondere Verteilungssicht.
+//=== IT-Betrieb
+//
+//Siehe auch VENOM-Architekturdokumentation, insbesondere Verteilungssicht.
