@@ -13,7 +13,7 @@ Der Stereotyp &laquo;Category&raquo; bezeichnet Schnittstellen, zu denen es unte
 Varianten oder Anbieter gibt.
 
 
-[options="header", cols="2,5"]
+[options="header", cols="2,7"]
 .Fachlicher Kontext
 |===
 | Nachbar | Beschreibung
