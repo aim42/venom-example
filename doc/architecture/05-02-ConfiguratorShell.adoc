@@ -28,7 +28,7 @@ http://www.apoforma.com/Home/Unternehmen.aspx[ApoForma^] und anderen.
 |
 
 | ConfigMaster
-|
+| Im wesentlichen der Dispatcher und Koordinator für die unterschiedlichen Anwendungsfälle.
 |
 
 | [[ConfEx]] Configuration Expert (ConfEx)

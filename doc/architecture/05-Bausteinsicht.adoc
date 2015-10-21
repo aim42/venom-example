@@ -16,7 +16,7 @@ der wesentlichen Anwendungsfälle, massiv geprägt durch die <<Historie>> von VE
 
 Enthaltene Bausteine::
 
-[cols="1,4,4" options="header"]
+[cols="1,4,6" options="header"]
 .VENOM Whitebox (Level 1)
 |===
 | Name | Verantwortung | Bemerkung 
@@ -36,7 +36,8 @@ Enthaltene Bausteine::
 
 | <<Configurator Shell>>| Fassade für unterschiedliche Konfiguratoren 
 | Die Konfiguratoren werden in die unterschiedlichen Sales-Frontends integriert. 
-  Enthält auch die (regelgestützten) Expertensysteme und die ->CTI Anbindung.
+  Enthält auch die (regelgestützten) Expertensysteme und die ->CTI Anbindung. Hauptsächlich Java,
+  relevante Teile in Prolog und Flash(tm).
 
 
 | [[eGovShop]] eGov Shop
@@ -48,7 +49,8 @@ Enthaltene Bausteine::
 
 | Marketing Campaigns
 | TODO
-|
+a| vergibt Gutscheine an bestimmte Kundensegmente (z.B. Treueboni, Ferien-
+oder Saisonaktionen, Rabattkarten). 
 
 | <<Optical-Archive>> 
 | Archivsystem für revisionssichere Langzeitspeicherung 
@@ -56,14 +58,19 @@ Enthaltene Bausteine::
 
 
 | Order & Fulfillment
-| TODO
+a| * Erzeugung verbindlicher Aufträge (_order_) an Lieferanten und Partner, nachdem
+seitens Kunden verbindliche Bestellungen eingeganten sind.
+   * Tracking des Erfüllungsstatus der Aufträge, insbesondere Wareneingänge, Transport-
+    und Lieferbestätigungen, Bestätigungen seitens der Partner bezüglich Aufbau und Abnahme
+   * Auslösung der Rechnungsstellungen gemäß individueller Vertragsgestaltung
+   (Akkonto-/Vorabzahlungen, Teil- oder Ratenzahlung, Rechnung nach Auftrag u.ä.) 
 |
 
 
 | Partner Management
-| Verwaltung von Partnern (Adressen, Kontaktdaten, Produktfamilien,
-  )
-|
+| Verwaltung von Partnern (Adressen, Kontaktdaten) sowie Zuordnung zu bestimmten Produktkategorien
+in VENOM.
+| 
 
 
 | <<PK-GK-Datenbank>> 
