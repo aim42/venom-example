@@ -216,7 +216,7 @@ Inbetriebnahme wenig Aufwand haben.
 
 
 
-[cols="2,3,4" options="header"]
+[cols="2,4,5" options="header"]
 .Stakeholder des Systems
 |===
 |Rolle | Beschreibung | Intention  
@@ -257,6 +257,6 @@ a|  * Produktdaten und deren Konfigurationsparameter pflegen
 
 | Behörde (extern)
 | Beispielsweise Exportkontrollbehörde
-|
+| Rechercheaufträge müssen innerhalb von 48h beantwortet werden.
 
 |===
