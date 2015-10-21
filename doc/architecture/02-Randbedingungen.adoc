@@ -1,3 +1,7 @@
 == Randbedingungen
 
-TODO
+* Aufgrund des Outsourcingvertrages müssen mindestens 30% der gesamten Entwicklungsaufgaben,
+insbesondere Implementierungsaufgaben, an die Near- und Offshorepartner (SAMM Magyar in Ungarn bzw. SAMM Urdu Ltd in Pakistan) vergeben werden.
+* Java, JavaScript, Html5 und PHP sind die bevorzugten Technologien für neue Features.
+* C, C++, Cobol, PL/1 sowie Haskell sollten für neue Features möglichst nicht mehr verwendet werden.
+
