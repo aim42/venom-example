@@ -16,6 +16,7 @@ buildscript {
         jcenter()
     }
 
+    
     dependencies {
 //        classpath ('org.aim42:HtmlSanityCheck-gradle-plugin:0.5.3')
 
@@ -25,9 +26,7 @@ buildscript {
 
         classpath ( group: 'org.asciidoctor',
                     name: 'asciidoctor-gradle-plugin',
-                    version: '1.5.2')
-// classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.6'
-
+                    version: '1.5.3')
     }
 }
 
@@ -46,6 +45,10 @@ def checkingResultsPath = "$buildDir/report/htmlchecks"
 
 // =========== asciidoctor stuff ===============
 apply plugin: 'org.asciidoctor.convert'
+
+asciidoctorj {
+       version = '1.5.4'
+    }
 
 asciidoctor {
     outputDir = file( targetDir )

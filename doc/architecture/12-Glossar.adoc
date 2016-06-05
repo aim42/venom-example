@@ -67,7 +67,7 @@ die nach einer Petition der Mitarbeiter seit 2002 nicht mehr verwendet wird.
   als Unternehmen geführt werden. 
 
 | [[NPO]] NPO 
-a| _non profit organization_, Hilfsorganisationen oder gemeinnützige
+e| _non profit organization_, Hilfsorganisationen oder gemeinnützige
 Organisationen/Vereine. Beispiele: 
 http://www.drk.de/ueber-uns/auftrag.html[Rotes Kreuz^], 
 http://www.cap-anamur.org/[Cap Anamur^], 
