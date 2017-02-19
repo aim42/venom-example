@@ -1,3 +1,4 @@
+ifndef::imagesdir[:imagesdir: images]
 
 == Kontextabgrenzung
 
@@ -9,7 +10,7 @@ Die folgenden Unterkapitel zeigen die Einbettung unseres Systems in seine Umgebu
 
 image::03-context.png["Business-Context", title="Business Context"]
 
-Der Stereotyp &laquo;Category&raquo; bezeichnet Schnittstellen, zu denen es unterschiedliche Ausprägungen,
+Der Stereotyp «Category» bezeichnet Schnittstellen, zu denen es unterschiedliche Ausprägungen,
 Varianten oder Anbieter gibt.
 
 

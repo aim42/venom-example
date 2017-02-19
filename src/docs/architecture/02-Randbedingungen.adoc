@@ -1,3 +1,5 @@
+ifndef::imagesdir[:imagesdir: images]
+
 == Randbedingungen
 
 * Aufgrund des Outsourcingvertrages müssen mindestens 30% der gesamten Entwicklungsaufgaben,

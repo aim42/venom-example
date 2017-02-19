@@ -28,7 +28,7 @@ buildNumber.properties
 .gradle/
 .idea/
 *.iml
-src/docs/.asciidoctor/
+.asciidoctor/
 
 VENOM.vpp.working
 *.vpp~*

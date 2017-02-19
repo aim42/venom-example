@@ -1,3 +1,5 @@
+ifndef::imagesdir[:imagesdir: images]
+
 === View Pipeline
 HTML-Views werden durch eine Pipes&Filter Architektur basierend auf dem Apache-Cocoon
 Framework dargestellt.
