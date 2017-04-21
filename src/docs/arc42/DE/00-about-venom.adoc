@@ -17,7 +17,7 @@ Es dient als Beispiel für:
 ====
 
 // mention author
-include::../common/authored-by.adoc[]
+include::../../common/authored-by.adoc[]
 
 
 === Warum "VENOM"?

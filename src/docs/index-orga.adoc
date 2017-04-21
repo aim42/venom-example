@@ -4,10 +4,10 @@
 :toc-title: Inhaltsverzeichnis
 
 // configure DE settings for asciidoc
-include::../common/asciidoctor-language-settings.config[]
+include::common/asciidoctor-language-settings.config[]
 
 // common header stuff
-include::../common/header.adoc[]
+include::common/header.adoc[]
 
 
 
@@ -21,58 +21,58 @@ Dieses Dokument beschreibt ein fiktives Unternehmen.
 [small]#Ähnlichkeiten mit bestehenden Systemen sind rein zufällig und nicht beabsichtigt.
 Entwickelt zur Illustration von http://aim42.org[aim42^]-Praktiken sowie der Nutzung des http://arc42.de[arc42^]-Templates.# 
 
-include::../common/authored-by.adoc[]
+include::common/authored-by.adoc[]
 ====
 | image:aim42-logo.png[aim42, link={aim42-url}]
 |===
 
 
 // build status, version etc.
-include::../common/project-status.adoc[]
+include::common/project-status.adoc[]
 
 
 // numbering from here on
 :numbered:
 
 // Firmenportrait
-include::01-samm-portrait.adoc[]
+include::organization/01-samm-portrait.adoc[]
 
 
 // Firmengeschichte
 // =================
-include::013-samm-history.adoc[]
+include::organization/013-samm-history.adoc[]
 
 
 // Geschäftsziele
 // =================
-include::02-geschaeftsziele.adoc[]
+include::organization/02-geschaeftsziele.adoc[]
 
 
 == Unternehmensstruktur
 
 // Geschäftsprozesse (Überblick)
-include::031-samm-business-processes.adoc[]
+include::organization/031-samm-business-processes.adoc[]
 
 
 // Aufbauorganisation
-include::032-samm-aufbauorganisation.adoc[]
+include::organization/032-samm-aufbauorganisation.adoc[]
 
 
 // IT-Organisation (Prozesse, Personal)
-include::04-samm-it-orga.adoc[]
+include::organization/04-samm-it-orga.adoc[]
 
 
 // Aktuelle Situation
-include::05-samm-aktuelle-situation.adoc[]
+include::organization/05-samm-aktuelle-situation.adoc[]
 
 
 
 // Anhaenge
 // =============================================================
 // give credits to openclipart-authors!
-include::../common/image-credits.adoc[]
+include::common/image-credits.adoc[]
 
 // license
-include::../common/license.adoc[]
+include::common/license.adoc[]
 
 

@@ -11,7 +11,7 @@ ____
 
 [small]#(nachfolgende Abbildung stammt aus dem Cocoon-Projekt)#
 
-image::08-cocoon-pipeline-schematic.gif["Cocoon Pipeline", title="Cocoon Pipeline (schematisch)"]
+image::08-cocoon-pipeline-schematic.png["Cocoon Pipeline", title="Cocoon Pipeline (schematisch)"]
 
 
 [WARNING]
