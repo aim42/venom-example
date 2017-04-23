@@ -7,10 +7,16 @@ Die SAMM Inc. (kurz für "sell and make money") ist seit Jahren erfolgreich
 mit dem Verkauf so genannter _komplexer Produkte_: Dazu zählen beispielsweise:
 
 * Büroausstattungen, Schrank- und Regalsysteme
-* Bürobedarf
 * Küchen und Großküchen
+* Ausstattungen für Spezialläger (beispielsweise für Apotheken oder Labore)
+* Badezimmerausstattungen und Armaturen
+* Gartenanlagen (Teiche, Wasserspiele, Bewässerungsanlagen, Pflanzenarrangements)
+* Feuer- und Sicherheitszubehör (Sprinkler-, Schliess- und Alarmanlagen)
+
+sowie zusätzlich
+
+* Bürobedarf
 * Küchenbedarf
-* Ausstattungen für Spezialläger (beispielsweise für Apotheken oder Labore )
 
 Zu den Kunden von SAMM zählen kleine und mittlere Unternehmen, Vereine,
 Behörden, Organisationen und Einzelpersonen.
@@ -46,8 +52,8 @@ ein typisches SAMM-Erfolgsgeschäft.
 
 === Das VENOM-System
 
-==== Historie 
-VENOM wurde über die letzten Jahre durch die SAMM Inc. und ihre Vorgängerunternehmen entwickelt. 
+==== Historie
+VENOM wurde über die letzten Jahre durch die SAMM Inc. und ihre Vorgängerunternehmen entwickelt.
 Das System in seiner heutigen Form ist aus einer Vielzahl von Vorgängersystemen entstanden, erklärbar im Wesentlichen durch die Unternehmenshistorie
 (siehe dazu die SAMM Inc. Unternehmensinformation)
 
@@ -104,30 +110,30 @@ weitere notwendige Details sind bekannt, ebenso Parameter der Apotheke (Beschaff
 ==== Beispiele noch nicht umgesetzter Anforderungen
 
 * Ein Privatkunde konfiguriert ein Produkt. VENOM zeigt eine
-  Liste möglicher Alternativen (Vorschlags- oder Empfehlungsliste), 
+  Liste möglicher Alternativen (Vorschlags- oder Empfehlungsliste),
   ähnlich der "Andere Kunden kauften auch..." Übersicht anderer Webshops.
 
 * Ein Kunde lädt einen Grundrissplan hoch. VENOM unterbreitet
   aus gestalterischer Sicht attraktive Vorschläge, sowohl
-  als Grundriss wie auch als photorealistische 3D-Darstellung. 
+  als Grundriss wie auch als photorealistische 3D-Darstellung.
 
 
 === Qualitätsziele
 
-Sind nur in Auszügen explizit bekannt. 
+Sind nur in Auszügen explizit bekannt.
 
 [options="header", cols="1,2,6"]
 .Qualitätsziele
 |===
 | Prio | Qualitätsmerkmal | Szenario
-| 1    | Entwicklungsgeschwindigkeit 
+| 1    | Entwicklungsgeschwindigkeit
 a| Neue Features sollen möglichst schnell umgesetzt werden können:
 
 * _einfache_ Features innerhalb von 2-3 Tagen
 * _mittlere_ Features innerhalb von 5-15 Tagen
 * Behebung kritischer Fehler innerhalb von 4-8 Stunden
 
-| 1 | Korrektheit  
+| 1 | Korrektheit
     | Es lassen sich nur sachlich/fachlich korrekte Produkte konfigurieren,
       d.h. solche, die technisch durchführbar/herstellbar sind: Benutzer
       können unmögliche/illegale Produkte nicht konfigurieren bzw. nicht bestellen.
@@ -137,13 +143,13 @@ a| Neue Features sollen möglichst schnell umgesetzt werden können:
       Ausgaben für IT-Leistungen (Entwicklung und Betrieb) möglichst gering gehalten
       werden.
 
-| 2 | Performance  
+| 2 | Performance
     | VENOM gibt eine verbindliche Auskünfte über Herstellbarkeit, Lieferbarkeit
       und Inbetriebnehmbarkeit für 90% aller Produkte/Anfragen innerhalb von maximal 60 Sekunden. Die übrigen 10% (schwierige) Anfragen können zeitverzögert oder
-      vorläufig innerhalb von 4h erfolgen. 
+      vorläufig innerhalb von 4h erfolgen.
 
 | 3 |  Auskunftsfähigkeit
-    | VENOM bearbeitet einige archivierungspflichtige Typen von Daten (AP-Daten). 
+    | VENOM bearbeitet einige archivierungspflichtige Typen von Daten (AP-Daten).
       Interne und berechtigte externe Anfragen nach AP-Daten können bis zu 15 Jahre nach Erzeugung dieser Daten innerhalb von maximal 30 Sekunden beantwortet werden. Dies betrifft insbesondere -><<BAFA>> oder -><<ECI>> Anfragen.
 |===
 
@@ -181,12 +187,12 @@ image::00-venom-users.jpg[title="Benutzer und Benutzergruppen von VENOM"]
 | User Group
 | (UGs) Benutzergruppen, wie etwa Vereine, Interessensgemeinschaften, Parteien.
 | Wollen für ihre Mitglieder Vorkonfigurationen erstellen, die diese dann
-  fertig konfigurieren und zu Sonderkonditionen erwerben können. 
-| 
+  fertig konfigurieren und zu Sonderkonditionen erwerben können.
+|
 
 | Corporate User
 | (CUs) Unternehmen oder kommerzielle Organisationen
-| Möchten komplexe Produkte fehlerfrei konfigurieren und mit Aufbau und 
+| Möchten komplexe Produkte fehlerfrei konfigurieren und mit Aufbau und
 Inbetriebnahme wenig Aufwand haben.
 |
 
@@ -195,20 +201,20 @@ Inbetriebnahme wenig Aufwand haben.
 | Möchten komplexe Produkte gesetzeskonform konfigurieren und durch
   speziell zertifizierte oder lizenzierte Handwerker/Unternehmen aufbauen
   und in Betrieb nehmen lassen.
-| Für GUs gelten für viele Produkte andere vertragliche Regelungen, 
+| Für GUs gelten für viele Produkte andere vertragliche Regelungen,
   Rabatte und Preise, auch für die Vergabe von Aufbau-Leistungen.
 
 | Operations
 | Betreiber und Administratoren von VENOM
-| Flexibilität hinsichtlich Betriebsumgebung, Betriebssystem. 
+| Flexibilität hinsichtlich Betriebsumgebung, Betriebssystem.
   Möglichst wenig Aufwand bei technischer Administration und Inbetriebnahmen.
   Technisches Monitoring.
 |
 
 | SAMM interne User
 | Buchhaltung, Controlling, Einkauf, Logistik, Marketing, Vertrieb, Legal,
-| 
-| 
+|
+|
 
 |===
 
@@ -219,9 +225,9 @@ Inbetriebnahme wenig Aufwand haben.
 [cols="2,4,5" options="header"]
 .Stakeholder des Systems
 |===
-|Rolle | Beschreibung | Intention  
+|Rolle | Beschreibung | Intention
 | Fachbereich
-| 
+|
 | VENOM ist essentielle Grundlage für die Wertschöpfung des Unternehmens,
   daher für die Fachbereiche immens wichtig.
 
@@ -230,7 +236,7 @@ Inbetriebnahme wenig Aufwand haben.
 a| * geringe Aufwände für Administration und Betrieb von VENOM
    * hohe Entwicklungseffizienz
    * hoher Standardisierungsgrad in der Entwicklung, um Outsourcing besser
-     zu unterstützen oder überhaupt zu ermöglichen 
+     zu unterstützen oder überhaupt zu ermöglichen
 
 | Entwickler (intern)
 |
