@@ -45,7 +45,7 @@ erheblich.
 
 === Umsatz- und Ertragsstruktur
 
-![](/images/Finance-KPIs.jpg)
+image:Finance-KPIs.jpg[]
 
 SAMM Inc. erzielt pro Mitarbeiter erheblich mehr Umsatz bzw. Ertrag
 als beispielsweise die großen DAX Unternehmen. Dies liegt unter anderem

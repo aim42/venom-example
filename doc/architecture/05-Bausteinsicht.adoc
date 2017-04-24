@@ -35,9 +35,9 @@ Enthaltene Bausteine::
 |
 
 | <<Configurator Shell>>| Fassade für unterschiedliche Konfiguratoren
-| Die Konfiguratoren werden in die unterschiedlichen Sales-Frontends integriert.
-  Enthält auch die (regelgestützten) Expertensysteme und die ->CTI Anbindung. Hauptsächlich Java,
-  relevante Teile in Prolog und Flash(tm).
+| Die Konfiguratoren werden aus Meta-Beschreibungen generiert und in die unterschiedlichen
+  Sales-Frontends integriert. Enthält auch die (regelgestützten) Expertensysteme und
+  die ->CTI Anbindung. Hauptsächlich Java, relevante Teile in Prolog, Python, PHP und Flash(tm).
 
 
 | [[eGovShop]] eGov Shop
