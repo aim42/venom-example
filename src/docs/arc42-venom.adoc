@@ -1,7 +1,10 @@
 // header file for the VENOM example
 // ====================================
+ifndef::imagesdir[:imagesdir: images]
 
-= image:../images/venom-logo-small.jpg[] VENOM Architecture Documentation
+= image:logo.jpg[width="100", height="102"] VENOM: Architecture Documentation
+Author: Gernot Starke @gernotstarke
+
 :toc-title: Inhaltsverzeichnis
 // toc-title definition MUST follow document title without blank line!
 

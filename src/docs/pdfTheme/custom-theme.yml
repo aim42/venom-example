@@ -50,9 +50,11 @@ header:
   height: 0.75in
   line_height: 1
   recto_content:
-    center: '{document-title}'
+    right: 'image:logo.jpg[width="30"]'
+    center: 'VENOM: {document-subtitle}'
   verso_content:
-    center: '{document-title}'
+    left: 'image:logo.jpg[width="30"]'
+    center: 'VENOM: {document-subtitle}'
 footer:
   height: 0.75in
   line_height: 1
