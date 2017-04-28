@@ -1,8 +1,10 @@
-ifndef::imagesdir[:imagesdir: images]
+ifndef::imagesdir[:imagesdir: ../../images]
 
 ==	Einführung
 
 === Das Unternehmen
+
+include::../../organization/01-samm-portrait.adoc[tags=aboutSam]
 
 Die SAMM Inc. (kurz für "sell and make money") ist seit Jahren erfolgreich
 mit dem Verkauf so genannter _komplexer Produkte_: Dazu zählen beispielsweise:
@@ -159,7 +161,7 @@ _mittel_:: Neue Produkte, die ähnlich zu bestehenden sind. Umfangreiche neue Ge
 
 _groß_:: Grundlegende neue Funktionen (beispielsweise der <<Gartenplanung, Garten-Konfigurator>>)
 
-[]
+<<<<
 
 === Stakeholder
 
@@ -167,55 +169,18 @@ _groß_:: Grundlegende neue Funktionen (beispielsweise der <<Gartenplanung, Gart
 
 
 [[figure-users]]
-image::00-venom-users.jpg[title="Benutzer und Benutzergruppen von VENOM"]
+image::ea/1.5_Stakeholder.png[title="Benutzer und Benutzergruppen von VENOM"]
 
-
-[cols="2,5,2,2" options="header"]
+[cols="2,3,3,2" options="header"]
 .Benutzer und Benutzergruppen
 |===
 | Rolle | Beschreibung | Ziel  | Bemerkungen
-| Private User
-| Privatkunden, die für ihren Eigenbedarf Produkte konfigurieren und kaufen.
-| Möchten Produkte hoher Qualität zu günstigen Preisen kaufen
-|
 
-| User Group
-| (UGs) Benutzergruppen, wie etwa Vereine, Interessensgemeinschaften, Parteien.
-| Wollen für ihre Mitglieder Vorkonfigurationen erstellen, die diese dann
-  fertig konfigurieren und zu Sonderkonditionen erwerben können. 
-| 
-
-| Corporate User
-| (CUs) Unternehmen oder kommerzielle Organisationen
-| Möchten komplexe Produkte fehlerfrei konfigurieren und mit Aufbau und 
-Inbetriebnahme wenig Aufwand haben.
-|
-
-| Government User
-| (GUs) Behörden oder regierungsnahe Organisationen
-| Möchten komplexe Produkte gesetzeskonform konfigurieren und durch
-  speziell zertifizierte oder lizenzierte Handwerker/Unternehmen aufbauen
-  und in Betrieb nehmen lassen.
-| Für GUs gelten für viele Produkte andere vertragliche Regelungen, 
-  Rabatte und Preise, auch für die Vergabe von Aufbau-Leistungen.
-
-| Operations
-| Betreiber und Administratoren von VENOM
-| Flexibilität hinsichtlich Betriebsumgebung, Betriebssystem. 
-  Möglichst wenig Aufwand bei technischer Administration und Inbetriebnahmen.
-  Technisches Monitoring.
-|
-
-| SAMM interne User
-| Buchhaltung, Controlling, Einkauf, Logistik, Marketing, Vertrieb, Legal,
-| 
-| 
+include::../../ea/stakeholder.ad[]
 
 |===
 
 ==== Sonstige Stakeholder
-
-
 
 [cols="2,4,5" options="header"]
 .Stakeholder des Systems

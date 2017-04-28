@@ -1,3 +1,4 @@
+ifndef::imagesdir[:imagesdir: images]
 
 == Firmenportrait
 
@@ -5,13 +6,16 @@
 [cols="1,4" options=""]
 |===
 | image:samm-logo.png[Samm Inc., 150]
-a|Die SAMM Inc. ist ein international operierendes Handelsunternehmen mit
+a|
+// tag::aboutSam[]
+Die SAMM Inc. ist ein international operierendes Handelsunternehmen mit
 Verwaltungssitz in Durango, Colorado (USA) und Firmenzentrale in Berlin.
 SAMM Inc. bündelt die Kompetenzen von über 500 Spezialisten,
 welche die gesamte vertriebliche und technische Bandbreite abdecken: Von der
 effizienten Beschaffung und Partnerbetreuung über die Konzipierung und
 Einführung zukunftsweisender Konfigurations- und Verkaufsprozesse bis
 hin zu kundenorientiertem Vertrieb und Service.
+// end::aboutSam[]
 |===
 
 Mit mehr als 1.900.000 Kunden weltweit, davon 900.000 in Europa ist die SAMM Inc.

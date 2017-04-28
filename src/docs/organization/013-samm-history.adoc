@@ -1,3 +1,4 @@
+ifndef::imagesdir[:imagesdir: images]
 
 === Historie der SAMM Inc.
 Die SAMM Inc. blickt auf eine langjährige und bewegte Geschichte zurück, geprägt

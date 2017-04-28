@@ -9,9 +9,6 @@ buildscript {
         classpath 'org.apache.httpcomponents:httpmime:4.5.1'
         classpath 'org.jsoup:jsoup:1.9.1'
 
-// comment this out this if you want to use the ruby versions of the plugins
-        classpath 'org.asciidoctor:asciidoctorj-diagram:1.5.4'
-// /comment
     }
 }
 
@@ -52,7 +49,8 @@ dependencies {
  /uncomment
 **/
 dependencies {
-    asciidoctor 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.14'
+    asciidoctor 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.15'
+    asciidoctor 'org.asciidoctor:asciidoctorj-diagram:1.5.4'
 }
 
 asciidoctorj {
@@ -93,18 +91,19 @@ asciidoctor {
     sourceDir = file('src/docs')
     sources {
         include 'arc42-venom.adoc'
-        include 'organization/index-orga.adoc'
+        include 'index-orga.adoc'
     }
     outputDir = file('build/docs')
     // good to see what the build is doing...
     logDocuments = true
+
+    requires = ['asciidoctor-diagram']
 
 /**
  uncomment this if you want to use the ruby versions of the plugins
     // the jrubyPrepare tasks takes care of loading the gems
     dependsOn jrubyPrepare
     // the asciidoctor task depends on this gem
-    requires = ['asciidoctor-diagram']
     gemPath = jrubyPrepare.outputDir
  /uncomment
  **/
@@ -270,11 +269,11 @@ htmlSanityCheck {
 
     dependsOn asciidoctor
 
-    sourceDir = new File( "$targetDir/html5" )
+    sourceDir = new File( "$targetDir/docs/html5" )
 
     // files to check, in Set-notation
-    sourceDocuments = [ "architecture/arc42-venom.html",
-                        "organization/index-orga.html"]
+    sourceDocuments = [ "arc42-venom.html",
+                        "index-orga.html"]
 
     // where to put results of sanityChecks...
     checkingResultsDir = new File( checkingResultsPath )
