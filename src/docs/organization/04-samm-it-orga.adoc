@@ -109,7 +109,7 @@ Leistungen geschlossen:
  ** Diverse externe Agenturen erhalten Aufträge zu UI-Screen-Design auf Basis
     fachlicher Grobspezifikationen.
  ** Diverse externe Entwicklungsunternehmen und IT-Beratungsunternehmen erhalten (auf Basis t&m (_time and material_) sowie Gewerke Konzeptions- und Entwicklungsaufträge).
-* Der <<IT-Betrieb>> liegt komplett in der Verantwortung der <<Sure_Data_Inc, Sure Data Inc.>>
+* Der IT-Betrieb liegt komplett in der Verantwortung der <<Sure_Data_Inc, Sure Data Inc.>>
 
 Diese Verträge umfassen für die internen Töchter die Verpflichtung,
 sämtliche Entwicklungsartefakte (Entwurfsdokumente, Quellcode, evtl. Wiki,

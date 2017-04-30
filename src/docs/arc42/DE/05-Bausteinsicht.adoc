@@ -90,7 +90,7 @@ in VENOM.
   Organisationen sowie Speicherung der entsprechenden Daten
 | Ursprünglich von Blau&Partner, danach von ATLAS Software entwickeltes System für
   eCommerce mit Behörden und staatsnahen Organisationen. 
-  Erweitert für -><<NPO,NPOs>>. Benötigt <<eGov-Shop>> als Frontend.
+  Erweitert für -><<NPO,NPOs>>. Benötigt eGov-Shop als Frontend.
   Die Datenhaltung der hierüber verkauften Produkte erfolgt
   in einer C++ Objektdatenbank (http://www.eyedb.org/[EyeDB^]).
 
