@@ -21,7 +21,7 @@ image::08-persistence.png["Persistenz", title="Persistenz"]
 | ATLAS (DB2/400) 
 | Auf einer http://de.wikipedia.org/wiki/System_i[IBM-Hardware AS/400^] laufendes DB2/400. Aus dem 2003-2005 übernommenen ATLAS/2 System liegen hierauf noch Kunden-, Vertrags- und Abrechnungsdaten.  
 
-a| Optisches Archiv 
+| Optisches Archiv 
 | Langzeitspeicher, basiert auf http://www.emc.com/data-protection/centera.htm[EMC-Centera^].
 Enthält sämtliche Verkaufsdaten, Angebote, Verträge, historisierte Stammdaten.
 

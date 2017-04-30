@@ -9,11 +9,11 @@ Nachfolgend einige Lösungsansätze, teilweise für die vorab genannten
 .Lösungsansätze für wichtige Szenarien
 |===
 | Szenario | Lösungsansatz
-a| Entwicklungsgeschwindigkeit: Neue Features sollen möglichst schnell umgesetzt werden können:
+| Entwicklungsgeschwindigkeit: Neue Features sollen möglichst schnell umgesetzt werden können:
 
-* _einfache_ Features innerhalb von 2-3 Tagen
-* _mittlere_ Features innerhalb von 5-15 Tagen
-* Behebung kritischer Fehler innerhalb von 4-8 Stunden
+- _einfache_ Features innerhalb von 2-3 Tagen +
+- _mittlere_ Features innerhalb von 5-15 Tagen +
+- Behebung kritischer Fehler innerhalb von 4-8 Stunden
 
 | Integration der spezialisierten Anwendungen der zugekauften Unternehmen. 
 

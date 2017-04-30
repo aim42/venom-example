@@ -75,8 +75,8 @@ http://www.cap-anamur.org/[Cap Anamur^],
 http://www.greenpeace.org/international/en/[Greenpeace^]. 
 
 | [[Partner]] Partner
-a| * _Dienstleister_ für kundenindividuellen Aufbau, Abnahme, Inbetriebnahme
-   * _Lieferanten_ für Produkte oder Bauteile
+| - _Dienstleister_ für kundenindividuellen Aufbau, Abnahme, Inbetriebnahme +
+   - _Lieferanten_ für Produkte oder Bauteile
 
 
 | PoS 
@@ -111,16 +111,16 @@ wäre somit die Überbrückung einer deutlich größeren Höhendifferenz.
 | t&m | _time and material_, Beauftragung von Dienstleistungen nach Zeit- und/oder Aufwand.
 
 | [[Validierung]] Validierung
-a| Überprüfung einer Konfiguration nach drei Kategorien: 
+| Überprüfung einer Konfiguration nach drei Kategorien:
 
-* technische Korrektheit, z.B. Tragfähigkeit, Statik oä.
-* juristische Korrektheit, insbesondere Einhaltung gesetzlicher Rahmenbedingungen und -><<ECI>> Compliance 
-* betriebswirtschaftliche Prüfung, ob Ertrag, Risiko und
+- technische Korrektheit, z.B. Tragfähigkeit, Statik oä. +
+- juristische Korrektheit, insbesondere Einhaltung gesetzlicher Rahmenbedingungen und -><<ECI>> Compliance +
+- betriebswirtschaftliche Prüfung, ob Ertrag, Risiko und
   Kundenkategorie in sinnvollen Relationen zueinander stehen.
 
 Durchgeführt durch den <<Configuration-Validator>>.
 
 | VENOM 
-a| *VE*ry *NO*r*M*al system, das integrierte ERP, CRM und Abrechnungssystem der ->SAMM Inc.
+| VEry NOrMal system, das integrierte ERP, CRM und Abrechnungssystem der ->SAMM Inc.
 
 |===

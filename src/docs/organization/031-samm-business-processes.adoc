@@ -17,49 +17,49 @@ image::org-processes-overview.png["Geschäftsprozesse (Überblick)", title="Gesc
 | Planung & Logistik | Logistics  |
 
 | Beschaffung        | Supply
-a| * Bestellungen bei Partnern, insbesondere für Großgeräte
-   * Materialbeschaffung für eigene Produkte
-   * Beauftragung von Dienstleistern für kundenindividuellen Aufbau, Abnahme, Inbetriebnahme
+| - Bestellungen bei Partnern, insbesondere für Großgeräte +
+  - Materialbeschaffung für eigene Produkte +
+  - Beauftragung von Dienstleistern für kundenindividuellen Aufbau, Abnahme, Inbetriebnahme
 
 | Lieferung          | Delivery
-a| * Durchführung von Aufbauprojekten
-   * Organisation von Transporten, insbesondere _just-in-time_ Anlieferung durch mehrere Zulieferer
-   * Organisation von Zwischenlagerung
+| - Durchführung von Aufbauprojekten +
+  - Organisation von Transporten, insbesondere _just-in-time_ Anlieferung durch mehrere Zulieferer +
+  - Organisation von Zwischenlagerung
 
 | Kundendienst       | Post Sales
-a| * Call-Center/Hotline für Supportanfragen
-   * Call-Center für Konfiguration
-   * Identifikation und Angebot spezifischer Zusatzleistungen _after sales_
+| - Call-Center/Hotline für Supportanfragen +
+  - Call-Center für Konfiguration +
+  - Identifikation und Angebot spezifischer Zusatzleistungen _after sales_
 
 | Finanzen           | Finance
-a| * Budgetierung
-   * Controlling
-   * Unternehmensbeteiligungen
+| - Budgetierung +
+  - Controlling +
+  - Unternehmensbeteiligungen
 
 | Recht              | Legal
-a| * Genehmigungsverfahren
-   * Vertragsprüfung
-   * Patentverwaltung
+| - Genehmigungsverfahren +
+  - Vertragsprüfung +
+  - Patentverwaltung
 | Personal           | HR
-a| * Personalakquise
-   * Aus- und Weiterbildung
-   * Personalentwicklung
-   * Lohn/Gehalt
+| - Personalakquise +
+  - Aus- und Weiterbildung +
+  - Personalentwicklung +
+  - Lohn/Gehalt
 | IT                 |
-a| * Softwareentwicklung der internen Systeme
-     ** Kommunikationssysteme
-     ** Buchhaltung
-     ** Financial Reporting
-     ** Data-Warehouse (Business-Intelligence)
+| - Softwareentwicklung der internen Systeme +
+     -- Kommunikationssysteme +
+     -- Buchhaltung +
+     -- Financial Reporting +
+     -- Data-Warehouse (Business-Intelligence) +
 
-   * Entwicklung und Betrieb der externen Systeme
-     ** VENOM (zentrales Vertriebssystem)
-   ** interaktive Webdienste
-     ** B2B Kommunikation, insbesondere Partner-APIs
-     ** Mobile Systeme
-     ** Reporting für Behörden und Kontrollgremien
-   * Integration von Drittsystemen (insb. Konfiguratoren)
-   * Konzeption, Beschaffung, Aufbau, Betrieb der internen genutzten
+   - Entwicklung und Betrieb der externen Systeme +
+     -- VENOM (zentrales Vertriebssystem) +
+     -- interaktive Webdienste +
+     -- B2B Kommunikation, insbesondere Partner-APIs +
+     -- Mobile Systeme +
+     -- Reporting für Behörden und Kontrollgremien +
+   - Integration von Drittsystemen (insb. Konfiguratoren) +
+   - Konzeption, Beschaffung, Aufbau, Betrieb der internen genutzten
      Hardware (Arbeitsplatzrechner, Intranet, Kommunikationssysteme)
 | Research/Innovationen
 | Entwickelt neue Produktideen bis zur Marktreife, Patentierung

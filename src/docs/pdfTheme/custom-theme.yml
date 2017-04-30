@@ -68,3 +68,7 @@ caption:
   align: center
   font_color: #FF0000
   font_size: 10
+table:
+  font_size: $base_font_size / 2
+table_head:
+  font_size: $base_font_size / 1.5

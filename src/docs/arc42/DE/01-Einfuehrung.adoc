@@ -124,11 +124,11 @@ Sind nur in Auszügen explizit bekannt.
 |===
 | Prio | Qualitätsmerkmal | Szenario
 | 1    | Entwicklungsgeschwindigkeit 
-a| Neue Features sollen möglichst schnell umgesetzt werden können:
+| Neue Features sollen möglichst schnell umgesetzt werden können:
 
-* _einfache_ Features innerhalb von 2-3 Tagen
-* _mittlere_ Features innerhalb von 5-15 Tagen
-* Behebung kritischer Fehler innerhalb von 4-8 Stunden
+- _einfache_ Features innerhalb von 2-3 Tagen +
+- _mittlere_ Features innerhalb von 5-15 Tagen +
+- Behebung kritischer Fehler innerhalb von 4-8 Stunden
 
 | 1 | Korrektheit  
     | Es lassen sich nur sachlich/fachlich korrekte Produkte konfigurieren,
@@ -193,10 +193,10 @@ include::../../ea/stakeholder.ad[]
 
 | IT-Management
 |
-a| * geringe Aufwände für Administration und Betrieb von VENOM
-   * hohe Entwicklungseffizienz
-   * hoher Standardisierungsgrad in der Entwicklung, um Outsourcing besser
-     zu unterstützen oder überhaupt zu ermöglichen 
+| - geringe Aufwände für Administration und Betrieb von VENOM +
+  - hohe Entwicklungseffizienz +
+  - hoher Standardisierungsgrad in der Entwicklung, um Outsourcing besser
+    zu unterstützen oder überhaupt zu ermöglichen
 
 | Entwickler (intern)
 |
@@ -209,16 +209,16 @@ a| * geringe Aufwände für Administration und Betrieb von VENOM
 | Externe Partner
 | beispielsweise Handwerker, Monteure oder Ingenieure, die zu Aufbau bzw. Inbetriebnahme
 der komplexen Produkte benötigt und durch VENOM vermittelt werden
-a| * möglichst einfache (d.h. standardisierte) Anbindung an VENOM
-   * Anbindung an VENOM soll mit der jeweils branchenüblichen Standardsoftware
+| - möglichst einfache (d.h. standardisierte) Anbindung an VENOM +
+  - Anbindung an VENOM soll mit der jeweils branchenüblichen Standardsoftware
      (einfache ERP-Systeme, Groupware- und Einsatzplanungswerkzeugen) möglich sein
 
 | Produkthersteller
 | beispielsweise Hersteller von Möbeln, gewerblichen Küchengeräten,
 Transportanlagen, Lagersystemen
-a|  * Produktdaten und deren Konfigurationsparameter pflegen
-   * Preis- und Lieferbarkeitsinformationen hinterlegen oder ändern
-   * Durchführbarkeit und Konditionen von Sonderkonfigurationen bearbeiten
+|  - Produktdaten und deren Konfigurationsparameter pflegen +
+   - Preis- und Lieferbarkeitsinformationen hinterlegen oder ändern +
+   - Durchführbarkeit und Konditionen von Sonderkonfigurationen bearbeiten
 
 
 | Behörde (extern)

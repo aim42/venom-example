@@ -50,7 +50,7 @@ Enthaltene Bausteine::
 
 | Marketing Campaigns
 | TODO
-a| vergibt Gutscheine an bestimmte Kundensegmente (z.B. Treueboni, Ferien-
+| vergibt Gutscheine an bestimmte Kundensegmente (z.B. Treueboni, Ferien-
 oder Saisonaktionen, Rabattkarten). 
 
 | <<Optical-Archive>> 
@@ -59,11 +59,11 @@ oder Saisonaktionen, Rabattkarten).
 
 
 | Order & Fulfillment
-a| * Erzeugung verbindlicher Aufträge (_order_) an Lieferanten und Partner, nachdem
-seitens Kunden verbindliche Bestellungen eingeganten sind.
-   * Tracking des Erfüllungsstatus der Aufträge, insbesondere Wareneingänge, Transport-
-    und Lieferbestätigungen, Bestätigungen seitens der Partner bezüglich Aufbau und Abnahme
-   * Auslösung der Rechnungsstellungen gemäß individueller Vertragsgestaltung
+| - Erzeugung verbindlicher Aufträge (_order_) an Lieferanten und Partner, nachdem
+seitens Kunden verbindliche Bestellungen eingeganten sind. +
+  - Tracking des Erfüllungsstatus der Aufträge, insbesondere Wareneingänge, Transport-
+    und Lieferbestätigungen, Bestätigungen seitens der Partner bezüglich Aufbau und Abnahme +
+  - Auslösung der Rechnungsstellungen gemäß individueller Vertragsgestaltung
    (Akkonto-/Vorabzahlungen, Teil- oder Ratenzahlung, Rechnung nach Auftrag u.ä.) 
 |
 

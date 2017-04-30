@@ -10,9 +10,6 @@ include::common/asciidoctor-language-settings.config[]
 include::common/header.adoc[]
 
 
-
-
-
 [cols="4,1" options=""]
 |===
 a|  [NOTE]
