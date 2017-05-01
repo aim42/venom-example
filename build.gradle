@@ -1,6 +1,9 @@
 /*
  * This build file is part of the docToolchain
  */
+
+import org.asciidoctor.gradle.AsciidoctorTask
+
 buildscript {
     dependencies {
         //for the exportJiraIssues Task
@@ -57,21 +60,23 @@ asciidoctorj {
  version = '1.5.4'
 }
 
-asciidoctor {
+// common settings for asciidoctor
+// this is needed for PDF generation with plantUML
+tasks.withType(AsciidoctorTask) { docTask ->
     outputDir = file(targetDir)
     sourceDir = file(srcDir)
 
-    backends 'html5', 'pdf'
     attributes \
         'pdf-stylesdir': 'pdfTheme',
-        'pdf-style': 'custom',
-        'source-highlighter': 'coderay',
-        'imagesdir': 'images',
-        'toc': 'left',
-        'icons': 'font',
-	'javaVersion'         : "$javaVersion",
-        'currentDate'         : "$currentDate",
-	'allow-uri-read'      : true
+            'pdf-style': 'custom',
+            'source-highlighter': 'coderay',
+            'imagesdir': 'images',
+            'toc': 'left',
+            'icons': 'font',
+            'javaVersion'         : "$javaVersion",
+            'currentDate'         : "$currentDate",
+            'allow-uri-read'      : true,
+            'plantUMLDir'         : file('build/docs/images/plantUML/').path
     // Here we can add the code for extensions we write.
     extensions {
         inlinemacro (name: "jira") {
@@ -101,13 +106,25 @@ asciidoctor {
 
 /**
  uncomment this if you want to use the ruby versions of the plugins
-    // the jrubyPrepare tasks takes care of loading the gems
-    dependsOn jrubyPrepare
-    // the asciidoctor task depends on this gem
-    gemPath = jrubyPrepare.outputDir
+ // the jrubyPrepare tasks takes care of loading the gems
+ dependsOn jrubyPrepare
+ // the asciidoctor task depends on this gem
+ gemPath = jrubyPrepare.outputDir
  /uncomment
  **/
 
+}
+
+task generateHTML (
+        type: AsciidoctorTask,
+        description: 'use html5 as asciidoc backend') {
+    backends = ['html5']
+}
+
+task generatePDF (
+        type: AsciidoctorTask,
+        description: 'use html5 as asciidoc backend') {
+    backends = ['pdf']
 }
 
 task streamingExecute(
