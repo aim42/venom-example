@@ -6,6 +6,8 @@
 // enable table-of-contents
 :toc:
 
+:icons: font
+
 :caution-caption: Achtung
 :important-caption: Wichtig
 :note-caption: Hinweis

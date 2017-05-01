@@ -15,7 +15,75 @@ Erläuterung::
 . Bei Bedarf: VENOM schlägt Verbesserungen vor (etwa zur Verbesserung der Leistung bei identischem Preis oder Senkung des Preises bei identischer Leistung)
 . VENOM holt ein verbindliches Angebot für Aufbau- und Lieferleistung ein. 
 
-
+.Privatkunde kauft Sitzmöbel
+[plantuml,"{plantUMLDir}/sequence-PK-buys-seating",png]
+----
+!pragma graphviz_dot jdot
+autonumber
+actor PK
+participant "sales Frontend\nPrivate & Corporate" as FE
+participant "sales Backend\nPrivate & Corporate" as BE
+participant "pK-GK\nDatabase" as DB
+participant "Configurator\nShell" as configurator
+participant "Pricing\nEngine" as pricing
+participant "Order\n& Fulfillment" as order
+participant "ATLAS\nLogistics" as atlas
+activate PK
+PK -> FE : authenticate
+activate FE
+FE -> BE : verifyUserId
+activate BE
+FE -> BE : getContract
+BE -> DB : getContract
+activate DB
+deactivate DB
+deactivate BE
+PK -> FE : selectProductGroup
+FE -> BE : selectProductGroup
+activate BE
+BE -> configurator : getProductConfigurator
+deactivate FE
+activate configurator
+deactivate BE
+PK -> FE : configure
+deactivate configurator
+activate FE
+FE -> BE : checkConfiguration
+activate BE
+BE -> configurator : checkConfiguration
+activate configurator
+configurator -> configurator : validateConfiguration
+BE -> DB : saveValidatedProduct
+activate DB
+deactivate DB
+deactivate BE
+deactivate FE
+configurator -> configurator : optimizeConfiguration
+configurator -> BE : proposeOptimazations
+activate BE
+configurator -> pricing : getPrice
+activate pricing
+deactivate pricing
+deactivate configurator
+BE -> FE : displayOptimizations
+activate FE
+deactivate FE
+deactivate BE
+PK -> FE : finishConfiguration
+activate FE
+FE -> BE : getQuoteWithLogistics
+activate BE
+BE -> order :
+activate order
+order -> atlas: getLogisticsOffer
+activate atlas
+deactivate atlas
+deactivate order
+deactivate BE
+PK -> FE : finalizeOrder
+deactivate FE
+deactivate PK
+----
 image::PK-buys-seating.png[title="Privatkunde kauft Sitzmöbel"]
 
 [[PE-ermittelt-Verkaufspreis]]

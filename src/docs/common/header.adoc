@@ -4,11 +4,6 @@
 
 :project: venom-example
 
-
-// where are images located?
-:imagesdir: ../images
-:icons: font
-
 :project-url: https://github.com/aim42/{project}
 
 :project-issues: https://github.com/aim42/{project}/issues
