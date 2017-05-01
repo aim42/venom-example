@@ -16,7 +16,7 @@ Erläuterung::
 . VENOM holt ein verbindliches Angebot für Aufbau- und Lieferleistung ein. 
 
 .Privatkunde kauft Sitzmöbel
-[plantuml,"{plantUMLDir}/sequence-PK-buys-seating",png]
+[plantuml,"{plantUMLDir}sequence-PK-buys-seating",png]
 ----
 !pragma graphviz_dot jdot
 autonumber
@@ -84,7 +84,6 @@ PK -> FE : finalizeOrder
 deactivate FE
 deactivate PK
 ----
-image::PK-buys-seating.png[title="Privatkunde kauft Sitzmöbel"]
 
 [[PE-ermittelt-Verkaufspreis]]
 === Pricing Engine ermittelt Verkaufspreis für GK
