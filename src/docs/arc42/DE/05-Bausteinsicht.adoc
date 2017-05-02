@@ -8,24 +8,26 @@ ifndef::imagesdir[:imagesdir: ../../images]
 
 image::VENOM-Level-1.png["Whitebox-Gesamtsystem", title="Whitebox Gesamtsystem"]
 
-Begründung::
+==== Begründung
 
 Primär _funktionale Zerlegung_ zur Trennung von Verantwortlichkeiten entlang
 der wesentlichen Anwendungsfälle, massiv geprägt durch die <<Historie>> von VENOM.
 
 
 
-Enthaltene Bausteine::
+==== Enthaltene Bausteine
 
 [cols="1,4,6" options="header"]
 .VENOM Whitebox (Level 1)
 |===
 | Name | Verantwortung | Bemerkung 
 
-| ATLAS Logistik | Teil- bzw. vollautomatische Generierung und Vergabe von Transportaufträgen
+| ATLAS Logistik
+| Teil- bzw. vollautomatische Generierung und Vergabe von Transportaufträgen
 | Früher eine Standardsoftware, heute für VENOM und die SAMM Produktpalette optimierte
   Lösung. Stellt die zeitgerechte Lieferung sämtlicher für ein Produkt benötigten Teile
   von sämtlichen Herstellern bzw. Lagerorten an den Zielort sicher.
+
 
 | Client Contracts 
 | Verträge mit Privatkunden: 
@@ -35,7 +37,8 @@ Enthaltene Bausteine::
   eine Schnittstelle dieser Komponente gelesen - die eigentliche Speicherung erfolgt in der <<PK-GK-Datenbank>>.
 |
 
-| <<Configurator Shell>>| Fassade für unterschiedliche Konfiguratoren 
+| <<Configurator Shell>>
+| Fassade für unterschiedliche Konfiguratoren
 | Die Konfiguratoren werden in die unterschiedlichen Sales-Frontends integriert. 
   Enthält auch die (regelgestützten) Expertensysteme und die ->CTI Anbindung. Hauptsächlich Java,
   relevante Teile in Prolog und Flash(tm).

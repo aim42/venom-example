@@ -4,12 +4,14 @@ ifndef::imagesdir[:imagesdir: ../../images]
 
 image::configurator-shell.png["Configurator-Shell", title="Configurator-Shell"]
 
-Begründung:: Mehrere der enthaltenen Bausteine sind durch Akquisitionen zu VENOM gekommen, und mit Hilfe manuell erstellter Adapterkomponenten integriert. Das Expertensystem wurde ursprünglich 1998 durch die ROT AG entwickelt und seither ständig erweitert. Um 2002 erste Integration der 
+===== Begründung
+
+Mehrere der enthaltenen Bausteine sind durch Akquisitionen zu VENOM gekommen, und mit Hilfe manuell erstellter Adapterkomponenten integriert. Das Expertensystem wurde ursprünglich 1998 durch die ROT AG entwickelt und seither ständig erweitert. Um 2002 erste Integration der
 formalen <<Configuration-Validator, Validierung>>.
 
 
 
-Enthaltene Bausteine::
+===== Enthaltene Bausteine
 
 [cols="1,4,4" options="header"]
 .Configurator-Shell (Whitebox, Level-2)
