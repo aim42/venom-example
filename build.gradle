@@ -96,6 +96,7 @@ tasks.withType(AsciidoctorTask) { docTask ->
     sources {
         include 'arc42-venom.adoc'
         include 'index-orga.adoc'
+        include 'SAMM_Ueberblick.adoc'
     }
     outputDir = file('build/docs')
     // good to see what the build is doing...
@@ -351,7 +352,7 @@ htmlSanityCheck {
     // ensure asciidoctor->html runs first
     // and images are copied to build directory
 
-    dependsOn asciidoctor
+    dependsOn generateHTML
 
     sourceDir = new File( "$targetDir/docs/html5" )
 

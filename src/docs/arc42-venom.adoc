@@ -110,7 +110,7 @@ include::arc42/DE/Appendix-Konfigurator.adoc[]
 
 <<<<
 // Appendix Open Issues
-include::arc42/DE/appendix-open_issues.adoc[]
+// include::arc42/DE/appendix-open_issues.adoc[]
 
 <<<<
 // give credits to openclipart-authors!
