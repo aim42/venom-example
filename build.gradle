@@ -117,6 +117,7 @@ tasks.withType(AsciidoctorTask) { docTask ->
 
 task generateHTML (
         type: AsciidoctorTask,
+        group: 'docToolchain',
         description: 'use html5 as asciidoc backend') {
 
     attributes \
@@ -127,6 +128,7 @@ task generateHTML (
 
 task generatePDF (
         type: AsciidoctorTask,
+        group: 'docToolchain',
         description: 'use html5 as asciidoc backend') {
 
     attributes \
@@ -319,11 +321,13 @@ task publishToConfluence(
 }
 task generateDocbook (
         type: AsciidoctorTask,
+        group: 'docToolchain',
         description: 'use docbook as asciidoc backend') {
         backends = ['docbook']
  }
 task convertToDocx (
         dependsOn: [generateDocbook ],
+        group: 'docToolchain',
         type: Exec
 ) {
     workingDir 'build/docs/docbook'
@@ -336,6 +340,7 @@ task convertToDocx (
 }
 task convertToEpub (
         dependsOn: [generateDocbook ],
+        group: 'docToolchain',
         type: Exec
 ) {
     workingDir 'build/docs/docbook'

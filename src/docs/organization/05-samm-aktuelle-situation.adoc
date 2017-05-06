@@ -1,4 +1,4 @@
-ifndef::imagesdir[:imagesdir: images]
+ifndef::imagesdir[:imagesdir: ../images]
 
 == Aktuelle Situation
 In den letzten Jahren haben mehrere namhafte Beratungsunternehmen 
