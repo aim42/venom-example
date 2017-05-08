@@ -43,18 +43,19 @@ Enthaltene Bausteine::
 | [[eGovShop]] eGov Shop
 | Frontend für Behörden und Organisationen
 | Speziell entwickelt für Arbeit in regulierten Umfeldern, d.h. mit erhöhten
-  Anforderungen an Comliance und Nachweispflichten sowie Auskunftspflicht
-  (via ->ECI)
+  Anforderungen an Compliance und Nachweispflichten sowie Auskunftspflicht (via ->ECI).
+  Anbindung an die notwendigen SalesBackend-Daten über das SalesFrontend.
 
 
-| Marketing Campaigns
+
+| Marketing & Sales Campaigns
 | TODO
 a| vergibt Gutscheine an bestimmte Kundensegmente (z.B. Treueboni, Ferien-
 oder Saisonaktionen, Rabattkarten).
 
-| <<Optical-Archive>>
+| <<Hodor_Optical_Archive, Hodor Optical Archive>>
 | Archivsystem für revisionssichere Langzeitspeicherung
-| Kombination aus Hard- und Software,
+| Kombination aus Hard- und Software. Siehe unten.
 
 
 | Order & Fulfillment
@@ -127,8 +128,9 @@ wird von den Fachbereichen Supply und Partner-Relations schon
 seit langem eingefordert.
 --
 
-[[Optical-Archive]]
-==== Optical Archive (Langzeitarchiv)
+
+[[Hodor_Optical_Archive]]
+==== Hodor Optical Archive (Langzeitarchiv)
 Revisionssichere Archivierung, elektronische Aufbewahrung geschäftsrelevanter Daten.
 Erfüllt die Anforderungen des (deutschen) Handelsgesetzbuches (§239, §257 HGB) an die
 sichere und ordnungsgemäße Aufbewahrung von kaufmännischen Dokumenten.
