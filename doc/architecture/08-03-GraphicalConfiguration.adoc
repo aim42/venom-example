@@ -1,0 +1,32 @@
+=== Generierte Konfiguratoren
+
+Die folgenden Konfiguratoren werden aus einer Meta-Beschreibung durch
+den Baustein 'MetaConfiguration' generiert:
+
+* Möbel-/Regalkonfiguration
+* Gartenplanung
+* Apotheken-Lagersystem-Konfiguration
+* Konfiguration spezieller Lagersysteme
+* Badezimmergestaltung
+
+(weitere: unklar?!)
+
+Auf Basis einer (XML) Beschreibung generiert MetaConfiguration einerseits
+das notwendige ActionScript, andererseits den Code für die zur Laufzeit
+benötigten Daten.
+
+Diese Generierung führt bereits zur Compilezeit einige Prüfungen
+gegen den ConfigurationValidator durch.
+
+Das generierte ActionScript wird mit den grafischen Sales-Frontends integriert
+im Browser ausgeführt. Notwendige Daten zur Konfiguration werden zur Laufzeit
+über ConfigurationDataAkquisition (eine Fassade) gelesen.
+
+Die Gültigkeit von Konfigurationen wird zur Laufzeit sowohl gegen den ConfigurationExpert
+wie auch den ConfigurationValidator geprüft.
+
+[WARNING]
+--
+Flash ist proprietäre Technologie, und auf vielen Mobilplattformen nicht mehr verfügbar.
+
+--

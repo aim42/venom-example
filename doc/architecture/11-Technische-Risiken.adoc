@@ -1,4 +1,4 @@
 
-== Technische Risiken
+== Risiken und Technische Schulden
 
 TODO

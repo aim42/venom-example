@@ -1,11 +1,15 @@
 
 ==== Configurator Shell
 
-image::configurator-shell.png["Configurator-Shell", title="Configurator-Shell"]
+image::05-configurator-level-2.png["Configurator-Shell", title="Configurator-Shell"]
 
-Begründung:: Mehrere der enthaltenen Bausteine sind durch Akquisitionen zu VENOM gekommen, und mit Hilfe manuell erstellter Adapterkomponenten integriert. Das Expertensystem wurde ursprünglich 1998 durch die ROT AG entwickelt und seither ständig erweitert. Um 2002 erste Integration der 
-formalen <<Configuration-Validator, Validierung>>.
+Begründung:: Mehrere der enthaltenen Bausteine sind durch Akquisitionen zu VENOM gekommen,
+und mit Hilfe manuell erstellter Adapterkomponenten integriert.
+Das Expertensystem wurde ursprünglich 1998 durch die ROT AG entwickelt und seither
+ständig erweitert. Um 2002 erste Integration der formalen <<Configuration-Validator, Validierung>>.
 
+Die grafischen Konfiguratoren basieren auf Flash und werden aus einer Meta-Beschreibung
+generiert.
 
 
 Enthaltene Bausteine::
@@ -13,15 +17,15 @@ Enthaltene Bausteine::
 [cols="1,4,4" options="header"]
 .Configurator-Shell (Whitebox, Level-2)
 |===
-| Name | Verantwortung | Bemerkung 
+| Name | Verantwortung | Bemerkung
 | ApoConfig
 | Konfigurator für Apotheken-Einrichtung, insbesondere automatisierte Kommissionier- bzw. Lagersysteme.
 | Auch für automatisierte Versorgungsschränke in Kliniken.
-Stark regulierter Bereich, da z.B. in Deutschland das Apothekenrecht den weitgehend automatisierten Verkauf stark einschränkt. 
-Integration mit verschiedenen Produktherstellern, u.a. 
-https://www.pharmatechnik.de/k2[Pharmatechnik^], 
-http://www.rowa.de/[Carefusion/Rowa^], 
-http://www.apoforma.com/Home/Unternehmen.aspx[ApoForma^] und anderen. 
+Stark regulierter Bereich, da z.B. in Deutschland das Apothekenrecht den weitgehend automatisierten Verkauf stark einschränkt.
+Integration mit verschiedenen Produktherstellern, u.a.
+https://www.pharmatechnik.de/k2[Pharmatechnik^],
+http://www.rowa.de/[Carefusion/Rowa^],
+http://www.apoforma.com/Home/Unternehmen.aspx[ApoForma^] und anderen.
 
 | Furniture Configurator
 |
@@ -32,7 +36,7 @@ http://www.apoforma.com/Home/Unternehmen.aspx[ApoForma^] und anderen.
 |
 
 | [[ConfEx]] Configuration Expert (ConfEx)
-a| Regelbasiertes System (auf Basis http://www.drools.org/[JBoss-Drools^]) zur Unterstützung von visuellen Konfiguratoren. 
+a| Regelbasiertes System (auf Basis http://www.drools.org/[JBoss-Drools^]) zur Unterstützung von visuellen Konfiguratoren.
 Ermittelt zu einer gegebenen Konfiguration Vorschläge sowohl zur inhaltlichen wie preislichen Verbesserung. Teil des _Expertensystems_ (anderer Teil ist der <<Configuration-Validator>>)
 a| In den meisten Situationen prüft ConfEx, welche Änderungen an der bestehenden Konfiguration:
 
@@ -44,18 +48,19 @@ Rechtliche Einschränkungen kann ConfEx aktuell nur unzureichend berücksichtige
 
 | [[Configuration-Validator]] Configuration Validator
 a| http://www.swi-prolog.org/[Prolog^] basierte ->
-<<Validierung>>. 
+<<Validierung>>.
 | Teil des Expertensystems, gemeinsam mit <<ConfEx>>.
 
-| GardenConfigurator
-| Konfiguration von Gartenanlagen.
-| 
+| Configuration Data Akquisition
+| Wrapper für die während der Konfiguration benötigten Daten.
+| Hierzu zählen Gutscheine und Rabattkarten (Voucher), Benutzerdaten (User)
+und auch Artikeldaten (die über den Umweg von SalesBackend integriert werden)
 
 |===
 
 [WARNING]
 --
-_Expertenwissen_ ist auf zwei komplett unterschiedliche Technologien verteilt (JBoss-Drools und Prolog), 
+_Expertenwissen_ ist auf zwei komplett unterschiedliche Technologien verteilt (JBoss-Drools und Prolog),
 Pflege und Erweiterung oftmals schwierig. Immer wieder lehnt der <<Configuration-Validator>> an sich gültige Konfigurationen als ungültig ab (meist aus vermeintlich wirtschaftlichen Gründen), andererseits wurden auch rechtlich ungültige
 Konfigurationen schon als valide bestätigt. Dies führte in
 der Vergangenheit zu fehlerhaften Angeboten und hohen Strafzahlungen.
@@ -69,3 +74,17 @@ der (fehlerhaften) Ablehnung an sich gültiger Verkäufe - und damit auch zu
 entgangenen Umsätzen/Erträgen.
 --
 
+[WARNING]
+--
+Die Flash-basierte grafische Konfiguration produziert zwar "schöne" UI's,
+allerdings ist Flash (ActionScript) eine veraltete Technologie, die insbesondere
+auf Mobilgeräten praktisch nicht verfügbar ist.
+
+Flash-Player werden als Einfallstor für Cyber-Angriffe verwendet,
+das Sicherheitsrisiko von Flash gilt als hoch.
+
+Insgesamt wird Flash mittlerweile seitens vieler Entwickler und
+und auch Anwender als Risiko betrachtet - und wirft ein schlechtes Licht
+auf VENOM und Samm, insbesondere weil es (noch) keine Alternative für die grafische
+Konfiguration von komplexen Produkten bei VENOM gibt.
+--

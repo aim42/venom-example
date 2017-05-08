@@ -4,7 +4,7 @@
 
 [cols="1,4" options=""]
 |===
-| image:samm-logo.png[Samm Inc., 150]
+| image:samm-logo-2017.png[Samm Inc., 150]
 a|Die SAMM Inc. ist ein international operierendes Handelsunternehmen mit
 Verwaltungssitz in Durango, Colorado (USA) und Firmenzentrale in Berlin.
 SAMM Inc. bündelt die Kompetenzen von über 500 Spezialisten,
