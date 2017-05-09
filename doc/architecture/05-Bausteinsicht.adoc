@@ -47,17 +47,23 @@ Enthaltene Bausteine::
   Anbindung an die notwendigen SalesBackend-Daten über das SalesFrontend.
 
 
+| External Partners
+| Verwaltung von Partnern (u.a. Handwerker, Gutachter, Ingenieure, Lieferanten) mit
+  deren Adressen, Kontaktdaten sowie Zuordnung zu bestimmten Produktkategorien
+  in VENOM.
+|
+
+| <<Hodor_Optical_Archive, Hodor Optical Archive>>
+| Archivsystem für revisionssichere Langzeitspeicherung
+| Kombination aus Hard- und Software. Siehe unten.
 
 | Marketing & Sales Campaigns
 a| * vergibt Gutscheine an bestimmte Kundensegmente (z.B. Treueboni, Ferien-
 oder Saisonaktionen, Rabattkarten)
   * weitere CRM Funktionen
 | Könnte ggfs. durch ein Standard-CRM abgelöst werden. Evaluierung Make/Buy hat
-angeblich ca. 2002 stattgefunden, Ergebnisse aber nicht mehr vorhanden. 
+angeblich ca. 2002 stattgefunden, Ergebnisse aber nicht mehr vorhanden.
 
-| <<Hodor_Optical_Archive, Hodor Optical Archive>>
-| Archivsystem für revisionssichere Langzeitspeicherung
-| Kombination aus Hard- und Software. Siehe unten.
 
 
 | Order & Fulfillment
@@ -70,18 +76,15 @@ seitens Kunden verbindliche Bestellungen eingeganten sind.
 |
 
 
-| External Partners
-| Verwaltung von Partnern (u.a. Handwerker, Gutachter, Ingenieure, Lieferanten) mit
-deren Adressen, Kontaktdaten sowie Zuordnung zu bestimmten Produktkategorien
-in VENOM.
-|
-
 | Post Sales Services
 | Nach Angeboten, Verkäufen, Lieferungen oder Retouren werden erkannte Probleme
 und mögliche Schwachstellen in der Lieferkette identifiziert, bzw. Möglichkeiten für
 weitergehende Verkäufe gesucht, und Kunden teilautomatisiert angeboten.
 | Aktuell unklar, inwieweit diese Services zum Geschäftsergebnis beitragen.
 
+|Price Management
+|(Größtenteils manuelle) Pflege von Eingangsdaten für die spätere Preisberechnung. 
+|
 
 | <<Pricing Engine>>
 | Ermittelt Gesamtpreise für komplexe Produkte.
@@ -104,6 +107,12 @@ weitergehende Verkäufe gesucht, und Kunden teilautomatisiert angeboten.
 | Abwicklung von Verkäufen für Privat- und Firmenkunden,
   ebenfalls -><<NGO,NGOs>>. Teilweise schwierige Differenzierung zu -><<NPO,NPOs>>.
   Enthält eine (relationale) Produktdatenbank auf Basis MySQL.
+|
+
+| Security Extensions
+| Erweiterungen und Plugins für die verwendeten Webserver, um bekannte
+Sicherheitsprobleme und -lücken zu schliessen. U.a. DoS und DDoS-Erkennung,
+Virenprüfung
 |
 
 | <<User-Data-Service>>
