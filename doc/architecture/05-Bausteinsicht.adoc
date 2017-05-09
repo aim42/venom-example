@@ -39,6 +39,10 @@ Enthaltene Bausteine::
   Sales-Frontends integriert. Enthält auch die (regelgestützten) Expertensysteme und
   die ->CTI Anbindung. Hauptsächlich Java, relevante Teile in Prolog, Python, PHP und Flash(tm).
 
+|Data Warehouse
+|Vor-Aggregation von Daten, die an das (externe) DWH exportiert werden.
+|Im wesentlichen eine Sammlung von Datenbank-Skripten zur Extraktion von
+Angebots- und Verkaufsdaten, Preisen, Aufträgen sowie Daten zur Projektabwicklung.
 
 | [[eGovShop]] eGov Shop
 | Frontend für Behörden und Organisationen
@@ -83,7 +87,7 @@ weitergehende Verkäufe gesucht, und Kunden teilautomatisiert angeboten.
 | Aktuell unklar, inwieweit diese Services zum Geschäftsergebnis beitragen.
 
 |Price Management
-|(Größtenteils manuelle) Pflege von Eingangsdaten für die spätere Preisberechnung. 
+|(Größtenteils manuelle) Pflege von Eingangsdaten für die spätere Preisberechnung.
 |
 
 | <<Pricing Engine>>
@@ -115,20 +119,22 @@ Sicherheitsprobleme und -lücken zu schliessen. U.a. DoS und DDoS-Erkennung,
 Virenprüfung
 |
 
-| <<User-Data-Service>>
-| Verwaltung der Stammdaten von Privat- und Geschäftskunden
-| CRUD-Operationen, Backup, selbständige Archivierung der relevanten Daten im <<Optical-Archive, Langzeitarchiv>>.
 
-
-| <<Sales_Contracts_DB, Sales & Contracts Database>>
+| <<Sales_Contracts_DB, Sales & Contracts Archive>>
 | Speichert Verkaufs- und Vertragsdaten.
-| Daten liegen in einer relationalen Datenbank. Arbeitet zusammen mit dem <<Optical-Archive>>,
-  sowie der <<User-Data-Service>>.
+| Daten liegen in einer relationalen Datenbank. Arbeitet zusammen mit dem <<Hodor-Optical-Archive>>,
+  sowie der <<User-Data-Service>>. Entgegen seinem Namen ist diese Komponente kein Archiv,
+  Daten hier können durchaus geändert/aktualisiert werden (was im Archiv nicht erlaubt ist).
 
 
 | <<Sales_Frontend, Sales Frontend Private + Corporate>>
 | Benutzeroberfläche für Auswahl, Konfiguration + Kaufabwicklung von Produkten für Privat- und Firmenkunden.
 |
+
+| <<User-Data-Service>>
+| Verwaltung der Stammdaten von Privat- und Geschäftskunden
+| CRUD-Operationen, Backup, selbständige Archivierung der relevanten Daten im <<Hodor_Optical_Archive, Langzeitarchiv>>.
+
 
 
 | Vouchers & Rebates
