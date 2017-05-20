@@ -7,7 +7,7 @@ Die folgenden Unterkapitel zeigen die Einbettung unseres Systems in seine Umgebu
 
 === Fachlicher Kontext
 
-image::03-context.png["Business-Context", title="Business Context"]
+image::03-business-context.png["Business-Context", title="Business Context"]
 
 Der Stereotyp &laquo;Category&raquo; bezeichnet Schnittstellen, zu denen es unterschiedliche Ausprägungen,
 Varianten oder Anbieter gibt.
@@ -22,10 +22,10 @@ Varianten oder Anbieter gibt.
 teilweise Konfigurationsdienste oder -komponenten, die in VENOM integriert werden.
 
 | externe Partner für Aufbau u. Inbetriebnahme
-| Handwerker, Monteure, Ingenieurbüros, teilweise Gutachter. 
-Insbesondere werden hier Termine und Verfügbarkeiten abgestimmt. 
+| Handwerker, Monteure, Ingenieurbüros, teilweise Gutachter.
+Insbesondere werden hier Termine und Verfügbarkeiten abgestimmt.
 Allgemeine organisatorische und kaufmännische Fragen der Zusammenarbeit werden
-im Vorfeld vertraglich geregelt bzw. über die Partner-Schnittstelle erfragt.  
+im Vorfeld vertraglich geregelt bzw. über die Partner-Schnittstelle erfragt.
 
 | Telephone, Call-Center | (internes) Call-Center für Post-Sales und Support-Aufgaben. Behandeln Rückrufwünsche und Anfragen zu Produkten sowie Unterstützung gerade online
 laufender Konfigurationen. Hier arbeiten einige der hervorragenden Experten von SAMM,
@@ -36,7 +36,7 @@ um Kunden bei hochgradig komplexen Produkten zu unterstützen.
 werden Transportunternehmer direkt beauftragt. Für Kleinbestellungen werden direkt entsprechende Versender (Post, etc. ) beauftragt.
 
 | Data Warehouse
-| Angebote, Aufträge, Marketingkampagnen zur Auswertung und 
+| Angebote, Aufträge, Marketingkampagnen zur Auswertung und
 Entscheidungsunterstützung (Business Intelligence).
 
 | Accounting
@@ -60,13 +60,12 @@ In Deutschland ist das das http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirts
 
 | Payment
 | Externe Dienstleistungen in Bezug auf Zahlungen und Zahlungsabwicklung. Unterschiedliche Anbieter,
-  unter anderem 
+  unter anderem
   http://www.arvato-infoscore.de/dienstleistungen/zahlungsabwicklung/[Arvato-InfoScore^],
   https://www.paypal.com[PayPal^] und
-  https://www.paymill.com/de/[PayMill^], sowie 
-  http://www.bundesbank.de/Navigation/DE/Aufgaben/Unbarer_Zahlungsverkehr/SEPA/sepa.html[SEPA^]-Schnittstellen zu diversen Banken. In kritischen Fällen auch Beauftragung von 
+  https://www.paymill.com/de/[PayMill^], sowie
+  http://www.bundesbank.de/Navigation/DE/Aufgaben/Unbarer_Zahlungsverkehr/SEPA/sepa.html[SEPA^]-Schnittstellen zu diversen Banken. In kritischen Fällen auch Beauftragung von
   http://inkasso.de/[Inkassoleistungen^].
 
 
 |===
-
