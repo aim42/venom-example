@@ -21,7 +21,7 @@ Enthaltene Bausteine::
 |===
 | Name | Verantwortung | Bemerkung
 
-| ATLAS Logistik | Teil- bzw. vollautomatische Generierung und Vergabe von Transportaufträgen
+| ATLAS Customs & Logistik | Teil- bzw. vollautomatische Generierung und Vergabe von Transportaufträgen
 | Früher eine Standardsoftware, heute für VENOM und die SAMM Produktpalette optimierte
   Lösung. Stellt die zeitgerechte Lieferung sämtlicher für ein Produkt benötigten Teile
   von sämtlichen Herstellern bzw. Lagerorten an den Zielort sicher.
@@ -31,7 +31,7 @@ Enthaltene Bausteine::
   Backoffice-Mitarbeiter können hier Verträge bearbeiten bzw. ändern,
   Mitarbeiter des Call-Centers können Teile von Verträgen einsehen.
   Eingescannte Altverträge bzw. anwaltlicher Schriftverkehr wird über
-  eine Schnittstelle dieser Komponente gelesen - die eigentliche Speicherung erfolgt in der <<PK-GK-Datenbank>>.
+  eine Schnittstelle dieser Komponente gelesen - die eigentliche Speicherung erfolgt in der <<User-Data-Service>>.
 |
 
 | <<Configurator Shell>>| Fassade für unterschiedliche Konfiguratoren
@@ -39,22 +39,35 @@ Enthaltene Bausteine::
   Sales-Frontends integriert. Enthält auch die (regelgestützten) Expertensysteme und
   die ->CTI Anbindung. Hauptsächlich Java, relevante Teile in Prolog, Python, PHP und Flash(tm).
 
+|Data Warehouse
+|Vor-Aggregation von Daten, die an das (externe) DWH exportiert werden.
+|Im wesentlichen eine Sammlung von Datenbank-Skripten zur Extraktion von
+Angebots- und Verkaufsdaten, Preisen, Aufträgen sowie Daten zur Projektabwicklung.
 
 | [[eGovShop]] eGov Shop
 | Frontend für Behörden und Organisationen
 | Speziell entwickelt für Arbeit in regulierten Umfeldern, d.h. mit erhöhten
-  Anforderungen an Comliance und Nachweispflichten sowie Auskunftspflicht
-  (via ->ECI)
+  Anforderungen an Compliance und Nachweispflichten sowie Auskunftspflicht (via ->ECI).
+  Anbindung an die notwendigen SalesBackend-Daten über das SalesFrontend.
 
 
-| Marketing Campaigns
-| TODO
-a| vergibt Gutscheine an bestimmte Kundensegmente (z.B. Treueboni, Ferien-
-oder Saisonaktionen, Rabattkarten).
+| External Partners
+| Verwaltung von Partnern (u.a. Handwerker, Gutachter, Ingenieure, Lieferanten) mit
+  deren Adressen, Kontaktdaten sowie Zuordnung zu bestimmten Produktkategorien
+  in VENOM.
+|
 
-| <<Optical-Archive>>
+| <<Hodor_Optical_Archive, Hodor Optical Archive>>
 | Archivsystem für revisionssichere Langzeitspeicherung
-| Kombination aus Hard- und Software,
+| Kombination aus Hard- und Software. Siehe unten.
+
+| Marketing & Sales Campaigns
+a| * vergibt Gutscheine an bestimmte Kundensegmente (z.B. Treueboni, Ferien-
+oder Saisonaktionen, Rabattkarten)
+  * weitere CRM Funktionen
+| Könnte ggfs. durch ein Standard-CRM abgelöst werden. Evaluierung Make/Buy hat
+angeblich ca. 2002 stattgefunden, Ergebnisse aber nicht mehr vorhanden.
+
 
 
 | Order & Fulfillment
@@ -67,15 +80,15 @@ seitens Kunden verbindliche Bestellungen eingeganten sind.
 |
 
 
-| Partner Management
-| Verwaltung von Partnern (Adressen, Kontaktdaten) sowie Zuordnung zu bestimmten Produktkategorien
-in VENOM.
+| Post Sales Services
+| Nach Angeboten, Verkäufen, Lieferungen oder Retouren werden erkannte Probleme
+und mögliche Schwachstellen in der Lieferkette identifiziert, bzw. Möglichkeiten für
+weitergehende Verkäufe gesucht, und Kunden teilautomatisiert angeboten.
+| Aktuell unklar, inwieweit diese Services zum Geschäftsergebnis beitragen.
+
+|Price Management
+|(Größtenteils manuelle) Pflege von Eingangsdaten für die spätere Preisberechnung.
 |
-
-
-| <<PK-GK-Datenbank>>
-| Verwaltung der Stammdaten von Privat- und Geschäftskunden
-| CRUD-Operationen, Backup, selbständige Archivierung der relevanten Daten im <<Optical-Archive, Langzeitarchiv>>.
 
 | <<Pricing Engine>>
 | Ermittelt Gesamtpreise für komplexe Produkte.
@@ -84,7 +97,7 @@ in VENOM.
   sowie Verfügbarkeiten. Siehe auch  <<PE-ermittelt-Verkaufspreis, Ablauf der Preisfindung für GK>>.
 
 
-| Sales Backend Government
+| Sales Backend eGovernment
 | Abwicklung von eCommerce Transaktionen für Behörden und
   Organisationen sowie Speicherung der entsprechenden Daten
 | Ursprünglich von Blau&Partner, danach von ATLAS Software entwickeltes System für
@@ -96,23 +109,38 @@ in VENOM.
 
 | Sales Backend Private + Corporate
 | Abwicklung von Verkäufen für Privat- und Firmenkunden,
-  ebenfalls -><<NGO,NGOs>>. Enthält eine (relationale) Produktdatenbank auf Basis MySQL.
+  ebenfalls -><<NGO,NGOs>>. Teilweise schwierige Differenzierung zu -><<NPO,NPOs>>.
+  Enthält eine (relationale) Produktdatenbank auf Basis MySQL.
+|
+
+| Security Extensions
+| Erweiterungen und Plugins für die verwendeten Webserver, um bekannte
+Sicherheitsprobleme und -lücken zu schliessen. U.a. DoS und DDoS-Erkennung,
+Virenprüfung
 |
 
 
-| <<Sales_Contracts_DB, Sales & Contracts Database>>
+| <<Sales_Contracts_DB, Sales & Contracts Archive>>
 | Speichert Verkaufs- und Vertragsdaten.
-| Daten liegen in einer relationalen Datenbank. Arbeitet zusammen mit dem <<Optical-Archive>>,
-  sowie der <<PK-GK-Datenbank>>.
+| Daten liegen in einer relationalen Datenbank. Arbeitet zusammen mit dem <<Hodor-Optical-Archive>>,
+  sowie der <<User-Data-Service>>. Entgegen seinem Namen ist diese Komponente kein Archiv,
+  Daten hier können durchaus geändert/aktualisiert werden (was im Archiv nicht erlaubt ist).
 
 
-| <<Sales_Frontend_PK_GK, Sales Frontend Private + Corporate>>
+| <<Sales_Frontend, Sales Frontend Private + Corporate>>
 | Benutzeroberfläche für Auswahl, Konfiguration + Kaufabwicklung von Produkten für Privat- und Firmenkunden.
 |
 
+| <<User-Data-Service>>
+| Verwaltung der Stammdaten von Privat- und Geschäftskunden
+| CRUD-Operationen, Backup, selbständige Archivierung der relevanten Daten im <<Hodor_Optical_Archive, Langzeitarchiv>>.
 
-| Voucher
+
+
+| Vouchers & Rebates
 | Gutscheine für Privatkunden, Anlegen von Gutscheinaktionen, Verwaltung individueller Gutscheine.
+Rabattaktionen und Sondertarife für Geschäftskunden. Keine (!) Sondervereinbarungen mit Behörden,
+die werden im eGov-Backend verwaltet.
 |
 
 |===
@@ -127,8 +155,9 @@ wird von den Fachbereichen Supply und Partner-Relations schon
 seit langem eingefordert.
 --
 
-[[Optical-Archive]]
-==== Optical Archive (Langzeitarchiv)
+
+[[Hodor_Optical_Archive]]
+==== Hodor Optical Archive (Langzeitarchiv)
 Revisionssichere Archivierung, elektronische Aufbewahrung geschäftsrelevanter Daten.
 Erfüllt die Anforderungen des (deutschen) Handelsgesetzbuches (§239, §257 HGB) an die
 sichere und ordnungsgemäße Aufbewahrung von kaufmännischen Dokumenten.
@@ -143,7 +172,7 @@ fehlerhaften Datensätze immer noch im Archiv enthalten und können bzw. dürfen
 werden. Abfragen auf Daten aus diesem Zeitraum sind grundsätzlich zu überprüfen.
 --
 
-==== PK-GK-Datenbank
+==== User-Data-Service
 Relationale Datenbank zur Speicherung von Privat- und Firmenkunden-Daten.
 
 
@@ -194,7 +223,7 @@ oder Zugriffsoperationen (etwa: Reporting).
 bei sämtlichen -><<CRUD>>-Operationen auf diesen Daten.
 --
 
-[[Sales_Frontend_PK_GK]]
+[[Sales_Frontend]]
 ==== Sales Frontend Private + Corporate
 Das Sales Frontend ist eine Multi-Page Web Application,
 die weitaus meisten Teile werden durch die
