@@ -1,7 +1,7 @@
 === Generierte Konfiguratoren
 
 Die folgenden Konfiguratoren werden aus einer Meta-Beschreibung durch
-den Baustein 'MetaConfiguration' generiert:
+den Baustein 'MetaConfiguration' (enthalten in <<Configurator Shell>>) generiert:
 
 * Möbel-/Regalkonfiguration
 * Gartenplanung

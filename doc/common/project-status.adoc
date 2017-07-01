@@ -3,7 +3,6 @@
 image:http://img.shields.io/badge/Version-{version}-green.svg[{version}]
 image:http://img.shields.io/badge/Date-{currentDate}-green.svg[/{currentDate}]
 -
-//image:http://img.shields.io/github/issues/aim42/venom-example.svg[link={project-issues}]
 image:https://img.shields.io/badge/License-commercial-red.svg[]
 -
 image:https://img.shields.io/badge/AsciiDoctor-{asciidoctor-version}-blue.svg[{asciidoctor-version}]

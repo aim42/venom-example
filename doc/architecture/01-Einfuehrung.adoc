@@ -172,7 +172,7 @@ _groß_:: Grundlegende neue Funktionen (beispielsweise der <<Gartenplanung, Gart
 
 
 [[figure-users]]
-image::00-venom-users.jpg[title="Benutzer und Benutzergruppen von VENOM"]
+image::00-venom-users.png[title="Benutzer und Benutzergruppen von VENOM"]
 
 
 [cols="2,5,2,2" options="header"]
