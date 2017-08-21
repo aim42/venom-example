@@ -55,7 +55,7 @@ asciidoctor {
     println "sourceDir = " + sourceDir
 
     sources  { include "architecture/arc42-venom.adoc",
-                       "organization/index-orga.adoc" }
+                       "business/samm-business.adoc" }
 
     backends 'html5' //,'pdf'
 
