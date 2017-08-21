@@ -1,20 +1,20 @@
 License
 
-Copyright (c) 2014-2015 Dr. Gernot Starke
+Copyright (c) Dr. Gernot Starke
 
 (1) Non-Commercial Use ONLY
 ---------------------------
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), for NON-COMMERCIAL
-use or application of the Software.
+use or application of the Software and the Documentation.
 
 
 (2) Commercial Use Only With Written Permission
 -----------------------------------------------
 
 Any commercial use of this software (for example for training, education or illustrative
-purposes, for consulting, coaching or within commercial or government softwre development
+purposes, for consulting, coaching or within commercial or government software development
 or maintenance projects) a WRITTEN PERMISSION from the original author, Dr. Gernot Starke,
 is required.
 
