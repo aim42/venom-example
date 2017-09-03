@@ -35,27 +35,29 @@
         Set objRegEx = CreateObject("VBScript.RegExp")
         objRegEx.Global = True
         objRegEx.IgnoreCase = True
-        objRegEx.Pattern = ".*{adoc}"
+        objRegEx.MultiLine = True
+        objRegEx.Pattern = "[\s,\S]*{adoc}"
         ' http://www.pptfaq.com/FAQ00481_Export_the_notes_text_of_a_presentation.htm
         strFileName = fso.GetFIle(sFile).Name
         Set oPPT = CreateObject("PowerPoint.Application")
-        Set oPres = oPPT.Presentations.Open(sFile, True, False, True) ' Read Only, No Title, No Window
+        Set oPres = oPPT.Presentations.Open(sFile, True, False, False) ' Read Only, No Title, No Window
         Set oSlides = oPres.Slides
         strNotesText = ""
         strImagePath = "/src/docs/images/ppt/" & strFileName & "/"
         MakeDir("." & strImagePath)
-        strNotesPath = "/src/docs/ppt/" & strFileName & "/"
+        strNotesPath = "/src/docs/ppt/"
         MakeDir("." & strNotesPath)
         For Each oSl In oSlides
            strSlideName = oSl.Name
-           ' WScript.echo fso.GetAbsolutePathName(".") & strImagePath & strSlideName & ".png"
-           oSl.Export fso.GetAbsolutePathName(".") & strImagePath & strSlideName & ".png", "PNG"
+           ' WScript.echo fso.GetAbsolutePathName(".") & strImagePath & strSlideName & ".jpg"
+           oSl.Export fso.GetAbsolutePathName(".") & strImagePath & strSlideName & ".jpg", ".jpg"
             For Each oSh In oSl.NotesPage.Shapes
                 If oSh.PlaceholderFormat.Type = ppPlaceholderBody  Then
                     If oSh.HasTextFrame Then
                         If oSh.TextFrame.HasText Then
                             strCurrentNotes = oSh.TextFrame.TextRange.Text
-                            strCurrentNotes = Replace(strCurrentNotes,"{slide}","image::ppt/"&strFileName&"/"&strSlideName&".png[]")
+                            strCurrentNotes = Replace(strCurrentNotes,vbVerticalTab, vbCrLf)
+                            strCurrentNotes = Replace(strCurrentNotes,"{slide}","image::ppt/"&strFileName&"/"&strSlideName&".jpg[]")
                             ' remove speaker notes before marker "{adoc}"
                             strCurrentNotes = objRegEx.Replace(strCurrentNotes,"")
                             strNotesText = strNotesText  & vbCrLf & strCurrentNotes & vbCrLf & vbCrLf

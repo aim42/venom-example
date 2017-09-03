@@ -6,23 +6,14 @@ import org.asciidoctor.gradle.AsciidoctorTask
 
 buildscript {
     dependencies {
-        //for the exportJiraIssues Task
-        classpath 'org.codehaus.groovy.modules.http-builder:http-builder:0.6'
         //for the renderToConfluence Task
         classpath 'org.apache.httpcomponents:httpmime:4.5.1'
         classpath 'org.jsoup:jsoup:1.9.1'
-
     }
 }
 
 plugins {
     id "org.asciidoctor.convert" version "1.5.3"
-/**
- uncomment this if you want to use the ruby versions of the plugins
-    // we need this plugin to add ruby gems
-    id "com.github.jruby-gradle.base" version "1.4.0"
- /uncomment
- **/
     id "org.aim42.htmlSanityCheck" version "0.9.7"
     id "com.github.ben-manes.versions" version "0.14.0"
 }
@@ -33,7 +24,13 @@ ext {
     targetDir = "$buildDir"
     javaVersion = System.getProperty("java.version")
     currentDate = new Date().format("d. MMM yyyy")
+    sourceFiles = [
+                    [file: 'arc42-venom.adoc',       formats: ['html','pdf','docbook']],
+                    [file: 'index-orga.adoc',        formats: ['html','pdf','docbook']],
+                    [file: 'SAMM_Ueberblick.adoc',   formats: ['html','pdf','docbook']],
+                ]
 }
+ 
 
 // where HTMLSanityCheck checking results ares stored
 def checkingResultsPath = "$buildDir/report/htmlchecks"
@@ -41,18 +38,12 @@ def checkingResultsPath = "$buildDir/report/htmlchecks"
 
 apply plugin:'groovy'
 
-/**
- uncomment this if you want to use the ruby versions of the plugins
-dependencies {
-    // this is the gem we need for diagrams
-    gems 'rubygems:asciidoctor-diagram:1.5.1'
-    gems 'rubygems:asciidoctor-pdf:1.5.0.alpha.15'
-
-}
- /uncomment
-**/
 dependencies {
     asciidoctor 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.15'
+    // carefull!
+    // asciidoctor 1.5.6 needs diagram 1.5.4.1
+    // but then reveal.js is broken...
+    // https://github.com/asciidoctor/asciidoctor-diagram/issues/161
     asciidoctor 'org.asciidoctor:asciidoctorj-diagram:1.5.4'
 }
 
@@ -60,14 +51,52 @@ asciidoctorj {
  version = '1.5.4'
 }
 
+
+apply from: 'scripts/exportEA.gradle'
+
+apply from: 'scripts/exportPPT.gradle'
+
+apply from: 'scripts/exportChangelog.gradle'
+
+apply from: 'scripts/exportJiraIssues.gradle'
+
+apply from: 'scripts/exportExcel.gradle'
+
+apply from: 'scripts/pandoc.gradle'
+
+apply from: 'scripts/publishToConfluence.gradle'
+
+//tag::htmlSanityCheck[]
+htmlSanityCheck {
+    sourceDir = new File( "$buildDir/docs/html5" )
+
+    // files to check - in Set-notation
+    //sourceDocuments = [ "one-file.html", "another-file.html", "index.html"]
+
+    // where to put results of sanityChecks...
+    checkingResultsDir = new File( checkingResultsPath )
+    checkExternalLinks = false
+}
+//end::htmlSanityCheck[]
+
+//tag::AsciidoctorTask[]
+
 // common settings for asciidoctor
 // this is needed for PDF generation with plantUML
 tasks.withType(AsciidoctorTask) { docTask ->
+    inputs.dir new File(srcDir, 'arc42')
+    inputs.dir new File(srcDir, 'images')
+    inputs.file new File(srcDir, 'arc42-template-de.adoc')
+    inputs.file new File(srcDir, 'config-de.adoc')
+    inputs.file new File(srcDir, 'arc42-template-en.adoc')
+    inputs.file new File(srcDir, 'config-en.adoc')
+    inputs.file new File(new File(targetDir, 'docs'), 'changelog.adoc')
+
     outputDir = file(targetDir)
     sourceDir = file(srcDir)
 
     attributes \
-        'pdf-stylesdir': 'pdfTheme',
+            'pdf-stylesdir': 'pdfTheme',
             'pdf-style': 'custom',
             'source-highlighter': 'coderay',
             'imagesdir': 'images',
@@ -93,28 +122,16 @@ tasks.withType(AsciidoctorTask) { docTask ->
 
     // configure source and output files and folders
     sourceDir = file('src/docs')
-    sources {
-        include 'arc42-venom.adoc'
-        include 'index-orga.adoc'
-        include 'SAMM_Ueberblick.adoc'
-    }
     outputDir = file('build/docs')
     // good to see what the build is doing...
     logDocuments = true
 
     requires = ['asciidoctor-diagram']
 
-/**
- uncomment this if you want to use the ruby versions of the plugins
- // the jrubyPrepare tasks takes care of loading the gems
- dependsOn jrubyPrepare
- // the asciidoctor task depends on this gem
- gemPath = jrubyPrepare.outputDir
- /uncomment
- **/
-
 }
+//end::AsciidoctorTask[]
 
+//tag::generateHTML[]
 task generateHTML (
         type: AsciidoctorTask,
         group: 'docToolchain',
@@ -123,255 +140,102 @@ task generateHTML (
     attributes \
         'plantUMLDir'         : ''
 
+    sources {
+        sourceFiles.findAll {
+            'html' in it.formats
+        }.each {
+            include it.file
+        }
+    }
+
     backends = ['html5']
 }
+//end::generateHTML[]
 
+//tag::generatePDF[]
 task generatePDF (
         type: AsciidoctorTask,
         group: 'docToolchain',
-        description: 'use html5 as asciidoc backend') {
+        description: 'use pdf as asciidoc backend') {
 
     attributes \
         'plantUMLDir'         : file('build/docs/images/plantUML/').path
 
+    sources {
+        sourceFiles.findAll {
+            'pdf' in it.formats
+        }.each {
+            include it.file
+        }
+    }
+
     backends = ['pdf']
 }
+//end::generatePDF[]
 
-task streamingExecute(
-    dependsOn: [],
-    description: 'extends the String class with a better .executeCmd'
-) << {
-    //I need a streaming execute in order to export from EA
-    String.metaClass.executeCmd = { silent ->
-        //make sure that all paramters are interpreted through the cmd-shell
-        //TODO: make this also work with *nix
-        def p = "cmd /c ${delegate.value}".execute()
-        def result=[std:'',err:'']
-        def ready = false
-        Thread.start{
-            def reader = new BufferedReader(new InputStreamReader(p.in))
-            def line = ""
-            while ((line = reader.readLine()) != null) {
-                if (silent!=false) {println ""+line}
-                result.std+=line+"\n"
-            }
-            ready=true
-            reader.close()
-        }
-        p.waitForOrKill(30000)
-        def error = p.err.text
-
-        if (error.isEmpty()) {
-            return result
-        } else {
-            throw new RuntimeException("\n"+error)
-        }
-    }
-}
-task exportEA(
-    dependsOn: [streamingExecute],
-    description: 'exports all diagrams and some texts from EA files',
-    group: 'docToolchain'
-) << {
-		//make sure path for notes exists
-		//and remove old notes
-		new File('src/docs/ea').deleteDir()
-		//also remove old diagrams
-		new File('src/docs/images/ea').deleteDir()
-		//create a readme to clarify things
-		def readme="""This folder contains exported diagrams or notes from Enterprise Architect.
-		
-Please note that these are generated files but reside in the `src`-folder in order to be versioned.
-
-This is to make sure that they can be used from environments other than windows.
-
-# Warning!
-
-**The contents of this folder	will be overwritten with each re-export!**
-
-use `gradle exportEA` to re-export files
-"""
-        new File('src/docs/images/ea/.').mkdirs()
-		new File('src/docs/images/ea/readme.ad').write(readme)
-        new File('src/docs/ea/.').mkdirs()
-		new File('src/docs/ea/readme.ad').write(readme)
-    //execute through cscript in order to make sure that we get WScript.echo right
-    "%SystemRoot%\\System32\\cscript.exe //nologo scripts/exportEAP.vbs".executeCmd()
-    //the VB Script is only capable of writing iso-8859-1-Files.
-    //we now have to convert them to UTF-8	
-    new File('src/docs/ea/.').eachFileRecurse { file ->
-    	if (file.isFile()) {
-	    	println "exported notes "+file.canonicalPath
-	    	file.write(file.getText('iso-8859-1'),'utf-8')
-	    	println "exported notes "+file.name
-    	}
-    }
-}
-task exportPPT(
-        dependsOn: [streamingExecute],
-        description: 'exports all slides and some texts from PPT files',
-        group: 'docToolchain'
-) << {
-    //make sure path for notes exists
-    //and remove old notes
-    new File('src/docs/ppt').deleteDir()
-    //also remove old diagrams
-    new File('src/docs/images/ppt').deleteDir()
-    //create a readme to clarify things
-    def readme="""This folder contains exported slides or notes from .ppt presentations.
-		
-Please note that these are generated files but reside in the `src`-folder in order to be versioned.
-
-This is to make sure that they can be used from environments other than windows.
-
-# Warning!
-
-**The contents of this folder	will be overwritten with each re-export!**
-
-use `gradle exportPPT` to re-export files
-"""
-    new File('src/docs/images/ppt/.').mkdirs()
-    new File('src/docs/images/ppt/readme.ad').write(readme)
-    new File('src/docs/ppt/.').mkdirs()
-    new File('src/docs/ppt/readme.ad').write(readme)
-    //execute through cscript in order to make sure that we get WScript.echo right
-    "%SystemRoot%\\System32\\cscript.exe //nologo scripts/exportPPT.vbs".executeCmd()
-}
-task exportChangeLog(
-        dependsOn: [streamingExecute],
-        description: 'exports the change log from a git subpath',
-        group: 'docToolchain'
-) << {
-    def res = "git log ./src/docs/arc42".execute().text
-    def changes = []
-    def change = null
-    res.eachLine { line ->
-        switch (line) {
-            case ~/^commit.*/:
-                if (change!=null) {
-                    changes << change
-                }
-                change = [commit:line-'commit ',log:'']
-                break;
-            case ~/^Author:.*/:
-                change['author'] = line-'Author: '
-                break;
-            case ~/^Date:.*/:
-                change['date'] = line-'Date: '
-                break;
-            default:
-                change['log'] += (line ? line.trim()+ "\n" : '')
-        }
-    }
-    changes << change
-    def path = './build/docs/'
-    new File(path).mkdirs()
-    def changelog = new File(path+'changelog.adoc')
-    changelog.write("")
-
-    changes.each { c ->
-        try {
-            changelog.append """| ${new Date(Date.parse(c.date)).format("dd.MM.yyyy")}
-| ${c.author.replaceAll('<[^>]*>','')}
-| ${c.log}
-"""
-        } catch (Exception e) { println c }
-    }
-}
-task exportJiraIssues(
-        description: 'exports all jira issues from a given search',
-        group: 'docToolchain'
-) << {
-        def user = jiraUser
-        def pass = jiraPass
-        if (!pass) {
-            pass = System.console().readPassword("Jira password for user '$user': ")
-        }
-
-        def stats = [:]
-        def jira = new groovyx.net.http.RESTClient( jiraRoot+'/rest/api/2/' )
-        jira.encoderRegistry = new groovyx.net.http.EncoderRegistry( charset: 'utf-8' )
-        def headers = [
-                'Authorization':"Basic " + "${user}:${pass}".bytes.encodeBase64().toString(),
-                'Content-Type':'application/json; charset=utf-8'
-        ]
-        def openIssues = new File('./build/docs/openissues.adoc')
-        openIssues.write("",'utf-8')
-        println jiraJql.replaceAll('%jiraProject%',jiraProject).replaceAll('%jiraLabel%',jiraLabel)
-        jira.get(path:'search',
-                query:['jql': jiraJql.replaceAll('%jiraProject%',jiraProject).replaceAll('%jiraLabel%',jiraLabel),
-                       'maxResults':1000,
-                       'fields':'created,resolutiondate,priority,summary,timeoriginalestimate, assignee'
-                ],
-                headers:headers
-        ).data.issues.each { issue ->
-            openIssues.append("| <<${issue.key}>> ",'utf-8')
-            openIssues.append("| ${issue.fields.priority.name} ",'utf-8')
-            openIssues.append("| ${Date.parse("yyyy-MM-dd'T'H:m:s.000z",issue.fields.created).format('dd.MM.yy')} ",'utf-8')
-            openIssues.append("| ${issue.fields.assignee?issue.fields.assignee.displayName:'not assigned'} ",'utf-8')
-            openIssues.append("| ${jiraRoot}/browse/${issue.key}[${issue.fields.summary}]\n",'utf-8')
-        }
-
-}
-task publishToConfluence(
-        description: 'publishes the HTML rendered output to confluence',
-        group: 'docToolchain'
-) << {
-    evaluate(new File('scripts/asciidoc2confluence.groovy'))
-}
+//tag::generateDocbook[]
 task generateDocbook (
         type: AsciidoctorTask,
         group: 'docToolchain',
         description: 'use docbook as asciidoc backend') {
-        backends = ['docbook']
- }
-task convertToDocx (
-        dependsOn: [generateDocbook ],
+
+    sources {
+        sourceFiles.findAll {
+            'docbook' in it.formats
+        }.each {
+            include it.file
+        }
+    }
+
+    backends = ['docbook']
+}
+//end::generateDocbook[]
+
+//tag::generateDeck[]
+task generateDeck (
+        type: AsciidoctorTask,
         group: 'docToolchain',
-        type: Exec
-) {
-    workingDir 'build/docs/docbook'
-    executable = "pandoc"
-    new File('build/docs/docx/').mkdirs()
-    args = ['-r','docbook',
-            '-t','docx',
-            '-o','../docx/arc42-venom.docx',
-                 'arc42-venom.xml']
+        description: 'use revealJs as asciidoc backend to create a presentation') {
+
+    attributes \
+        'plantUMLDir'         : '',
+        'idprefix': 'slide-',
+        'idseparator': '-',
+        'docinfo1': '',
+        'revealjs_theme': 'black',
+        'revealjs_progress': 'true',
+        'revealjs_touch': 'true',
+        'revealjs_hideAddressBar': 'true',
+        'revealjs_transition': 'linear',
+        'revealjs_history': 'true',
+        'revealjs_slideNumber': 'true'
+
+    options template_dirs : [new File('resources/asciidoctor-reveal.js','templates/slim').absolutePath ]
+
+    sources {
+        sourceFiles.findAll {
+            'revealjs' in it.formats
+        }.each {
+            include it.file
+        }
+
+    }
+
+    outputDir = file(targetDir+'/decks/')
+
+    resources {
+        from('resources') {
+            include 'reveal.js/**'
+        }
+        from(sourceDir) {
+            include 'images/**'
+        }
+        into("ppt")
+        logger.error "${buildDir}/ppt/images"
+    }
 }
-task convertToEpub (
-        dependsOn: [generateDocbook ],
-        group: 'docToolchain',
-        type: Exec
-) {
-    workingDir 'build/docs/docbook'
-    //commandLine "pandoc -r arc42-template.xml -o arc42-template.docx "
-    executable = "pandoc"
-    new File('build/docs/epub/').mkdirs()
-    args = ['-r','docbook',
-            '-t','epub',
-            '-o','../epub/arc42-venom.epub',
-            'arc42-venom.xml']
-}
-htmlSanityCheck {
+//end::generateDeck[]
 
-    // ensure asciidoctor->html runs first
-    // and images are copied to build directory
-
-    dependsOn generateHTML
-
-    sourceDir = new File( "$targetDir/docs/html5" )
-
-    // files to check, in Set-notation
-    sourceDocuments = [ "arc42-venom.html",
-                        "index-orga.html"]
-
-    // where to put results of sanityChecks...
-    checkingResultsDir = new File( checkingResultsPath )
-
-    // false: restrict checks to local resources
-    // true:  also check external (e.g. http, https...) links.
-    checkExternalLinks = false
-}
 // let's set a defaultTask for convenience
 //defaultTasks 'exportChangeLog','exportJiraIssues','asciidoctor'
 defaultTasks 'exportChangeLog', 'generateHTML', 'generatePDF', 'htmlSanityCheck'
