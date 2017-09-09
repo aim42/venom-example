@@ -8,8 +8,8 @@ task convertToDocx (
     new File('build/docs/docx/').mkdirs()
     args = ['-r','docbook',
             '-t','docx',
-            '-o','../docx/arc42-template-en.docx',
-            'arc42-template-en.xml']
+            '-o','../docx/arc42-venom.docx',
+            'arc42-venom.xml']
 }
 //end::convertToDocx[]
 
@@ -24,8 +24,8 @@ task convertToEpub (
     new File('build/docs/epub/').mkdirs()
     args = ['-r','docbook',
             '-t','epub',
-            '-o','../epub/arc42-template-en.epub',
-            'arc42-template-en.xml']
+            '-o','../epub/arc42-venom.epub',
+            'arc42-venom.xml']
 }
 //end::convertToEpub[]
 project.afterEvaluate {
