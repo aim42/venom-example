@@ -1,4 +1,0 @@
-
-== Risiken und Technische Schulden
-
-TODO
