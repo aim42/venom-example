@@ -1,0 +1,61 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+=== Persistenz
+
+[WARNING]
+--
+Die Speicherung von Daten in VENOM basiert auf den _historisch gewachsenen_
+Mechanismen der zugekauften Systeme. Es gab bislang niemals einen durchgängigen
+Entwurf eines homogenen, zuverlässigen und flexiblen Persistenzkonzeptes.
+--
+
+An der Speicherung von Daten in VENOM sind im wesentlichen folgende Teilsysteme
+beteiligt:
+
+image::08-persistence.png["Persistenz", title="Persistenz"]
+
+
+[cols="1,3" options=""]
+.Bestandteile des Persistenzkonzept
+|===
+| ATLAS (DB2/400) 
+| Auf einer http://de.wikipedia.org/wiki/System_i[IBM-Hardware AS/400^] laufendes DB2/400. Aus dem 2003-2005 übernommenen ATLAS/2 System liegen hierauf noch Kunden-, Vertrags- und Abrechnungsdaten.  
+
+| Optisches Archiv 
+| Langzeitspeicher, basiert auf http://www.emc.com/data-protection/centera.htm[EMC-Centera^].
+Enthält sämtliche Verkaufsdaten, Angebote, Verträge, historisierte Stammdaten.
+
+| Partner Management
+|
+
+| PK-GK Datenbank (MySQL)
+| Stammdaten von Privat- und Geschäftskunden, https://www.mysql.de/[MySQL^]
+
+| Sales Backend PK-GK
+| Primär relevant für Konfiguration von Queries innerhalb PK/GK.
+
+| Sales Backend Government (EyeDB)
+| Verkaufte Produkte, Konfigurationen, Preise sowie
+  Vertragsdetails, gespeichert als Objekte/Objektgraphen in der C++ 
+  Objektdatenbank (http://www.eyedb.org/[EyeDB^])
+
+| Sales & Contracts Database (PostgreSQL)
+| Verkaufs- und Vertragsdaten, gespeichert http://www.postgresql.org/[PostgreSQL^]
+|===
+
+
+==== Fachliches Datenmodell
+In einem informellen Brainstorming hat eine interne Arbeitsgruppe einen Vorschlag
+für ein grobes fachliches Datenmodell erarbeitet, das als Grundlage für eine
+zukünftige Konsolidierung der vorhandenen Datenquellen und -senken dienen könnte.
+
+image::VENOMBOM.png[title="Draft: Fachliches Datenmodell"]
+
+
+
+.TODO
+* typische Queries erläutern
+** Suche nach alten Aufträgen eines Kunden
+** Suche nach Verkäufen & Konfigurationen eines Produktes
+** Suche nach dem Status ausfuhrbeschränkter Produkte/Aufträge
+

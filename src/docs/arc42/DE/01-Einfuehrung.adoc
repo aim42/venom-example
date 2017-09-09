@@ -1,0 +1,234 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+==	Einführung
+
+=== Das Unternehmen
+
+include::../../organization/01-samm-portrait.adoc[tags=aboutSam]
+
+Die SAMM Inc. (kurz für "sell and make money") ist seit Jahren erfolgreich
+mit dem Verkauf so genannter _komplexer Produkte_: Dazu zählen beispielsweise:
+
+* Büroausstattungen, Schrank- und Regalsysteme
+* Küchen und Großküchen
+* Ausstattungen für Spezialläger (beispielsweise für Apotheken oder Labore)
+* Badezimmerausstattungen und Armaturen
+* Gartenanlagen (Teiche, Wasserspiele, Bewässerungsanlagen, Pflanzenarrangements)
+* Feuer- und Sicherheitszubehör (Sprinkler-, Schliess- und Alarmanlagen)
+
+sowie zusätzlich
+
+* Bürobedarf
+* Küchenbedarf
+
+Zu den Kunden von SAMM zählen kleine und mittlere Unternehmen, Vereine,
+Behörden, Organisationen und Einzelpersonen.
+
+SAMM bietet seinen Kunden für diese _komplexen Produkte_ benutzerfreundliche
+Konfiguration an (online oder per Telefon). SAMM selbst kauft die Produkte
+bei Herstellern gemäß der Konfiguration ein, kann aufgrund langfristiger
+Liefer- und Rabattverträge die Produkte deutlich unterhalb gängiger Marktpreise
+anbieten.
+
+[small]#<<Beispiele-Konfiguration,Vereinfachte Beispiele>> solcher Konfiguration finden Sie im <<Beispiele-Konfiguration, Anhang>>.#
+
+SAMM schafft starke Kundenbindung durch die Kombination langfristige
+Vergünstigungsverträge, zeitlich befristeten Rabattmöglichkeiten und
+branchenorientierten Vertragsmodellen.
+
+
+Beispiel 1:: Für die Lagerung von Medikamenten in Apotheken werden immer mehr
+Lagerautomaten verwendet: Rezepte werden an der Theke eingescannt und der Lagerautomat
+transportiert die entsprechende Medikamentenpackung automatisch an den Point-of-Sale.
+Solche Systeme kosten direkt beim Hersteller 150.000-500.000€. SAMM kann
+in vielen Fällen solche Systeme für 90.000-300.000€ an die Apotheken verkaufen.
+
+Beispiel 2:: Komplettausstattungen spezieller Großküchen (etwa für Krankenhäuser,
+  im Justizvollzug oder für Betriebskantinen) bietet SAMM in der Regel ca. 30% günstiger
+  als Möbelhäuser oder Hersteller an.
+
+Beispiel 3:: Für Einzelpersonen ist die Konfiguration spezieller Schränke oder Regale
+ein typisches SAMM-Erfolgsgeschäft.
+
+
+
+
+=== Das VENOM-System
+
+==== Historie
+VENOM wurde über die letzten Jahre durch die SAMM Inc. und ihre Vorgängerunternehmen entwickelt.
+Das System in seiner heutigen Form ist aus einer Vielzahl von Vorgängersystemen entstanden, erklärbar im Wesentlichen durch die Unternehmenshistorie
+(siehe dazu die SAMM Inc. Unternehmensinformation)
+
+
+Einen groben Überblick über die Historie von VENOM und dessen Vorgänger
+gibt Abbildung <<figure-history>>.
+
+
+[[figure-history]]
+image::00-venom-history.jpg["Historie", title="Historie von VENOM"]
+
+Aufgrund der langen Historie und der häufig wechselden Entwicklungs- und Wartungsteams
+sowie der damit verbundenen wechselnden Verantwortlichkeiten und Prioritäten leidet VENOM
+unter folgenden grundsätzlichen Problemen (Details werden an anderer Stelle
+  beschrieben):
+
+* Signifikante Steigerung von Entwicklungs- und Betriebskosten
+** Hohe Aufwände zur Entwicklung und Inbetriebnahme neuer Features. Teilweise
+dauert es auch bei wichtigen Anforderungen mehr als 4-6 Monate, bis die entsprechende
+Funktion in Betrieb gehen kann.
+** Hohe Fehleranfälligkeit bei Änderungen und Neuentwicklungen: Selbst kleine Änderungen
+ziehen substantielle Test- und Bugfixing-Aufwände nach sich.
+
+* Sinkende Betriebsstabilität: Die Anzahl an Fehlern im laufenden Betrieb
+(Prio-1 Produktionsfehler) nimmt zu.
+
+* Die Verlässlichkeit von Aufwandsschätzungen der Entwicklungsteams nimmt ab.
+* Mangelhafte Qualität von Dokumentation
+
+
+
+=== Aufgabenstellung
+
+Aus der gesamten Wertschöpfungskette soll VENOM insbesondere die Konfigurations-
+und Verkaufsprozesse unterstützen, inklusive:
+
+* Konfiguration komplexer Produkte (insbesondere Möbel, Küchen, Lagersysteme,
+  Spezialmaschinen mit geringer Individualität)
+* Verwaltung der dazu notwendigen Produkt- und Konfigurationsdaten
+* Kundenverwaltung (inklusive Verkaufshistorie und einfachen CRM Funktionen)
+* Angebotserstellung auf Basis getätiger Produktauswahl und -konfiguration
+* Verfeinerung und Optimierung von Konfigurationen durch
+  ein regelbasiertes Expertensystem.
+* Berücksichtigung individueller Vertrags- und Rabattgestaltung sowie Marketingkampagnen
+
+==== Beispiele von Anwendungsfällen
+
+* Ein gewerblicher Nutzer konfiguriert einen Lagerautomaten für eine Apotheke. Raummaße und
+weitere notwendige Details sind bekannt, ebenso Parameter der Apotheke (Beschaffenheit der PoS,
+  Art der Kassensysteme etc.). VENOM ermittelt nach fertiggestellter Konfiguration innerhalb
+  von max. 1 Minute einen verbindlichen Angebotspreis.
+
+
+==== Beispiele noch nicht umgesetzter Anforderungen
+
+* Ein Privatkunde konfiguriert ein Produkt. VENOM zeigt eine
+  Liste möglicher Alternativen (Vorschlags- oder Empfehlungsliste),
+  ähnlich der "Andere Kunden kauften auch..." Übersicht anderer Webshops.
+
+* Ein Kunde lädt einen Grundrissplan hoch. VENOM unterbreitet
+  aus gestalterischer Sicht attraktive Vorschläge, sowohl
+  als Grundriss wie auch als photorealistische 3D-Darstellung.
+
+
+=== Qualitätsziele
+
+Sind nur in Auszügen explizit bekannt.
+
+[options="header", cols="1,2,6"]
+.Qualitätsziele
+|===
+| Prio | Qualitätsmerkmal | Szenario
+| 1    | Entwicklungsgeschwindigkeit 
+| Neue Features sollen möglichst schnell umgesetzt werden können:
+
+- _einfache_ Features innerhalb von 2-3 Tagen +
+- _mittlere_ Features innerhalb von 5-15 Tagen +
+- Behebung kritischer Fehler innerhalb von 4-8 Stunden
+
+| 1 | Korrektheit
+    | Es lassen sich nur sachlich/fachlich korrekte Produkte konfigurieren,
+      d.h. solche, die technisch durchführbar/herstellbar sind: Benutzer
+      können unmögliche/illegale Produkte nicht konfigurieren bzw. nicht bestellen.
+
+| 1 | IT-Kosten
+    | Da die zu erzielenden Erträge im Handel eher gering sind, müssen die
+      Ausgaben für IT-Leistungen (Entwicklung und Betrieb) möglichst gering gehalten
+      werden.
+
+| 2 | Performance
+    | VENOM gibt eine verbindliche Auskünfte über Herstellbarkeit, Lieferbarkeit
+      und Inbetriebnehmbarkeit für 90% aller Produkte/Anfragen innerhalb von maximal 60 Sekunden. Die übrigen 10% (schwierige) Anfragen können zeitverzögert oder
+      vorläufig innerhalb von 4h erfolgen.
+
+| 3 |  Auskunftsfähigkeit
+    | VENOM bearbeitet einige archivierungspflichtige Typen von Daten (AP-Daten).
+      Interne und berechtigte externe Anfragen nach AP-Daten können bis zu 15 Jahre nach Erzeugung dieser Daten innerhalb von maximal 30 Sekunden beantwortet werden. Dies betrifft insbesondere -><<BAFA>> oder -><<ECI>> Anfragen.
+|===
+
+Für die Einstufung der Features in _einfach_ und _mittel_ gelten folgende
+grobe Regeln:
+
+[horizontal]
+_einfach_:: kleine Ergänzungen oder Korrekturen, etwa Layout, Texte, einfache Zusatzoptionen, kleine Änderungen an Geschäfts- oder Validierungsregeln.
+Änderungen an Konfigurationsregeln.
+
+_mittel_:: Neue Produkte, die ähnlich zu bestehenden sind. Umfangreiche neue Geschäfts- oder Validierungsregeln, Anbindung neuer Partner.
+
+_groß_:: Grundlegende neue Funktionen (beispielsweise der <<Gartenplanung, Garten-Konfigurator>>)
+
+<<<<
+
+=== Stakeholder
+
+==== Benutzer und Benutzergruppen
+
+
+[[figure-users]]
+image::ea/1.5_Stakeholder.png[title="Benutzer und Benutzergruppen von VENOM"]
+
+[cols="2,3,3,2" options="header"]
+.Benutzer und Benutzergruppen
+|===
+| Rolle | Beschreibung | Ziel  | Bemerkungen
+
+include::../../ea/stakeholder.ad[]
+
+|===
+
+==== Sonstige Stakeholder
+
+[cols="2,4,5" options="header"]
+.Stakeholder des Systems
+|===
+|Rolle | Beschreibung | Intention
+| Fachbereich
+|
+| VENOM ist essentielle Grundlage für die Wertschöpfung des Unternehmens,
+  daher für die Fachbereiche immens wichtig.
+
+| IT-Management
+|
+| - geringe Aufwände für Administration und Betrieb von VENOM +
+  - hohe Entwicklungseffizienz +
+  - hoher Standardisierungsgrad in der Entwicklung, um Outsourcing besser
+    zu unterstützen oder überhaupt zu ermöglichen
+
+| Entwickler (intern)
+|
+| keine _bösen Überraschungen_ bei Änderungen am System, Transparenz
+
+| Entwickler (extern)
+|
+| kurze Einarbeitungszeiten, gute Dokumentation
+
+| Externe Partner
+| beispielsweise Handwerker, Monteure oder Ingenieure, die zu Aufbau bzw. Inbetriebnahme
+der komplexen Produkte benötigt und durch VENOM vermittelt werden
+| - möglichst einfache (d.h. standardisierte) Anbindung an VENOM +
+  - Anbindung an VENOM soll mit der jeweils branchenüblichen Standardsoftware
+     (einfache ERP-Systeme, Groupware- und Einsatzplanungswerkzeugen) möglich sein
+
+| Produkthersteller
+| beispielsweise Hersteller von Möbeln, gewerblichen Küchengeräten,
+Transportanlagen, Lagersystemen
+|  - Produktdaten und deren Konfigurationsparameter pflegen +
+   - Preis- und Lieferbarkeitsinformationen hinterlegen oder ändern +
+   - Durchführbarkeit und Konditionen von Sonderkonfigurationen bearbeiten
+
+
+| Behörde (extern)
+| Beispielsweise Exportkontrollbehörde
+| Rechercheaufträge müssen innerhalb von 48h beantwortet werden.
+
+|===

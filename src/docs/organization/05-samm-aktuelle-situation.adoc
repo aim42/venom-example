@@ -1,0 +1,92 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+== Aktuelle Situation
+In den letzten Jahren haben mehrere namhafte Beratungsunternehmen 
+(u.a. McFool & Company, Prix-Wassermann sowie Cup-Mercury)
+die SAMM Inc. auf Optimierungspotential 
+und zu Benchmarking-Zwecken untersucht.
+Nachfolgend einige Extrakte dieser Untersuchungen bzw. Ergebnisse aus Interviews
+mit SAMM Mitarbeitern.
+
+
+=== Wirtschaftliche Situation
+
+* starker Umsatzrückgang bei Privatkunden
+* Ausfall diverser Partner aufgrund Insolvenzen in der Möbelindustrie
+* Gestiegener Ertrag bei Gewerbekunden und für Großprojekte
+* bisher kein Markteintritt in mobiles Internet
+
+* Analysten prognostizieren weitere Verluste in den kommenden Jahren, sofern
+die Umsatz- und Marktausfälle nicht durch neue Produkte/Vertriebswege kompensiert werden können. 
+* Investoren drängen auf kurz- und mittelfristige Verbesserung der Erträge,
+ggfs. durch Verkauf von Unternehmensteilen.
+
+
+=== Fachliche Situation
+
+
+* Bisher ungenutztes Portfolio von Patenten im Bereich regelgestützte Innenarchitektur
+* Zu geringe Standardisierung in Prozessen und Produkten, etwa im Bereich IT-Governance und IT-Betrieb.
+* Zu geringe Prozessorientierung macht organisatorische Anpassungen auf allen Hierarchieebenen notwendig. Siehe dazu die Veröffentlichung der
+http://www.escpeurope.eu/uploads/media/WP_58_Bick.pdf[Ecole Supérieure de Commerce ESCP] zum Thema Prozessorientierung.
+
+* Laufende Gerichtsverfahren mit Steuerbehörden bezüglich CBBPO 
+(_cross border business process outsourcing_)
+
+* Hohe laufende Aufwände (Personal und Geld) in ertragsarmen Bereichen
+
+* anchor:time-to-market[] Inakzeptabel schlechte _time-to-market_ bei innovativen Produktideen:
+ Bereits mehrfach wurden hervorragende Ansätze derartig langsam umgesetzt,
+ dass Mitbewerber ähnliche Ideen schneller am Markt hatten und SAMM somit
+ den Markteintritt verpasst hatte.
+
+* Gemeinsam mit internationalen Technologiepartnern und eigenen Experten
+einige vielversprechende Innovationen kurz vor Markt-/Produktionsreife:
+** 3D-Druck von Kleinmöbeln nach individueller Spezifikation
+** Erstellung von Gebäudeplänen auf Basis von Panoramafotos - Grundlage für die halbautomatische Konfiguration von z.B. komplexen Schrank- oder Regalsystemen.
+** Expertensysteme zur Einrichtungs- oder Konfigurationsberatung, etwa: Material-/Textur-/Farbkombination, Stoff- und Dekorationsmaterial.  
+
+* Laut eines vorangegangenen technischen Reviews der Softwareplattform VENOM durch Cup-Mercury gibt es eine Reihe kritischer Problemfelder:
+** zu hoher Anteil Eigenentwicklung bei Standard-IT-Aufgaben, etwa bei der Persistenz, im Reporting (DWH), Monitoring/Logging, fachliche und technische 
+Transaktionen, Konfiguration sowie Benutzeroberflächen.
+** übermäßige Komplexität im gesamten System.
+** übermäßige Heterogenität, unter anderem aufgrund der vielen Altsysteme.
+** unzureichende automatische Tests, geringe Menge an Unit-Tests.
+** massiv unzureichende innere Konsistenz und Standardisierung innerhalb von Softwarearchitektur und -entwicklung (_rotten architecture_)
+
+
+=== Situation der IT
+(hier bezogen auf die _customer facing systems_, insbesondere VENOM)
+Die Situation der Kundensysteme, primär VENOM, fasst 
+Abbildung <<abb-kpis-over-time>> in kompakter Form zusammen:
+
+* Die Entwicklungsgeschwindigkeit der CS-Teams ist in den letzten Jahren
+kontinuierlich gesunken.
+** Dadurch steigen die Kosten-pro-fachlichem-Feature kontinuierlich an
+** siehe auch <<time-to-market, Time-to-Market>>
+* Die Menge kritischer Produktionsfehler (Prio-1, d.h. System war für Endkunden
+oder prozessrelevante Beteiligte zu Geschäftszeiten nicht verfügbar) stieg in
+dieser Zeit signifikant an.
+* Im Konzern werden immer noch mehrere unterschiedliche Buchhaltungssysteme eingesetzt,
+  woraus schwieriges und teilweise langsames _financial reporting_ resultiert. 
+  Müsste in VENOM vereinheitlicht werden.
+* Die Speicherung von Produktdaten erfolgt in zwei unterschiedlichen Datenbanken
+(der relationalen MySQL-DB für PK/GK Kunden sowie der Objektdatenbank http://www.eyedb.org/[EyeDB]
+für E-Government Daten.  )
+
+[[abb-kpis-over-time]]
+image::05-KPI-over-time.png[title="Kritische Fehler und Entwicklungsgeschwindigkeit"]
+
+[[abb-verfuegbarkeit]]
+image::05-verfuegbarkeit.png[title="Verfügbarkeit von VENOM"]
+
+Das IT-Budget ist in den letzten Jahren praktisch konstant geblieben,
+in dieser Hinsicht ist keine Korrelation zu den o.g. KPI's erkennbar.
+
+
+[WARNING]
+--
+Die bereits 2013 geplante Markteinführung des Produktes _Garden-Configurator_
+musste aufgrund gravierender Qualitätsmängel, schlechter Benutzbarkeit sowie
+Nichterreichung zugesagter Liefertermine seitens des Entwicklungsteams mehrfach verschoben werden.
+--

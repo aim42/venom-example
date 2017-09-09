@@ -1,0 +1,174 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+== Laufzeitsicht
+
+=== Privatkunde kauft Sitzmöbel
+Einfacher Anwendungsfall, ohne Bilderkennung, sehr einfache
+Regelwerke, einfache Logistik- und Aufbauplanung, keine juristischen Einschränkungen
+
+
+Erläuterung::
+. Anmelden (ohne Anmeldung ist kein Zugriff auf die Expertensysteme möglich)
+. Produktgruppe bzw. Produkt auswählen 
+. Passender grafischer Konfigurator wird mit den Produktdaten vorbereitet und angezeigt ('getProductConfigurator')
+. Benutzer konfiguriert Produkt, zwischenzeitlich ggfs. Zugriff auf zusätzliche Produktdaten, das Expertensystem oder die PricingEngine.
+. Bei Bedarf: VENOM schlägt Verbesserungen vor (etwa zur Verbesserung der Leistung bei identischem Preis oder Senkung des Preises bei identischer Leistung)
+. VENOM holt ein verbindliches Angebot für Aufbau- und Lieferleistung ein. 
+
+.Privatkunde kauft Sitzmöbel
+[plantuml,"{plantUMLDir}sequence-PK-buys-seating",png]
+----
+!pragma graphviz_dot jdot
+autonumber
+actor PK
+participant "sales Frontend\nPrivate & Corporate" as FE
+participant "sales Backend\nPrivate & Corporate" as BE
+participant "pK-GK\nDatabase" as DB
+participant "Configurator\nShell" as configurator
+participant "Pricing\nEngine" as pricing
+participant "Order\n& Fulfillment" as order
+participant "ATLAS\nLogistics" as atlas
+activate PK
+PK -> FE : authenticate
+activate FE
+FE -> BE : verifyUserId
+activate BE
+FE -> BE : getContract
+BE -> DB : getContract
+activate DB
+deactivate DB
+deactivate BE
+PK -> FE : selectProductGroup
+FE -> BE : selectProductGroup
+activate BE
+BE -> configurator : getProductConfigurator
+deactivate FE
+activate configurator
+deactivate BE
+PK -> FE : configure
+deactivate configurator
+activate FE
+FE -> BE : checkConfiguration
+activate BE
+BE -> configurator : checkConfiguration
+activate configurator
+configurator -> configurator : validateConfiguration
+BE -> DB : saveValidatedProduct
+activate DB
+deactivate DB
+deactivate BE
+deactivate FE
+configurator -> configurator : optimizeConfiguration
+configurator -> BE : proposeOptimazations
+activate BE
+configurator -> pricing : getPrice
+activate pricing
+deactivate pricing
+deactivate configurator
+BE -> FE : displayOptimizations
+activate FE
+deactivate FE
+deactivate BE
+PK -> FE : finishConfiguration
+activate FE
+FE -> BE : getQuoteWithLogistics
+activate BE
+BE -> order :
+activate order
+order -> atlas: getLogisticsOffer
+activate atlas
+deactivate atlas
+deactivate order
+deactivate BE
+PK -> FE : finalizeOrder
+deactivate FE
+deactivate PK
+----
+
+[[PE-ermittelt-Verkaufspreis]]
+=== Pricing Engine ermittelt Verkaufspreis für GK
+
+Preise ergeben sich aus folgenden Parametern:
+
+* Verkaufspreisen der Einzelprodukte korrigiert um
+* Konfigurationsauf- bzw. Abschläge,
+* Pauschalen Rabatten aufgrund von Verträgen
+* Speziellen Rabatten wie 
+** Mengenstaffeln
+** Gutscheine (Voucher)
+** Kampagnen (seitens Marketing)
+** besondere Produktkombinationen
+* Scoring der Kunden (Risikoaufschläge für negative Historie, Abzüge für positive Historie)
+
+
+Voraussetzung::
+
+Produkt ist ausgewählt, Geschäftskunde befindet sich in Konfigurationsprozess.
+
+Erläuterung::
+
+Ablauf in der <<Pricing Engine>> ist etwa folgender:
+
+PricingEngine prüft:
+
+. (bei OrderFulfillment und SalesBackend-PK-GK) Kundenhistorie, 
+   um Scoring-Parameter zu ermitteln
+. (bei <<Configurator Shell>>)  
+.. ob Konfiguration gültig ist,
+.. welche aufschlags- bzw. abzugsfähigen Konfigurationsparameter vorliegen
+.. ob rabatt- oder aufschlagsfähige Produktkombinationen vorliegen
+. (via SalesBackend-PK-GK) Verträge, ob Rabatte möglich oder notwendig sind
+. Voucher (falls Kunde Gutschein angegeben hat)
+. (bei Marketing) ob aktuell Kampagnen für das jeweilige Produkt laufen
+
+Im Falle von _ungültigen_ Produkten oder Konfigurationen liefert die PricingEngine
+ein _NoPP_ (no-price-possible) als Ergebnis.
+
+
+[WARNING]
+--
+Da die PricingEngine intensiv mit anderen Bausteinen zusammenarbeiten muss, sind
+häufig Schnittstellenänderungen erforderlich. Aufgrund der Arbeitsteilung zwischen
+Berlin und Ungarn kommt es dabei immer wieder zu starken Zeitverzögerungen,
+da die ungarische Haskell-Entwicklerin nur halbtags arbeitet.
+--
+
+=== Kunde konfiguriert Schrankwand 
+Mit Raumplan-Upload, Bilderkennung sowie umfangreicher 
+Unterstützung durch Expertensystem. Praktisch identisch für alle Kundensegmente,
+lediglich Preise werden anders berechnet.
+
+TODO
+
+=== Anpassung von VENOM an neue Produkteigenschaften
+Oftmals müssen bei Produktänderungen seitens der Hersteller
+auch die Konfiguratoren, Konfigurationsregeln oder
+die Benutzeroberfläche angepasst werden (tritt 1-5 mal monatlich auf). 
+
+Dazu sind (grob) folgende Schritte seitens der Entwicklung notwendig:
+
+. Anpassung der Produktparameter in den 
+.. betroffenen Sales Frontends, PK-GK und/oder eGov (PHP und/oder JavaScript)
+.. Backends, insbesondere den dort enthaltenen Produktdatenbanken
+(Java, C/C++, SQL)
+. Anpassung der Preisparameter in der <<Pricing Engine>> (Haskell)
+. Erweiterung/Anpassung der Konfigurationsregeln in <<Configurator Shell>> (Drools + Java). 
+. Anpassung der Validierungsregeln (Prolog) 
+. Anpassen der automasierten und manuellen Testfälle/Testdaten.
+
+Manche dieser Produktupdates werden über Marketing-Kampagnen oder Gutscheine (Voucher) beworben, in seltenen Fällen sind dann Änderungen an den jeweiligen
+Komponenten nötig.
+
+
+
+[WARNING]
+--
+Aus Sicht einiger Fachbereiche von SAMM Inc, insbesondere dem Vertrieb (Delivery/Sales) dauern diese Anpassungen viel zu lange: Mindestens 80% aller Produktänderungen und -anpassungen sollten aus deren Sicht rein konfigurativ durch die Fachabteilungen bzw. Produktexperten selbst umsetzbar sein, komplett ohne Eingriff der IT. Stand heute sind sämtliche (!) Produktanpassungen auf IT-Entwicklung angewiesen. 
+--
+
+.TODO List
+* Erstellen eines VENOM Releases
+* Geschäftskunde konfiguriert Transport- und Lagersystem
+
+* Marketing wertet Kampagne aus
+
