@@ -7,7 +7,7 @@ An example for several [aim42] practices and for the [arc42] architecture templa
     Any similarity to existing systems or organizations is purely accidental and against my intention.
 
 
-(c) 2014-2015 by [Dr. Gernot Starke]. Rights reserved. Reproduction and commercial use only
+(c) by [Dr. Gernot Starke]. Rights reserved. Reproduction and commercial use only
 with written permission by the author. Please see the file "license.txt" for details.
 
 
@@ -41,10 +41,10 @@ sind herzlich willkommen!
 
 
 ### Credits
-Das VENOM-Logo basiert auf [Bone-Clipart] 
-von [matheod](https://openclipart.org/user-detail/matheod) 
-sowie [Poison-Clipart] 
-von [Lil_Mermaid_Girl](https://openclipart.org/user-detail/Lil_Mermaid_Girl) 
+Das VENOM-Logo basiert auf [Bone-Clipart]
+von [matheod](https://openclipart.org/user-detail/matheod)
+sowie [Poison-Clipart]
+von [Lil_Mermaid_Girl](https://openclipart.org/user-detail/Lil_Mermaid_Girl)
 und [Dear-theophilus](https://openclipart.org/user-detail/dear_theophilus)
 
 VENOM-Logo (c) 2015 Gernot Starke.

@@ -1,5 +1,5 @@
 ifndef::imagesdir[:imagesdir: ../../images]
 
-== Technische Risiken
+== Risiken und Technische Schulden
 
 TODO
