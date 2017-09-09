@@ -16,16 +16,14 @@ ext {
     targetDir = "$buildDir"
     javaVersion = System.getProperty("java.version")
     currentDate = new Date().format("d. MMM yyyy")
+    // where HTMLSanityCheck checking results ares stored
+    checkingResultsPath = "$buildDir/report/htmlchecks"
     sourceFiles = [
                     [file: 'arc42-venom.adoc',       formats: ['html','pdf','docbook']],
                     [file: 'index-orga.adoc',        formats: ['html','pdf','docbook']],
                     [file: 'SAMM_Ueberblick.adoc',   formats: ['html','pdf','docbook']],
                 ]
 }
- 
-
-// where HTMLSanityCheck checking results ares stored
-def checkingResultsPath = "$buildDir/report/htmlchecks"
 
 
 apply plugin:'groovy'
