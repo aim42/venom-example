@@ -4,14 +4,6 @@
 
 import org.asciidoctor.gradle.AsciidoctorTask
 
-buildscript {
-    dependencies {
-        //for the renderToConfluence Task
-        classpath 'org.apache.httpcomponents:httpmime:4.5.1'
-        classpath 'org.jsoup:jsoup:1.9.1'
-    }
-}
-
 plugins {
     id "org.asciidoctor.convert" version "1.5.3"
     id "org.aim42.htmlSanityCheck" version "0.9.7"
@@ -66,18 +58,7 @@ apply from: 'scripts/pandoc.gradle'
 
 apply from: 'scripts/publishToConfluence.gradle'
 
-//tag::htmlSanityCheck[]
-htmlSanityCheck {
-    sourceDir = new File( "$buildDir/docs/html5" )
-
-    // files to check - in Set-notation
-    //sourceDocuments = [ "one-file.html", "another-file.html", "index.html"]
-
-    // where to put results of sanityChecks...
-    checkingResultsDir = new File( checkingResultsPath )
-    checkExternalLinks = false
-}
-//end::htmlSanityCheck[]
+apply from: 'scripts/htmlSanityCheck.gradle'
 
 //tag::AsciidoctorTask[]
 
