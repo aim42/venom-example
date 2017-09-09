@@ -1,122 +1,220 @@
-// gradle build script for the VENOM architecture example
-//
-// free software - without guarantee, use at your own risk
-// ========================================================
+/*
+ * This build file is part of the docToolchain
+ */
 
-println """compiling with Java ${System.getProperty("java.version")} at ${new Date().format("HH:mm:ss")}"""
+import org.asciidoctor.gradle.AsciidoctorTask
 
-
-buildscript {
-    // these are the BUILDSCRIPT deps - required to execute
-    // build targets and -operations
-    repositories {
-      maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-        jcenter()
-    }
-
-
-    dependencies {
-        classpath ( group: 'gradle.plugin.org.aim42',
-                    name: 'htmlSanityCheck',
-                    version: '0.9.7')
-
-        classpath ( group: 'org.asciidoctor',
-                    name: 'asciidoctor-gradle-plugin',
-                    version: '1.5.3')
-    }
+plugins {
+    id "org.asciidoctor.convert" version "1.5.3"
+    id "org.aim42.htmlSanityCheck" version "0.9.7"
+    id "com.github.ben-manes.versions" version "0.14.0"
 }
-
+println "compiling with Java ${System.getProperty("java.version")} at ${new Date().format("HH:mm:ss")}"
 
 ext {
-    srcDir  = "$projectDir/doc"
+    srcDir  = "$projectDir/src/docs"
     targetDir = "$buildDir"
     javaVersion = System.getProperty("java.version")
     currentDate = new Date().format("d. MMM yyyy")
+    // where HTMLSanityCheck checking results ares stored
+    checkingResultsPath = "$buildDir/report/htmlchecks"
+    sourceFiles = [
+                    [file: 'arc42-venom.adoc',       formats: ['html','pdf','docbook']],
+                    [file: 'index-orga.adoc',        formats: ['html','pdf','docbook']],
+                    [file: 'SAMM_Ueberblick.adoc',   formats: ['html','pdf','docbook']],
+                ]
 }
 
 
-// where HTMLSanityCheck checking results ares stored
-def checkingResultsPath = "$buildDir/report/htmlchecks"
+apply plugin:'groovy'
 
-
-// =========== asciidoctor stuff ===============
-apply plugin: 'org.asciidoctor.convert'
+dependencies {
+    asciidoctor 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.15'
+    // carefull!
+    // asciidoctor 1.5.6 needs diagram 1.5.4.1
+    // but then reveal.js is broken...
+    // https://github.com/asciidoctor/asciidoctor-diagram/issues/161
+    asciidoctor 'org.asciidoctor:asciidoctorj-diagram:1.5.4'
+}
 
 asciidoctorj {
-       version = '1.5.4'
+ version = '1.5.4'
+}
+
+
+apply from: 'scripts/exportEA.gradle'
+
+apply from: 'scripts/exportPPT.gradle'
+
+apply from: 'scripts/exportChangelog.gradle'
+
+apply from: 'scripts/exportJiraIssues.gradle'
+
+apply from: 'scripts/exportExcel.gradle'
+
+apply from: 'scripts/pandoc.gradle'
+
+apply from: 'scripts/publishToConfluence.gradle'
+
+apply from: 'scripts/htmlSanityCheck.gradle'
+
+//tag::AsciidoctorTask[]
+
+// common settings for asciidoctor
+// this is needed for PDF generation with plantUML
+tasks.withType(AsciidoctorTask) { docTask ->
+    inputs.dir new File(srcDir, 'arc42')
+    inputs.dir new File(srcDir, 'images')
+    inputs.file new File(srcDir, 'arc42-template-de.adoc')
+    inputs.file new File(srcDir, 'config-de.adoc')
+    inputs.file new File(srcDir, 'arc42-template-en.adoc')
+    inputs.file new File(srcDir, 'config-en.adoc')
+    inputs.file new File(new File(targetDir, 'docs'), 'changelog.adoc')
+
+    outputDir = file(targetDir)
+    sourceDir = file(srcDir)
+
+    attributes \
+            'pdf-stylesdir': 'pdfTheme',
+            'pdf-style': 'custom',
+            'source-highlighter': 'coderay',
+            'imagesdir': 'images',
+            'toc': 'left',
+            'icons': 'font',
+            'javaVersion'         : "$javaVersion",
+            'currentDate'         : "$currentDate",
+            'allow-uri-read'      : true
+    // Here we can add the code for extensions we write.
+    extensions {
+        inlinemacro (name: "jira") {
+            parent, target, attributes ->
+                options = [
+                        "type": ":link",
+                        "target": jiraRoot+"/browse/${target}".toString(),
+                        "id": "${target}"
+                ]
+
+                // Create the link to the issue.
+                createInline(parent, "anchor", target, attributes, options).render()
+        }
     }
 
-asciidoctor {
-    outputDir = file( targetDir )
-    sourceDir = file("$srcDir")
-    println "outputDir = " + outputDir
-    println "sourceDir = " + sourceDir
+    // configure source and output files and folders
+    sourceDir = file('src/docs')
+    outputDir = file('build/docs')
+    // good to see what the build is doing...
+    logDocuments = true
 
-    sources  { include "architecture/arc42-venom.adoc",
-                       "business/samm-business.adoc" }
+    requires = ['asciidoctor-diagram']
 
-    backends 'html5' //,'pdf'
+}
+//end::AsciidoctorTask[]
 
-    attributes = [
-            doctype: 'book',
-            icons: 'font',
-            toc: 'left',
-            sectlink : true,
-            sectanchors : true,
-            numbered : true,
-            'source-highlighter': 'coderay',
-            //'imagesdir'         :'./images',
-            'javaVersion'       : "$javaVersion",
-            'currentDate'       : "$currentDate"
+//tag::generateHTML[]
+task generateHTML (
+        type: AsciidoctorTask,
+        group: 'docToolchain',
+        description: 'use html5 as asciidoc backend') {
 
-   ]
+    attributes \
+        'plantUMLDir'         : ''
 
+    sources {
+        sourceFiles.findAll {
+            'html' in it.formats
+        }.each {
+            include it.file
+        }
+    }
 
-  //  println "arcImageDir = " + "${srcDir}/architecture/images"
+    backends = ['html5']
+}
+//end::generateHTML[]
+
+//tag::generatePDF[]
+task generatePDF (
+        type: AsciidoctorTask,
+        group: 'docToolchain',
+        description: 'use pdf as asciidoc backend') {
+
+    attributes \
+        'plantUMLDir'         : file('build/docs/images/plantUML/').path
+
+    sources {
+        sourceFiles.findAll {
+            'pdf' in it.formats
+        }.each {
+            include it.file
+        }
+    }
+
+    backends = ['pdf']
+}
+//end::generatePDF[]
+
+//tag::generateDocbook[]
+task generateDocbook (
+        type: AsciidoctorTask,
+        group: 'docToolchain',
+        description: 'use docbook as asciidoc backend') {
+
+    sources {
+        sourceFiles.findAll {
+            'docbook' in it.formats
+        }.each {
+            include it.file
+        }
+    }
+
+    backends = ['docbook']
+}
+//end::generateDocbook[]
+
+//tag::generateDeck[]
+task generateDeck (
+        type: AsciidoctorTask,
+        group: 'docToolchain',
+        description: 'use revealJs as asciidoc backend to create a presentation') {
+
+    attributes \
+        'plantUMLDir'         : '',
+        'idprefix': 'slide-',
+        'idseparator': '-',
+        'docinfo1': '',
+        'revealjs_theme': 'black',
+        'revealjs_progress': 'true',
+        'revealjs_touch': 'true',
+        'revealjs_hideAddressBar': 'true',
+        'revealjs_transition': 'linear',
+        'revealjs_history': 'true',
+        'revealjs_slideNumber': 'true'
+
+    options template_dirs : [new File('resources/asciidoctor-reveal.js','templates/slim').absolutePath ]
+
+    sources {
+        sourceFiles.findAll {
+            'revealjs' in it.formats
+        }.each {
+            include it.file
+        }
+
+    }
+
+    outputDir = file(targetDir+'/decks/')
 
     resources {
-        // include architecture diagrams
-        from("${srcDir}/architecture") {
-          include 'images/**'
+        from('resources') {
+            include 'reveal.js/**'
         }
-        from("${srcDir}/organization") {
-          include 'images/**'
+        from(sourceDir) {
+            include 'images/**'
         }
-        // include logos and other common images
-        from("${srcDir}") {
-          include 'images/**'
-        }
+        into("ppt")
+        logger.error "${buildDir}/ppt/images"
     }
-
-
 }
+//end::generateDeck[]
 
-
-defaultTasks 'asciidoctor'
-
-// ========================================================
-apply plugin: 'org.aim42.htmlSanityCheck'
-
-
-htmlSanityCheck {
-
-    // ensure asciidoctor->html runs first
-    // and images are copied to build directory
-
-    dependsOn asciidoctor
-
-    sourceDir = new File( "$targetDir/html5" )
-
-    // files to check, in Set-notation
-    sourceDocuments = [ "architecture/arc42-venom.html",
-                        "organization/index-orga.html"]
-
-    // where to put results of sanityChecks...
-    checkingResultsDir = new File( checkingResultsPath )
-
-    // false: restrict checks to local resources
-    // true:  also check external (e.g. http, https...) links.
-    checkExternalLinks = false
-}
+// let's set a defaultTask for convenience
+//defaultTasks 'exportChangeLog','exportJiraIssues','asciidoctor'
+defaultTasks 'exportChangeLog', 'generateHTML', 'generatePDF', 'htmlSanityCheck'

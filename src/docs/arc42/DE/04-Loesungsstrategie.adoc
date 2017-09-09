@@ -1,0 +1,48 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+== Lösungsstrategie
+
+Nachfolgend einige Lösungsansätze, teilweise für die vorab genannten
+<<Qualitätsziele>>.
+
+[options="header", cols="4,4"]
+.Lösungsansätze für wichtige Szenarien
+|===
+| Szenario | Lösungsansatz
+| Entwicklungsgeschwindigkeit: Neue Features sollen möglichst schnell umgesetzt werden können:
+
+- _einfache_ Features innerhalb von 2-3 Tagen +
+- _mittlere_ Features innerhalb von 5-15 Tagen +
+- Behebung kritischer Fehler innerhalb von 4-8 Stunden
+
+| Integration der spezialisierten Anwendungen der zugekauften Unternehmen. 
+
+
+| Kostengünstige Entwicklung
+| Wiederverwendung der Anwendungen der zugekauften Unternehmen.
+
+| Korrektheit: Es lassen sich nur sachlich/fachlich korrekte Produkte konfigurieren
+| Integration eines durch externalisierte Regeln konfigurier- und erweiterbaren
+Expertensystems (auf Basis der JBoss-Drools Regelengine).
+ 
+| Langfristige Auskunftsfähigkeit: Interne und berechtigte externe Anfragen nach <<AP>>-Daten können bis zu 15 Jahre nach Erzeugung dieser Daten innerhalb von maximal 30 Sekunden beantwortet werden. 
+| Speicherung sämtlicher Angebots- und Auftragsdaten auf Write-Once Datenspeichern
+(zur Zeit: optische Speichermedien), so daß diese Daten niemals versehentlich gelöscht werden können.
+|===
+
+
+
+[WARNING]
+--
+Die starke Heterogenität der zugekauften Systeme (und damit des gesamten VENOM Systems) 
+sowie die damit verbundene enge Kopplung führt 
+zu vielfältigen Integrationsproblemen: 
+
+* erfordert immens breites Know-How seitens der IT-Entwicklung, 
+* verlangsamt Entwicklungs- und Testzeiten
+* verzögert Inbetriebnahmen, weil häufig "Folgefehler" oder "unerwünschte Nebenwirkungen" auftreten. 
+
+Die Anforderung
+nach hoher Entwicklungsgeschwindigkeit ist damit aus Sicht der Fachbereiche *nicht erfüllt*.
+
+--

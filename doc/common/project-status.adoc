@@ -1,9 +1,0 @@
-
-// venom-example project status info
-image:http://img.shields.io/badge/Version-{version}-green.svg[{version}]
-image:http://img.shields.io/badge/Date-{currentDate}-green.svg[/{currentDate}]
--
-image:https://img.shields.io/badge/License-commercial-red.svg[]
--
-image:https://img.shields.io/badge/AsciiDoctor-{asciidoctor-version}-blue.svg[{asciidoctor-version}]
-image:https://img.shields.io/badge/Java-{javaVersion}-blue.svg[{javaVersion}]

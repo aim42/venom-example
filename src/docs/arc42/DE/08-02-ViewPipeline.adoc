@@ -1,0 +1,24 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+=== View Pipeline
+HTML-Views werden durch eine Pipes&Filter Architektur basierend auf dem Apache-Cocoon
+Framework dargestellt.
+
+Aus der Dokumentation von http://cocoon.apache.org[Apache-Cocoon^]:
+____
+Cocoon is based around the concept of pipelines: If a request comes in, a generator produces SAX events that represent the XML, tranformers can alter the stream of SAX events and a serializer finally creates an output stream which is sent to the client. Sitemaps are used to define those pipelines and connect them with requests. These connections are defined by some kind of rules. In the context  of Cocoon  those rules are named matchers. Whenever one of those rules (matcher) matches, a pipeline is executed.
+____
+
+[small]#(nachfolgende Abbildung stammt aus dem Cocoon-Projekt)#
+
+image::08-cocoon-pipeline-schematic.png["Cocoon Pipeline", title="Cocoon Pipeline (schematisch)"]
+
+
+[WARNING]
+--
+Rendering- und Business-Funktionen sind hier massiv vermischt, d.h. während der Generierung von HTML-Seiten werden viele Geschäftsregeln innerhalb von XSLT-Skripten ausgeführt - eine Mischung aus Templating, Datentransformation und Ablaufsteuerung. Die View-Pipeline ändert (!) Produktivdaten. 
+
+image::08-view-pipeline-issue.png[title="Problem mit View-Pipeline"]
+
+--
+

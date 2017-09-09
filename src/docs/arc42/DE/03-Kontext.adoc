@@ -1,0 +1,70 @@
+//ifndef::imagesdir[:imagesdir: ../../images]
+
+== Kontextabgrenzung
+
+Die folgenden Unterkapitel zeigen die Einbettung unseres Systems in seine Umgebung.
+
+=== Fachlicher Kontext
+
+image::03-Context.png["Business-Context", title="Business Context"]
+
+Der Stereotyp «Category» bezeichnet Schnittstellen, zu denen es unterschiedliche Ausprägungen,
+Varianten oder Anbieter gibt.
+
+
+[options="header", cols="2,7"]
+.Fachlicher Kontext
+|===
+| Nachbar | Beschreibung
+| Produkthersteller und Lieferanten
+| Küchen-, Möbel-, Lagersystemhersteller. Stellen Produktdaten und Verfügbarkeitsdaten bereit,
+teilweise Konfigurationsdienste oder -komponenten, die in VENOM integriert werden.
+
+| Support, Call-Center | (internes) Call-Center für Post-Sales und Support-Aufgaben. Behandeln Rückrufwünsche und Anfragen zu Produkten sowie Unterstützung gerade online
+laufender Konfigurationen. Hier arbeiten einige der hervorragenden Experten von SAMM,
+um Kunden bei hochgradig komplexen Produkten zu unterstützen.
+
+| (externe) Partner für Aufbau u. Inbetriebnahme
+| Handwerker, Monteure, Ingenieurbüros, teilweise Gutachter.
+Insbesondere werden hier Termine und Verfügbarkeiten abgestimmt.
+Allgemeine organisatorische und kaufmännische Fragen der Zusammenarbeit werden
+im Vorfeld vertraglich geregelt bzw. über die Partner-Schnittstelle erfragt.
+
+| Transportunternehmen
+| Angebotsanfragen, Buchung und Beauftragung von Transportkapazitäten. In der Regel arbeitet VENOM mit einigen Speditionen zusammen, in Ausnahmefällen
+werden Transportunternehmer direkt beauftragt. Für Kleinbestellungen werden direkt entsprechende Versender (Post, etc. ) beauftragt.
+
+| Marktforschung
+| Konkurrenzanalyse, Auswertung von Web-Analytics, Preisbeobachtung
+
+| Accounting
+| Buchhaltung, unter anderem SAP. Relevante Buchungen werden in das jeweilige Buchhaltungssystem
+  geschrieben.
+
+| Data Warehouse
+| Angebote, Aufträge, Marketingkampagnen zur Auswertung und
+  Entscheidungsunterstützung (Business Intelligence).
+
+| Exportkontrolle
+| Manche Produkte (etwa: Komplexe pharmazietaugliche Transportsysteme) können in einigen Ländern/Regionen Ausfuhrrestriktionen unterliegen. Hierüber können die Behörden entsprechende Anfragen stellen bzw. erhalten dazu Resultate.
+In Deutschland ist das das http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle, BAFA^].
+
+| Kreditrating / Scoring
+| Bonitätsprüfung und Risikobewertung (Rating oder Scoring) von Kunden, beispielsweise durch Kreditkartenprüfung
+  oder Bonitätsauskunft. Je nach Kundenart (Privat-, Firmenkunde, Organisationen) werden hier verschiedene
+  Prüfungen durchgeführt. Verschiedene Anbieter, je nach Land. In Deutschland beispielsweise
+  http://www.arvato-infoscore.de/[Arvato-InfoScore^] oder
+  https://www.schufa4b.de[Schufa Holding^]. Diese Schnittstellen sind durch die jeweiligen Anbieter vorgegeben.
+
+
+| Payment (Zahlungsdienstleister)
+| Externe Dienstleistungen in Bezug auf Zahlungen und Zahlungsabwicklung, aber auch Inkassoleistungen.
+Unterschiedliche Anbieter, unter anderem
+  http://www.arvato-infoscore.de/dienstleistungen/zahlungsabwicklung/[Arvato-InfoScore^],
+  https://www.paypal.com[PayPal^] und
+  https://www.paymill.com/de/[PayMill^], sowie
+  http://www.bundesbank.de/Navigation/DE/Aufgaben/Unbarer_Zahlungsverkehr/SEPA/sepa.html[SEPA^]-Schnittstellen zu diversen Banken. In kritischen Fällen auch Beauftragung von
+  http://inkasso.de/[Inkassoleistungen^].
+
+
+|===

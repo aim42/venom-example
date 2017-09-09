@@ -1,0 +1,5 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+== Entwurfsentscheidungen
+
+TODO

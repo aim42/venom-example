@@ -1,0 +1,121 @@
+// header file for the VENOM example
+// ====================================
+ifndef::imagesdir[:imagesdir: images]
+
+= image:logo.jpg[width="100", height="102"] VENOM: Architecture Documentation
+Author: Gernot Starke @gernotstarke
+
+:toc-title: Inhaltsverzeichnis
+// toc-title definition MUST follow document title without blank line!
+
+
+// configure DE settings for asciidoc
+include::config-de.adoc[]
+
+// common header stuff
+include::common/header.adoc[]
+
+include::arc42/DE/00-about-venom.adoc[]
+
+***
+
+[cols="1,4,1" options=""]
+|===
+| image:arc42-logo.png[arc42, link={arc42-url}, width=180]
+| (C) This document uses material from the {arc42-url}[arc42 architecture
+template^], freely available at {arc42-url}[{arc42-url}^].
+[small]#This material comes *without any guarantee*. Use on your own risk.
+
+{arc42-url}[arc42] and its structure by Dr. Peter Hruschka and
+http://gernotstarke.de[Dr. Gernot Starke].
+Asciidoc version initiated by Markus Schärtel and Jürgen Krey,
+completed and maintained by Ralf Müller and Gernot Starke.#
+| image:aim42-logo.png[aim42, link={aim42-url}, width=192]
+|===
+
+.Änderungen
+[options="header",cols="1,2,6"]
+|====
+| Date
+| Author
+| Comment
+
+include::../../build/docs/changelog.adoc[]
+
+|====
+
+// Versionsinfo, Statusinfo von github
+include::common/project-status.adoc[]
+
+
+
+
+
+// numbering from here on
+:numbered:
+
+<<<<
+// 1. Anforderungen und Ziele
+include::arc42/DE/01-Einfuehrung.adoc[]
+
+<<<<
+// 2. Randbedingungen
+include::arc42/DE/02-Randbedingungen.adoc[]
+
+<<<<
+// 3. Kontextabgrenzung
+include::arc42/DE/03-Kontext.adoc[]
+
+<<<<
+// 4. Lösungsstrategie
+include::arc42/DE/04-Loesungsstrategie.adoc[]
+
+<<<<
+// 5. Bausteinsicht
+include::arc42/DE/05-Bausteinsicht.adoc[]
+
+<<<<
+// 6. Laufzeitsicht
+include::arc42/DE/06-Laufzeitsicht.adoc[]
+
+<<<<
+// 7. Verteilungssicht
+include::arc42/DE/07-Verteilungssicht.adoc[]
+
+<<<<
+// 8. Querschnittliche Konzepte
+include::arc42/DE/08-Konzepte.adoc[]
+
+<<<<
+// 9. Entscheidungen
+include::arc42/DE/09-Entwurfsentscheidungen.adoc[]
+
+<<<<
+// 10. Qualität...
+include::arc42/DE/10-Qualitaetsszenarien.adoc[]
+
+<<<<
+// 11. Risiken
+include::arc42/DE/11-Technische-Risiken.adoc[]
+
+<<<<
+// 12. Glossar
+include::arc42/DE/12-Glossar.adoc[]
+
+
+// Appendix
+
+// Beispiel Konfigurator
+include::arc42/DE/Appendix-Konfigurator.adoc[]
+
+<<<<
+// Appendix Open Issues
+// include::arc42/DE/appendix-open_issues.adoc[]
+
+<<<<
+// give credits to openclipart-authors!
+include::common/image-credits.adoc[]
+
+// license
+include::common/license.adoc[]
+

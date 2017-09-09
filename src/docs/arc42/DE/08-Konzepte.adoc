@@ -1,0 +1,9 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+== Konzepte
+
+include::08-02-Persistence.adoc[]
+
+include::08-02-ViewPipeline.adoc[]
+
+include::08-03-GraphicalConfiguration.adoc[]
