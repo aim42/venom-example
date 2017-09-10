@@ -1,5 +1,5 @@
-// header file for the VENOM example
-// ====================================
+// header for VENOM architecture documentation
+// ===========================================
 ifndef::imagesdir[:imagesdir: images]
 
 = image:logo.jpg[width="100", height="102"] VENOM: Architecture Documentation
@@ -33,7 +33,7 @@ completed and maintained by Ralf Müller and Gernot Starke.#
 | image:aim42-logo.png[aim42, link={aim42-url}, width=192]
 |===
 
-.Änderungen
+.Letzte Änderungen
 [options="header",cols="1,2,6"]
 |====
 | Date
@@ -118,4 +118,3 @@ include::common/image-credits.adoc[]
 
 // license
 include::common/license.adoc[]
-
