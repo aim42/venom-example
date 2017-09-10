@@ -3,7 +3,7 @@ task exportChangeLog(
         description: 'exports the change log from a git subpath',
         group: 'docToolchain'
 ) doLast {
-    def res = "git log -4 ./src/docs/arc42".execute().text
+    def res = "git log -4 ./src/docs".execute().text
     def changes = []
     def change = null
     res.eachLine { line ->
