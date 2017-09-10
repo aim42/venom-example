@@ -1,10 +1,9 @@
 //tag::exportChangeLog[]
 task exportChangeLog(
-        dependsOn: [streamingExecute],
         description: 'exports the change log from a git subpath',
         group: 'docToolchain'
-) << {
-    def res = "git log ./src/docs/arc42".execute().text
+) doLast {
+    def res = "git log -4 ./src/docs/arc42".execute().text
     def changes = []
     def change = null
     res.eachLine { line ->
