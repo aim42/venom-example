@@ -6,7 +6,8 @@ ifndef::imagesdir[:imagesdir: ../../images]
 
 === Whitebox Gesamtsystem
 
-image::05-whitebox-level-1.png["Whitebox-Gesamtsystem", title="Whitebox Gesamtsystem"]
+.Whitebox VENOM Gesamtsystem
+image::05-whitebox-level-1.png["Whitebox-Gesamtsystem"]
 
 ==== Begründung
 
@@ -22,26 +23,29 @@ der wesentlichen Anwendungsfälle, massiv geprägt durch die <<Historie>> von VE
 |===
 | Name | Verantwortung | Bemerkung
 
-| ATLAS Logistik
+| ATLAS Customs und Logistik
 | Teil- bzw. vollautomatische Generierung und Vergabe von Transportaufträgen
 | Früher eine Standardsoftware, heute für VENOM und die SAMM Produktpalette optimierte
   Lösung. Stellt die zeitgerechte Lieferung sämtlicher für ein Produkt benötigten Teile
   von sämtlichen Herstellern bzw. Lagerorten an den Zielort sicher.
+  +
+  Cobol und PL/SQL
 
 
-| Client Contracts 
-| Verträge mit Privatkunden: 
-  Backoffice-Mitarbeiter können hier Verträge bearbeiten bzw. ändern, 
+| Client Contracts
+| Verträge mit Privatkunden:
+  Backoffice-Mitarbeiter können hier Verträge bearbeiten bzw. ändern,
   Mitarbeiter des Call-Centers können Teile von Verträgen einsehen.
   Eingescannte Altverträge bzw. anwaltlicher Schriftverkehr wird über
-  eine Schnittstelle dieser Komponente gelesen - die eigentliche Speicherung erfolgt in der <<User-Data-Service>>.
+  eine Schnittstelle dieser Komponente gelesen - die eigentliche Speicherung erfolgt in <<User-Data-Service>>.
 |
 
 | <<Configurator Shell>>
 | Fassade für unterschiedliche Konfiguratoren
-| Die Konfiguratoren werden in die unterschiedlichen Sales-Frontends integriert. 
-  Enthält auch die (regelgestützten) Expertensysteme und die ->CTI Anbindung. Hauptsächlich Java,
-  relevante Teile in Prolog und Flash(tm).
+| Die Konfiguratoren werden in die unterschiedlichen Sales-Frontends integriert.
+  Enthält auch die (regelgestützten) Expertensysteme und die ->CTI Anbindung.
+  +
+  Java, Drools (Rule-Engine), Python, HTML/JavaScript, relevante Teile in Prolog und Flash(tm).
 
 |Data Warehouse
 |Vor-Aggregation von Daten, die an das (externe) DWH exportiert werden.
@@ -80,8 +84,8 @@ seitens Kunden verbindliche Bestellungen eingeganten sind. +
   - Tracking des Erfüllungsstatus der Aufträge, insbesondere Wareneingänge, Transport-
     und Lieferbestätigungen, Bestätigungen seitens der Partner bezüglich Aufbau und Abnahme +
   - Auslösung der Rechnungsstellungen gemäß individueller Vertragsgestaltung
-   (Akkonto-/Vorabzahlungen, Teil- oder Ratenzahlung, Rechnung nach Auftrag u.ä.) 
-|
+   (Akkonto-/Vorabzahlungen, Teil- oder Ratenzahlung, Rechnung nach Auftrag u.ä.)
+| Cobol, PL/SQL
 
 
 | Post Sales Services
@@ -92,36 +96,38 @@ weitergehende Verkäufe gesucht, und Kunden teilautomatisiert angeboten.
 
 |Price Management
 |(Größtenteils manuelle) Pflege von Eingangsdaten für die spätere Preisberechnung.
-|
+| Java
 
 | <<Pricing Engine>>
 | Ermittelt Gesamtpreise für komplexe Produkte.
 | Faktisch ein Expertensystem zur Optimierung von Angebot und Nachfrage:
   Kombiniert Vertragsoptionen von Lieferanten/Partnern sowie Kunden, Rabatte, Gutscheine
   sowie Verfügbarkeiten. Siehe auch  <<PE-ermittelt-Verkaufspreis, Ablauf der Preisfindung für GK>>.
-
+  +
+  Haskell
 
 | Sales Backend eGovernment
 | Abwicklung von eCommerce Transaktionen für Behörden und
   Organisationen sowie Speicherung der entsprechenden Daten
 | Ursprünglich von Blau&Partner, danach von ATLAS Software entwickeltes System für
-  eCommerce mit Behörden und staatsnahen Organisationen. 
+  eCommerce mit Behörden und staatsnahen Organisationen.
   Erweitert für -><<NPO,NPOs>>. Benötigt <<eGov-Shop>> als Frontend.
-  Die Datenhaltung der hierüber verkauften Produkte erfolgt
-  in einer C++ Objektdatenbank (http://www.eyedb.org/[EyeDB^]).
+  +
+  C++, Python, interne Datenhaltung erfolgt
+  in der C++ Objektdatenbank (http://www.eyedb.org/[EyeDB^]).
 
 
 | Sales Backend Private + Corporate
 | Abwicklung von Verkäufen für Privat- und Firmenkunden,
   ebenfalls -><<NGO,NGOs>>. Teilweise schwierige Differenzierung zu -><<NPO,NPOs>>.
-  Enthält eine (relationale) Produktdatenbank auf Basis MySQL.
-|
+| MySQL als interne Datenbank für notwendige Produktinformation, sonst Java, Cobol, Python.
+
 
 | Security Extensions
 | Erweiterungen und Plugins für die verwendeten Webserver, um bekannte
 Sicherheitsprobleme und -lücken zu schliessen. U.a. DoS und DDoS-Erkennung,
-Virenprüfung
-|
+Virenprüfung.
+| Python.
 
 
 | <<Sales_Contracts_DB, Sales & Contracts Archive>>
@@ -133,7 +139,7 @@ Virenprüfung
 
 | <<Sales_Frontend, Sales Frontend Private + Corporate>>
 | Benutzeroberfläche für Auswahl, Konfiguration + Kaufabwicklung von Produkten für Privat- und Firmenkunden.
-|
+| Java, JavaScript, HTML
 
 | <<User-Data-Service>>
 | Verwaltung der Stammdaten von Privat- und Geschäftskunden
@@ -145,7 +151,7 @@ Virenprüfung
 | Gutscheine für Privatkunden, Anlegen von Gutscheinaktionen, Verwaltung individueller Gutscheine.
 Rabattaktionen und Sondertarife für Geschäftskunden. Keine (!) Sondervereinbarungen mit Behörden,
 die werden im eGov-Backend verwaltet.
-|
+| Java
 
 |===
 
@@ -171,9 +177,11 @@ Basiert auf http://www.emc.com/data-protection/centera.htm[EMC-Centera^].
 [WARNING]
 --
 Durch einen gravierenden Softwarefehler wurden zwischen 2001 und 2004 falsche Stamm-, Auftrags-
-und Buchungsdaten geschrieben. Der Fehler wurde erkannt und behoben, jedoch sind die betroffenen
-fehlerhaften Datensätze immer noch im Archiv enthalten und können bzw. dürfen nicht überschrieben
-werden. Abfragen auf Daten aus diesem Zeitraum sind grundsätzlich zu überprüfen.
+und Buchungsdaten geschrieben. Der Fehler wurde erkannt und in der Software behoben,
+jedoch sind die betroffenen fehlerhaften Datensätze immer noch im Archiv enthalten
+und können bzw. dürfen nicht überschrieben
+werden. Abfragen auf Daten aus diesem Zeitraum sind grundsätzlich zu überprüfen
+und ggfs. zu korrigieren.
 --
 
 ==== User-Data-Service
