@@ -9,20 +9,21 @@ task exportChangeLog(
     res.eachLine { line ->
         switch (line) {
             case ~/^commit.*/:
-                if (change!=null) {
+                if (change != null) {
                     changes << change
                 }
-                change = [commit:line-'commit ',log:'']
+                change = [commit: line - 'commit ', log: '']
                 break;
             case ~/^Author:.*/:
-                change['author'] = line-'Author: '
+                change['author'] = line - 'Author: '
                 break;
             case ~/^Date:.*/:
-                change['date'] = line-'Date: '
+                change['date'] = line - 'Date: '
                 break;
             default:
-                change['log'] += (line ? line.trim()+ "\n" : '')
+                change['log'] += (line ? line.trim() + "\n" : '')
         }
+    }
         changes << change
         def path = './build/docs/'
         new File(path).mkdirs()
@@ -39,6 +40,7 @@ task exportChangeLog(
                 println c
             }
         }
-    }
+
+
 }
 //end::exportChangeLog[]
