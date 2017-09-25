@@ -33,16 +33,14 @@ completed and maintained by Ralf Müller and Gernot Starke.#
 | image:aim42-logo.png[aim42, link={aim42-url}, width=192]
 |===
 
-.Letzte Änderungen
-[options="header",cols="1,2,6"]
-|====
-| Date
-| Author
-| Comment
+//.Letzte Änderungen
+//[options="header",cols="1,2,6"]
+//|====
+//| Date | Author | Comment
 
-include::../../build/docs/changelog.adoc[]
+//include::../../build/docs/changelog.adoc[]
 
-|====
+//|====
 
 // Versionsinfo, Statusinfo von github
 include::common/project-status.adoc[]
