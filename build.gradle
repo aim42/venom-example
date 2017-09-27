@@ -15,7 +15,8 @@ ext {
     srcDir  = "$projectDir/src/docs"
     targetDir = "$buildDir"
     javaVersion = System.getProperty("java.version")
-    currentDate = new Date().format("d. MMM yyyy")
+    currentDate = new Date().format("d.' 'MMM' 'yyyy")
+    currentDateURL = new Date().format("d.'%20'MMM'%20'yyyy")
     // where HTMLSanityCheck checking results ares stored
     checkingResultsPath = "$buildDir/report/htmlchecks"
     sourceFiles = [
@@ -82,6 +83,7 @@ tasks.withType(AsciidoctorTask) { docTask ->
             'icons': 'font',
             'javaVersion'         : "$javaVersion",
             'currentDate'         : "$currentDate",
+            'currentDateURL'      : "$currentDateURL",
             'allow-uri-read'      : true
     // Here we can add the code for extensions we write.
 //    extensions {
