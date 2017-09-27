@@ -114,6 +114,7 @@ tasks.withType(AsciidoctorTask) { docTask ->
 //tag::generateHTML[]
 task generateHTML (
         type: AsciidoctorTask,
+        dependsOn: exportChangeLog,
         group: 'docToolchain',
         description: 'use html5 as asciidoc backend') {
 
@@ -135,6 +136,7 @@ task generateHTML (
 //tag::generatePDF[]
 task generatePDF (
         type: AsciidoctorTask,
+        dependsOn: exportChangeLog,
         group: 'docToolchain',
         description: 'use pdf as asciidoc backend') {
 
@@ -156,6 +158,7 @@ task generatePDF (
 //tag::generateDocbook[]
 task generateDocbook (
         type: AsciidoctorTask,
+        dependsOn: exportChangeLog,
         group: 'docToolchain',
         description: 'use docbook as asciidoc backend') {
 
@@ -174,6 +177,7 @@ task generateDocbook (
 //tag::generateDeck[]
 task generateDeck (
         type: AsciidoctorTask,
+        dependsOn: exportChangeLog,
         group: 'docToolchain',
         description: 'use revealJs as asciidoc backend to create a presentation') {
 
