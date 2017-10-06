@@ -86,7 +86,7 @@ Flash-Player werden als Einfallstor für Cyber-Angriffe verwendet,
 das Sicherheitsrisiko von Flash gilt als hoch.
 
 Insgesamt wird Flash mittlerweile seitens vieler Entwickler und
-und auch Anwender als Risiko betrachtet - und wirft ein schlechtes Licht
+auch Anwender als Risiko betrachtet - und wirft ein schlechtes Licht
 auf VENOM und Samm, insbesondere weil es (noch) keine Alternative für die grafische
 Konfiguration von komplexen Produkten bei VENOM gibt.
 --

@@ -87,7 +87,7 @@ für die Konfiguratoren von Apothekensystemen.
 
 | [[Puppet]] Puppet
 | http://www.infoq.com/articles/introduction-puppet[Puppet^]
-ist ein (Open-Source) Werkzeug zur Systemkonfiguration. Wesentlicher Anwendungszweck ist die automatisierte Konfigurationen mehrerer Computer via Netzwerk, etwa zur Installation neuer Versionen.
+ist ein (Open-Source) Werkzeug zur Systemkonfiguration. Wesentlicher Anwendungszweck ist die automatisierte Konfiguration mehrerer Computer via Netzwerk, etwa zur Installation neuer Versionen.
 
 | [[RPM]] RPM
 | http://www.rpm.org/[Redhat Package Manager^]. System zur Verteilung komplexer Softwaresysteme.
@@ -99,7 +99,7 @@ Mehr zum Thema http://www.rpm.org/max-rpm/ch-intro-to-rpm.html#S1-INTRO-TO-RPM-W
 image:samm-logo.png[Samm Inc., 100]
 
 | Scoring
-| Variante der Bonitätsprüfung: Scores sind Wert von 1 bis 100, der die (statistische) Wahrscheinlichkeit angibt,
+| Variante der Bonitätsprüfung: Score ist sind Werte von 1 bis 100, die die (statistische) Wahrscheinlichkeit angeben,
   dass ein Kredit bedient wird. Je niedriger der Wert, desto größer die Ausfallwahrscheinlichkeit.
 
 | Sonderkonfiguration
