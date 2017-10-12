@@ -25,7 +25,7 @@ Zu den Kunden von SAMM zählen kleine und mittlere Unternehmen, Vereine,
 Behörden, Organisationen und Einzelpersonen.
 
 SAMM bietet seinen Kunden für diese _komplexen Produkte_ benutzerfreundliche
-Konfiguration an (online oder per Telefon). SAMM selbst kauft die Produkte
+Konfigurationen an (online oder per Telefon). SAMM selbst kauft die Produkte
 bei Herstellern gemäß der Konfiguration ein, kann aufgrund langfristiger
 Liefer- und Rabattverträge die Produkte deutlich unterhalb gängiger Marktpreise
 anbieten.
@@ -147,7 +147,7 @@ Sind nur in Auszügen explizit bekannt.
       werden.
 
 | 2 | Performance
-    | VENOM gibt eine verbindliche Auskünfte über Herstellbarkeit, Lieferbarkeit
+    | VENOM gibt eine verbindliche Auskunft über Herstellbarkeit, Lieferbarkeit
       und Inbetriebnehmbarkeit für 90% aller Produkte/Anfragen innerhalb von maximal 60 Sekunden. Die übrigen 10% (schwierige) Anfragen können zeitverzögert oder
       vorläufig innerhalb von 4h erfolgen.
 

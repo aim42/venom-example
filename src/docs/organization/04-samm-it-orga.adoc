@@ -31,7 +31,7 @@ wahrgenommen. Es gelten eine Vielzahl von bereichs- oder systemspezifischen Rege
 
 ==== Controlling und Budgetierung
 Controlling und Budgetierung wird durch die CTOs wahrgenommen,
-mit starker Unterstützung durch den Finanzen & Controlling (FC)
+mit starker Unterstützung durch Finanzen & Controlling (FC)
 
 ==== Anforderungsmanagement
 (hier: für die Customer-Systeme, insbesondere VENOM)

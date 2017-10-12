@@ -80,7 +80,7 @@ angeblich ca. 2002 stattgefunden, Ergebnisse aber nicht mehr vorhanden.
 
 | Order & Fulfillment
 | - Erzeugung verbindlicher Aufträge (_order_) an Lieferanten und Partner, nachdem
-seitens Kunden verbindliche Bestellungen eingeganten sind. +
+seitens Kunden verbindliche Bestellungen eingegangen sind. +
   - Tracking des Erfüllungsstatus der Aufträge, insbesondere Wareneingänge, Transport-
     und Lieferbestätigungen, Bestätigungen seitens der Partner bezüglich Aufbau und Abnahme +
   - Auslösung der Rechnungsstellungen gemäß individueller Vertragsgestaltung
