@@ -11,6 +11,8 @@ project('docToolchain') {
     }
 }
 
+apply plugin:'groovy'
+
 // let's set a defaultTask for convenience
 //defaultTasks 'exportChangeLog','exportJiraIssues','asciidoctor'
 //defaultTasks 'exportChangeLog', 'generateHTML', 'generatePDF', 'htmlSanityCheck'
