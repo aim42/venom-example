@@ -47,24 +47,24 @@ werden Transportunternehmer direkt beauftragt. Für Kleinbestellungen werden dir
 
 | Exportkontrolle
 | Manche Produkte (etwa: Komplexe pharmazietaugliche Transportsysteme) können in einigen Ländern/Regionen Ausfuhrrestriktionen unterliegen. Hierüber können die Behörden entsprechende Anfragen stellen bzw. erhalten dazu Resultate.
-In Deutschland ist das das http://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle, BAFA^].
+In Deutschland ist das das https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Wirtschaft_und_Ausfuhrkontrolle[Bundesamt für Wirtschaft und Außenkontrolle, BAFA^].
 
 | Kreditrating / Scoring
 | Bonitätsprüfung und Risikobewertung (Rating oder Scoring) von Kunden, beispielsweise durch Kreditkartenprüfung
   oder Bonitätsauskunft. Je nach Kundenart (Privat-, Firmenkunde, Organisationen) werden hier verschiedene
   Prüfungen durchgeführt. Verschiedene Anbieter, je nach Land. In Deutschland beispielsweise
-  http://www.arvato-infoscore.de/[Arvato-InfoScore^] oder
+  https://www.arvato-infoscore.de/[Arvato-InfoScore^] oder
   https://www.schufa4b.de[Schufa Holding^]. Diese Schnittstellen sind durch die jeweiligen Anbieter vorgegeben.
 
 
 | Payment (Zahlungsdienstleister)
 | Externe Dienstleistungen in Bezug auf Zahlungen und Zahlungsabwicklung, aber auch Inkassoleistungen.
 Unterschiedliche Anbieter, unter anderem
-  http://www.arvato-infoscore.de/dienstleistungen/zahlungsabwicklung/[Arvato-InfoScore^],
+  https://www.arvato-infoscore.de/dienstleistungen/zahlungsabwicklung/[Arvato-InfoScore^],
   https://www.paypal.com[PayPal^] und
   https://www.paymill.com/de/[PayMill^], sowie
-  http://www.bundesbank.de/Navigation/DE/Aufgaben/Unbarer_Zahlungsverkehr/SEPA/sepa.html[SEPA^]-Schnittstellen zu diversen Banken. In kritischen Fällen auch Beauftragung von
-  http://inkasso.de/[Inkassoleistungen^].
+  https://www.bundesbank.de/Navigation/DE/Aufgaben/Unbarer_Zahlungsverkehr/SEPA/sepa.html[SEPA^]-Schnittstellen zu diversen Banken. In kritischen Fällen auch Beauftragung von
+  https://inkasso.de/[Inkassoleistungen^].
 
 
 |===

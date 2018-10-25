@@ -37,25 +37,25 @@ Bitte melden Sie Fehler oder Hinweise über unseren [Issue-Tracker]. Pull-Reques
 sind herzlich willkommen!
 
 
-![Offene Punkte](http://img.shields.io/github/issues/aim42/venom-example.svg)
+![Offene Punkte](https://img.shields.io/github/issues/aim42/venom-example.svg)
 
 
 ### Credits
-Das VENOM-Logo basiert auf [Bone-Clipart]
+Das ursprüngliche VENOM-Logo basiert auf _Bone-Clipart_
 von [matheod](https://openclipart.org/user-detail/matheod)
-sowie [Poison-Clipart]
+sowie _Poison-Clipart_
 von [Lil_Mermaid_Girl](https://openclipart.org/user-detail/Lil_Mermaid_Girl)
 und [Dear-theophilus](https://openclipart.org/user-detail/dear_theophilus)
 
-VENOM-Logo (c) 2015 Gernot Starke.
+VENOM-Logo (c) 2015ff Gernot Starke.
 
 ___
-[aim42]: http://aim42.org "The Architecture Improvement Method"
-[arc42]: http://arc42.de "The arc42 Template for Software Architectures"
+[aim42]: https://aim42.org "The Architecture Improvement Method"
+[arc42]: https://arc42.de "The arc42 Template for Software Architectures"
 
 [Issue-Tracker]: https://github.com/aim42/venom-example/issues "Issue-Tracker"
 
-[Dr. Gernot Starke]: http://gernotstarke.de "Homepage of Dr. Gernot Starke"
+[Dr. Gernot Starke]: https://gernotstarke.de "Homepage of Dr. Gernot Starke"
 
 [Bone-Clipart]: https://openclipart.org/image/800px/svg_to_png/188266/bone.png "Bone Clipart from OpenClipart.org"
 

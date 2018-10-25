@@ -1,5 +1,3 @@
-
-
 = SAMM Inc. - Das Unternehmen
 :toc-title: Inhaltsverzeichnis
 
@@ -15,7 +13,7 @@ a|  [NOTE]
 ====
 Dieses Dokument beschreibt ein fiktives Unternehmen.
 [small]#Ähnlichkeiten mit bestehenden Systemen sind rein zufällig und nicht beabsichtigt.
-Entwickelt zur Illustration von http://aim42.org[aim42^]-Praktiken sowie der Nutzung des http://arc42.de[arc42^]-Templates.# 
+Entwickelt zur Illustration von https://aim42.org[aim42^]-Praktiken sowie der Nutzung des https://arc42.de[arc42^]-Templates.#
 
 include::common/authored-by.adoc[]
 ====
@@ -69,5 +67,3 @@ include::common/image-credits.adoc[]
 
 // license
 include::common/license.adoc[]
-
-

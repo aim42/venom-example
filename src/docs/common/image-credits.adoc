@@ -6,8 +6,8 @@
 VENOM logo (c) 2015 by Gernot Starke. Use only with written permission.
 
 
-https://openclipart.org[Openclipart.org] provides free cliparts. 
-Each artist at Openclipart releases all rights to the images they share at Openclipart. 
+https://openclipart.org[Openclipart.org] provides free cliparts.
+Each artist at Openclipart releases all rights to the images they share at Openclipart.
 Unlimited commercial use of these cliparts is allowed.
 
 * https://openclipart.org/detail/188617/treasure-chest[Treasure-Chest] by https://openclipart.org/user-detail/Moini[Moini], used for the SAMM AG logo.
@@ -18,8 +18,8 @@ Unlimited commercial use of these cliparts is allowed.
 https://openclipart.org/user-detail/Lil_Mermaid_Girl[Lil_Mermaid_Girl] and
 https://openclipart.org/user-detail/dear_theophilus[Dear-theophilus], used for the VENOM logo.
 
-* https://openclipart.org/detail/176510/comicstyle-shelves[comic shelves] by 
+* https://openclipart.org/detail/176510/comicstyle-shelves[comic shelves] by
 https://openclipart.org/user-detail/rubejar[rubejar], used for the example configurator
 
-* http://mygarden.gardena.com/de/[MyGarden von GARDENA(C)], a powerful online garden designer. It was used
+* https://mygarden.gardena.com/de/[MyGarden von GARDENA(C)], a powerful online garden designer. It was used
 to create the diagram in the example configurator section.

@@ -18,11 +18,11 @@ image::08-persistence.png["Persistenz", title="Persistenz"]
 [cols="1,3" options=""]
 .Bestandteile des Persistenzkonzept
 |===
-| ATLAS (DB2/400) 
-| Auf einer http://de.wikipedia.org/wiki/System_i[IBM-Hardware AS/400^] laufendes DB2/400. Aus dem 2003-2005 übernommenen ATLAS/2 System liegen hierauf noch Kunden-, Vertrags- und Abrechnungsdaten.  
+| ATLAS (DB2/400)
+| Auf einer https://de.wikipedia.org/wiki/System_i[IBM-Hardware AS/400^] laufendes DB2/400. Aus dem 2003-2005 übernommenen ATLAS/2 System liegen hierauf noch Kunden-, Vertrags- und Abrechnungsdaten.
 
 | Optisches Archiv 
-| Langzeitspeicher, basiert auf http://www.emc.com/data-protection/centera.htm[EMC-Centera^].
+| Langzeitspeicher, basiert auf https://www.emc.com/data-protection/centera.htm[EMC-Centera^].
 Enthält sämtliche Verkaufsdaten, Angebote, Verträge, historisierte Stammdaten.
 
 | Partner Management
@@ -36,11 +36,11 @@ Enthält sämtliche Verkaufsdaten, Angebote, Verträge, historisierte Stammdaten
 
 | Sales Backend Government (EyeDB)
 | Verkaufte Produkte, Konfigurationen, Preise sowie
-  Vertragsdetails, gespeichert als Objekte/Objektgraphen in der C++ 
-  Objektdatenbank (http://www.eyedb.org/[EyeDB^])
+  Vertragsdetails, gespeichert als Objekte/Objektgraphen in der C++
+  Objektdatenbank (https://www.eyedb.org/[EyeDB^])
 
 | Sales & Contracts Database (PostgreSQL)
-| Verkaufs- und Vertragsdaten, gespeichert http://www.postgresql.org/[PostgreSQL^]
+| Verkaufs- und Vertragsdaten, gespeichert https://www.postgresql.org/[PostgreSQL^]
 |===
 
 
@@ -58,4 +58,3 @@ image::VENOMBOM.png[title="Draft: Fachliches Datenmodell"]
 ** Suche nach alten Aufträgen eines Kunden
 ** Suche nach Verkäufen & Konfigurationen eines Produktes
 ** Suche nach dem Status ausfuhrbeschränkter Produkte/Aufträge
-
