@@ -26,8 +26,8 @@ generiert.
 Stark regulierter Bereich, da z.B. in Deutschland das Apothekenrecht den weitgehend automatisierten Verkauf stark einschränkt.
 Integration mit verschiedenen Produktherstellern, u.a.
 https://www.pharmatechnik.de/k2[Pharmatechnik^],
-http://www.rowa.de/[Carefusion/Rowa^],
-http://www.apoforma.com/Home/Unternehmen.aspx[ApoForma^] und anderen.
+https://www.rowa.de/[Carefusion/Rowa^],
+https://www.apoforma.com/Home/Unternehmen.aspx[ApoForma^] und anderen.
 
 | Furniture Configurator
 |
@@ -38,7 +38,7 @@ http://www.apoforma.com/Home/Unternehmen.aspx[ApoForma^] und anderen.
 |
 
 | [[ConfEx]] Configuration Expert (ConfEx)
-| Regelbasiertes System (auf Basis http://www.drools.org/[JBoss-Drools^]) zur Unterstützung von visuellen Konfiguratoren.
+| Regelbasiertes System (auf Basis https://://www.drools.org/[JBoss-Drools^]) zur Unterstützung von visuellen Konfiguratoren.
 Ermittelt zu einer gegebenen Konfiguration Vorschläge sowohl zur inhaltlichen wie preislichen Verbesserung. Teil des _Expertensystems_ (anderer Teil ist der <<Configuration-Validator>>)
 | In den meisten Situationen prüft ConfEx, welche Änderungen an der bestehenden Konfiguration:
 
@@ -49,8 +49,8 @@ Rechtliche Einschränkungen kann ConfEx aktuell nur unzureichend berücksichtige
 (etwa bei Apotheken) Anfragen beim <<Configuration-Validator>> nötig.
 
 | [[Configuration-Validator]] Configuration Validator
-| http://www.swi-prolog.org/[Prolog^] basierte ->
-<<Validierung>>. 
+| https://://www.swi-prolog.org/[Prolog^] basierte ->
+<<Validierung>>.
 | Teil des Expertensystems, gemeinsam mit <<ConfEx>>.
 
 | Configuration Data Akquisition

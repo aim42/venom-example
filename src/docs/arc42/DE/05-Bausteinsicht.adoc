@@ -114,7 +114,7 @@ weitergehende Verkäufe gesucht, und Kunden teilautomatisiert angeboten.
   Erweitert für -><<NPO,NPOs>>. Benötigt <<eGov-Shop>> als Frontend.
   +
   C++, Python, interne Datenhaltung erfolgt
-  in der C++ Objektdatenbank (http://www.eyedb.org/[EyeDB^]).
+  in der C++ Objektdatenbank (https://www.eyedb.org/[EyeDB^]).
 
 
 | Sales Backend Private + Corporate
@@ -172,7 +172,7 @@ Revisionssichere Archivierung, elektronische Aufbewahrung geschäftsrelevanter D
 Erfüllt die Anforderungen des (deutschen) Handelsgesetzbuches (§239, §257 HGB) an die
 sichere und ordnungsgemäße Aufbewahrung von kaufmännischen Dokumenten.
 
-Basiert auf http://www.emc.com/data-protection/centera.htm[EMC-Centera^].
+Basiert auf https://www.emc.com/data-protection/centera.htm[EMC-Centera^].
 
 [WARNING]
 --
@@ -209,7 +209,7 @@ gut genug zu verstehen.
 ==== Sales Backend Government
 In C/C++ entwickeltes eCommerce System für Behörden.
 Verwendet die Objektdatenbank (OODBMS)
-http://www.eyedb.org/[EyeDB^] zur Speicherung von Daten.
+https://www.eyedb.org/[EyeDB^] zur Speicherung von Daten.
 
 Anmerkung: Innerhalb der existieren seit längerer Zeit
 
@@ -240,7 +240,7 @@ bei sämtlichen -><<CRUD>>-Operationen auf diesen Daten.
 Das Sales Frontend ist eine Multi-Page Web Application,
 die weitaus meisten Teile werden durch die
 so genannte _View Pipeline_ mit Hilfe von
-http://cocoon.apache.org/[Apache-Cocoon^] erzeugt.
+https://cocoon.apache.org/[Apache-Cocoon^] erzeugt.
 
 
 include::05-02-ConfiguratorShell.adoc[]
