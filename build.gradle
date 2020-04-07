@@ -1,19 +1,40 @@
+import org.asciidoctor.gradle.AsciidoctorTask
+import javax.inject.Inject
+import java.text.SimpleDateFormat
 
-project('docToolchain') {
-    if (project.hasProperty('docDir')) {
-        docDir = '../.'
-        mainConfigFile = 'Config.groovy'
-    } else {
-        println "="*80
-        println "  please initialize the docToolchain submodule"
-        println "  by executing git submodule update -i"
-        println "="*80
-    }
+
+buildscript {
+  repositories {
+    jcenter()
+  }
+
+  dependencies {
+    classpath "org.asciidoctor:asciidoctorj-pdf:1.5.3"
+  }
+}
+plugins {
+  id "org.asciidoctor.convert" version "1.6.0"
 }
 
-apply plugin:'groovy'
 
-// let's set a defaultTask for convenience
-//defaultTasks 'exportChangeLog','exportJiraIssues','asciidoctor'
-//defaultTasks 'exportChangeLog', 'generateHTML', 'generatePDF', 'htmlSanityCheck'
-defaultTasks 'generateHTML'
+asciidoctor {
+
+    sourceDir = new File(".src/docs/")
+    sources {
+      include "SAMM_Ueberblick.adoc"
+    }
+    outputDir = new File("./build/")
+    separateOutputDirs = false
+    backends 'pdf', 'html5'
+
+    attributes = [
+      'icons'            : 'font',
+      'pdf-stylesdir'    : './pdf-theme/themes',
+      'pdf-fontsdir'     : '‚./pdf-theme/fonts',
+      'pdf-style'        : 'isaqb'
+    ]
+  }
+
+
+
+defaultTasks "asciidoctor"
