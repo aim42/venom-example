@@ -3,7 +3,7 @@
 [appendix]
 == Image Credits
 
-VENOM logo (c) 2015 by Gernot Starke. Use only with written permission.
+VENOM logo (c) by Gernot Starke. Use only with written permission.
 
 
 https://openclipart.org[Openclipart.org] provides free cliparts.

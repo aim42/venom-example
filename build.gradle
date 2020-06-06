@@ -1,6 +1,7 @@
-import org.asciidoctor.gradle.AsciidoctorTask
-import javax.inject.Inject
-import java.text.SimpleDateFormat
+// gradle build script for the VENOM architecture example
+//
+// free software - without guarantee, use at your own risk
+// ========================================================
 
 
 buildscript {
@@ -10,6 +11,9 @@ buildscript {
 
   dependencies {
     classpath "org.asciidoctor:asciidoctorj-pdf:1.5.3"
+     classpath 'com.github.jruby-gradle:jruby-gradle-plugin:0.1.11'
+       
+    gems 'rubygems:asciidoctor-diagram:1.2.1'
   }
 }
 plugins {
@@ -17,24 +21,68 @@ plugins {
 }
 
 
-asciidoctor {
 
-    sourceDir = new File(".src/docs/")
-    sources {
-      include "SAMM_Ueberblick.adoc"
+ext {
+    srcDir  = "./src/docs"
+    targetDir = "$buildDir"
+    themeDir = "$projectDir/pdf-theme"
+    javaVersion = System.getProperty("java.version")
+    currentDate = new Date().format("d.MMM.yyyy")
+}
+
+
+asciidoctor {
+    outputDir = new File( "./build" )
+    sourceDir = new File("./docs/")
+    sources  { 
+      include "arc42-venom.adoc"
+      include "SAMM_Ueberblick.adoc" 
+      //include "venom-reading-guide.adoc"
     }
-    outputDir = new File("./build/")
+
+    dependsOn jrubyPrepareGems
+    gemPath = jrubyPrepareGems.outputDir
+
     separateOutputDirs = false
-    backends 'pdf', 'html5'
+    backends 'html5' //, 'pdf'
+    requires 'asciidoctor-diagram'
+    
 
     attributes = [
-      'icons'            : 'font',
-      'pdf-stylesdir'    : './pdf-theme/themes',
-      'pdf-fontsdir'     : '‚./pdf-theme/fonts',
-      'pdf-style'        : 'isaqb'
-    ]
-  }
+            doctype: 'book',
+            icons: 'font',
+            toc: 'left',
+            sectlink : true,
+            sectanchors : true,
+            numbered : true,
+            'allow-uri-read' : true,
+            'document-version' : '0.4.2',
+            'document-name'    : 'Architekturdokumentation VENOM',
+            'source-highlighter' : 'coderay',
+            'imagesdir'         :'./docs/images',
+            'currentDate'       : currentDate,
+            'pdf-stylesdir'    : '../pdf-theme/themes',
+            'pdf-fontsdir'     : '../pdf-theme/fonts',
+            'pdf-style'        : 'venom'
+   
+   ]
+
+    resources {
+        // include architecture diagrams
+        from("${srcDir}/architecture") {
+          include 'images/**'
+        }
+        from("${srcDir}/organization") {
+          include 'images/**'
+        }
+        // include logos and other common images
+        from("${srcDir}") {
+          include 'images/**'
+        }
+    }
 
 
+}
 
-defaultTasks "asciidoctor"
+
+defaultTasks 'asciidoctor'

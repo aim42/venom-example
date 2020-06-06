@@ -96,7 +96,6 @@ Mehr zum Thema https://www.rpm.org/max-rpm/ch-intro-to-rpm.html#S1-INTRO-TO-RPM-
 
 | SAMM
 | Sell And Make Money. Eingetragenes Marken- und Warenzeichen (C) und (R) SAMM Inc.
-image:samm-logo.png[Samm Inc., 100]
 
 | Scoring
 | Variante der Bonitätsprüfung: Score ist sind Werte von 1 bis 100, die die (statistische) Wahrscheinlichkeit angeben,

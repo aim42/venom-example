@@ -1,0 +1,37 @@
+
+= VENOM: Reading Guide
+Author: Gernot Starke @gernotstarke
+
+
+== Leitfragen
+Dies ist eine kleine Leseanleitung für das VENOM Fallbeispiel.
+
+Die Fragen sollen Ihnen im Umgang mit der (recht umfangreichen) Dokumentation helfen.
+
+
+1. In Ihren eigenen Worten - was ist SAMM für eine Firma?
+2. Nennen Sie ein paar der wesentlichen Geschäftsprozesse, die SAMM abwickelt.
+   * mit Endkunden
+   * mit anderen für die Leistungserbringung relevanten Stakeholdern
+
+3. Was sind die wesentlichen Aspekte der
+   * Aufbauorganisation der IT
+   * Entwicklungsorganisation in der IT (d.h. wie wird Software entwickelt?)
+ 
+4. Stellen Sie sich vor, Sie seien Fachbereich von SAMM und haben eine großartige (aktuelle!) Projektidee: Sie möchten Designer-Atemschutzmasken produzieren und über VENOM verkaufen. Sie haben einen Produzenten, Lager- und Transportkapazitäten organisiert. Wie geht SAMM jetzt vor?
+
+5. Nennen Sie die wesentlichen Stakeholder von VENOM
+
+6. Welche wesentlichen Aufgaben im Unternehmen übernimmt VENOM?
+
+7. Wodurch ist die aktuelle Modul-/Subsystem-Struktur (Bausteinsicht) geprägt? Was waren die wesentlichen Treiber dieses Systemschnitts?
+
+   * Welche Risiken sehen Sie dabei?
+
+8. Was sehen Sie als Stärken des VENOM Systems?
+
+9. Nennen Sie einige wesentliche Aspekte der VENOM Datenhaltung? Welche Daten finden Sie besonders wichtig, und wie werden die verarbeitet?
+
+10. Nennen Sie wesentliche Aspekte der VENOM GUI, insbesondere "customer-facing".
+
+11. Was gibt es aus Ihrer Sicht für offene Fragen, die die Architekturdoku nicht beantwortet?

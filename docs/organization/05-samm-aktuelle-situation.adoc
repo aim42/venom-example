@@ -85,7 +85,7 @@ in dieser Hinsicht ist keine Korrelation zu den o.g. KPI's erkennbar.
 
 [WARNING]
 --
-Die bereits 2013 geplante Markteinführung des Produktes _Garden-Configurator_
+Die bereits 2018 geplante Markteinführung des Produktes _Garden-Configurator_
 musste aufgrund gravierender Qualitätsmängel, schlechter Benutzbarkeit sowie
 Nichterreichung zugesagter Liefertermine seitens des Entwicklungsteams mehrfach verschoben werden.
 --

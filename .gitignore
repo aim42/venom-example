@@ -38,3 +38,7 @@ VENOM.vpp.working
 *.vpp~*
 VENOM.vpp.bak
 VENOM.vpp.bak~1
+.vscode/settings.json
+.vscode
+graphics/samm-logo/.DS_Store
+.DS_Store
