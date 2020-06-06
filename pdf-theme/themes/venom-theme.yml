@@ -78,9 +78,6 @@ heading:
   margin_bottom: 10
 title_page:
   align: center
-  logo:
-    image: image:../isaqb-logo.jpg[pdfwidth=60%,align=center]
-    top: 70%
   title:
     top: 0%
     font_size: $heading_h1_font_size
@@ -218,7 +215,7 @@ running_content:
   start_at: toc
 # NOTE in addition to footer, header is also supported
 footer:
-  font_size: $base_font_size_small * 0.9
+  font_size: $base_font_size_small * 0.8
   # NOTE if background_color is set, background and border will span width of page
   border_color: dddddd
   border_width: 0.25
@@ -230,7 +227,7 @@ footer:
     right:
       content: '{page-number}'
     left:
-      content: '(C) iSAQB e.V.'
+      content: '(C) Dr. Gernot Starke'
     center:
       content: 'Version {document-version}'
   verso:
@@ -241,18 +238,18 @@ footer:
     right:
       content: $footer_recto_right_content
 header:
-  height: 2.0cm
-  image_vertical_align: 12.16mm
-  vertical_align: bottom
+  height: 1.5cm
+  image_vertical_align: 0mm
+  vertical_align: center
   border_color: dddddd
   border_width: 0.25
-  linge_height: 1
-  padding: [0, -15, 0, 0]
+  line_height: 1
+  padding: [0, -5, 0, -10]
   recto:
     left:
-      content: "{curriculum-header-title}"
+      content: ""
     right:
-      content: image:../isaqb-logo-without-text.jpg[width=138]
+      content: 
   verso:
     left:
       content: $header_recto_left_content
